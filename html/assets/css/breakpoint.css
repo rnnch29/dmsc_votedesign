@@ -1,0 +1,240 @@
+/* Breakpoint  */
+@media (min-width: 1200px) {
+    .container {
+        max-width: inherit;
+        width: 1210px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .container {
+        max-width: inherit;
+        width: 1440px;
+    }
+}
+
+
+/* responsive */
+
+@media(max-width:1600px) {
+    header {
+        padding: 20px;
+    }
+
+    .block-platinum-card .two-card img {
+        width: 650px;
+    }
+
+    .block-platinum-card p {
+        font-size: 35px;
+    }
+
+    .block-platinum-card h1 {
+        font-size: 65px;
+    }
+
+    .block-platinum-card h3 {
+        font-size: 55px;
+    }
+
+    .graphics .obj-I {
+        top: -300px;
+        left: 150px;
+    }
+
+    .graphics .obj-II {
+        top: -540px;
+        left: 1430px;
+    }
+
+    .graphics .obj-III {
+        top: -310px;
+        left: 0;
+    }
+
+    .graphics .obj-IV {
+        top: -740px;
+        left: 1200px;
+    }
+
+    .block-benefits-slider .item {
+        padding: 10px 10px;
+        border-radius: 35px;
+    }
+
+    .graphics .obj-mobile-I {
+        top: -240px;
+        left: 1130px;
+    }
+
+    .graphics .obj-mobile-II {
+        top: 310px;
+        left: -412px;
+    }
+
+    .graphics .obj-mobile-IV {
+        top: 100px;
+        left: -50px;
+    }
+
+    .graphics .obj-mobile-V {
+        top: 80px;
+        left: 1380px;
+    }
+
+    .graphics .obj-mobile-VI {
+        top: 680px;
+        left: -20px;
+    }
+}
+
+
+
+@media(max-width:1440px) {
+    header {
+        padding: 20px;
+    }
+
+    .block-platinum-card .two-card img {
+        width: 600px;
+    }
+
+    .block-platinum-card p {
+        font-size: 30px;
+    }
+
+    .block-platinum-card h1 {
+        font-size: 60px;
+    }
+
+    .block-platinum-card h3 {
+        font-size: 50px;
+    }
+
+    .block-benefits-slider h1 {
+        font-size: 65;
+    }
+
+    .block-benefits-slider h3 {
+        font-size: 55px;
+    }
+
+    .graphics .obj-I {
+        top: -280px px;
+        left: 150px;
+    }
+
+    .graphics .obj-I img {
+        width: 100px;
+    }
+
+    .graphics .obj-II {
+        top: -520px;
+        left: 1280px;
+    }
+
+    .graphics .obj-II img {
+        width: 100px;
+    }
+
+    .graphics .obj-III {
+        top: -250px;
+        left: 0;
+    }
+
+    .graphics .obj-IV {
+        top: -720px;
+        left: 1070px;
+    }
+
+    .btn-I {
+        font-size: 24px;
+        width: 210px;
+        height: 70px;
+    }
+
+    .block-benefits-slider .item {
+        padding: 10px 10px;
+        border-radius: 35px;
+    }
+
+    .graphics .obj-mobile-I {
+        top: 20px;
+        left: 1111px;
+    }
+
+    .graphics .obj-mobile-I img {
+        width: 700px;
+    }
+
+
+    .graphics .obj-mobile-II {
+        top: 400px;
+        left: -200px;
+    }
+
+    .graphics .obj-mobile-II img{
+        width: 600px;
+    }
+
+    .graphics .obj-mobile-IV {
+        top: 100px;
+        left: -50px;
+    }
+
+    .graphics .obj-mobile-V {
+        top: 80px;
+        left: 1250px;
+    }
+
+    .graphics .obj-mobile-VI {
+        top: 680px;
+        left: -20px;
+    }
+
+    .master-card h5 {
+        font-size: 35px;
+    }
+
+    .master-card h1 {
+        font-size: 80px;
+    }
+
+    .master-card h3 {
+        font-size: 55px;
+    }
+
+    .master-card p {
+        font-size: 25px;
+    }
+
+    .btn-III {
+        width: 550px;
+        height: 70px;
+        font-size: 24px;
+    }
+
+    
+
+}
+
+
+
+@media(max-width:1199px) {}
+
+
+
+@media(max-width:991px) {}
+
+
+
+@media(max-width:767px) {
+    .container {
+        max-width: inherit;
+        width: 100%;
+    }
+}
+
+
+
+@media(max-width:575px) {}
