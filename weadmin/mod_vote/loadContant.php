@@ -123,9 +123,13 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                     <td align="left">
                         <table border="0" cellspacing="0" cellpadding="0" align="right">
                             <tr>
-                                <!-- <td align="right">
+                                <td align="right">
                                     <?php if ($valPermission == "RW") { ?>
-                                    <div class="btnAdd" title="<?php echo  $langTxt["btn:add"] ?>" onclick="document.myFormHome.inputLt.value = 'Thai';
+
+                                    <div class="btnExport" title="<?php echo  $langTxt["btn:export"] ?>" onclick="document.myFormHome.inputLt.value = 'Thai';
+                                    addContactNew('addContant.php');"></div>
+
+                                    <!-- <div class="btnAdd" title="<?php echo  $langTxt["btn:add"] ?>" onclick="document.myFormHome.inputLt.value = 'Thai';
                                                     addContactNew('addContant.php');"></div>
                                     <div class="btnDel" title="<?php echo  $langTxt["btn:del"] ?>" onclick="
                                                     if (Paging_CountChecked('CheckBoxID', document.myForm.TotalCheckBoxID.value) > 0) {
@@ -139,8 +143,8 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                                     <?php //if($_REQUEST['inputGh']>=1){ ?>
                                     <div class="btnSort" title="<?php echo  $langTxt["btn:sortting"] ?>"
                                         onclick="sortContactNew('sortContant.php');"></div>
-                                    <?php }//} ?>
-                                </td> -->
+                                    <?php }//} ?> -->
+                                </td>
                             </tr>
                         </table>
                     </td>
@@ -164,11 +168,11 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                     <!-- Top graphic name table head  -->
                     <td width="5%" class="divRightTitleTbL" valign="middle" align="left" style="padding-left: 40px;"><?php echo $langMod["txt:id"] ?></span></td>   
 
-                    <td align="left" width="10%" valign="middle" class="divRightTitleTb"><span class="fontTitlTbRight"><?php echo $langMod["txt:q1"] ?></span></td> 
+                    <td align="left" width="20%" valign="middle" class="divRightTitleTb" style="padding-left: 10px;"><span class="fontTitlTbRight"><?php echo $langMod["txt:q1short"] ?></span></td> 
 
-                    <td align="left" width="25%" valign="middle" class="divRightTitleTb"><span class="fontTitlTbRight"><?php echo $langMod["txt:q2"] ?></span></td>
+                    <td align="left" width="25%" valign="middle" class="divRightTitleTb" style="padding-left: 10px;"><span class="fontTitlTbRight"><?php echo $langMod["txt:q2short"] ?></span></td>
 
-                    <td align="left" width="20%" valign="middle" class="divRightTitleTb"><span class="fontTitlTbRight"><?php echo $langMod["txt:q3"] ?></span></td>
+                    <td align="left" width="20%" valign="middle" class="divRightTitleTb" style="padding-left: 10px;"><span class="fontTitlTbRight"><?php echo $langMod["txt:q3short"] ?></span></td>
 
                     <td align="left" width="10%" valign="middle" class="divRightTitleTbR" style="padding-left: 10px;"><span class="fontTitlTbRight"><?php echo $langMod["txt:suggest"] ?></span></td>
                     
