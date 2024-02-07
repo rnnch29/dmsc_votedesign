@@ -65,28 +65,40 @@
         </div>
         <div class="row">
           <div class="col-6">
-            <div class="choice">
+            {* <div class="choice">
               <input class="choice-input" type="radio" id="q1_1" name="q1" value="1">
               <label class="control-label">รูปแบบที่ 1</label>
+            </div> *}
+            <div class="rdio rdio-primary radio-inline"> <input name="radio" value="1" id="radio1" type="radio" checked>
+              <label for="radio1">All</label>
             </div>
           </div>
           <div class="col-6">
-            <div class="choice">
+            {* <div class="choice">
               <input type="radio" id="q1_2" name="q1" value="2">
               <label>รูปแบบที่ 2</label>
+            </div> *}
+            <div class="rdio rdio-primary radio-inline"> <input name="radio" value="1" id="radio2" type="radio" checked>
+              <label for="radio2">All</label>
             </div>
           </div>
           <div class="col-6">
 
-            <div class="choice">
+            {* <div class="choice">
               <input type="radio" id="q1_3" name="q1" value="3">
               <label>รูปแบบที่ 3</label>
+            </div> *}
+            <div class="rdio rdio-primary radio-inline"> <input name="radio" value="1" id="radio1" type="radio" checked>
+              <label for="radio1">All</label>
             </div>
           </div>
           <div class="col-6">
-            <div class="choice">
+            {* <div class="choice">
               <input type="radio" id="q1_4" name="q1" value="4">
               <label>รูปแบบที่ 4</label>
+            </div> *}
+            <div class="rdio rdio-primary radio-inline"> <input name="radio" value="1" id="radio1" type="radio" checked>
+              <label for="radio1">All</label>
             </div>
           </div>
         </div>
