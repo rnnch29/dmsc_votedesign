@@ -20,7 +20,6 @@ include("../core/incLang.php");
 
 
     <script language="JavaScript" type="text/javascript">
-    
         var countArrSort = '';
         jQuery(function() {
 
@@ -55,7 +54,7 @@ include("../core/incLang.php");
                 <td align="left">
                     <table border="0" cellspacing="0" cellpadding="0" align="right">
                         <tr>
-<!-- #################################### add menu to load Home ############################ -->
+                            <!-- #################################### add menu to load Home ############################ -->
 
                             <!-- <td align="right">
                                 <div class="btnAdd" title="Add" onclick="window.open('box.php', '_self');"></div>
@@ -69,7 +68,7 @@ include("../core/incLang.php");
     </div>
 
 
-<!--################################################# Select Pic ############################################################-->
+    <!--################################################# Select Pic ############################################################-->
     <div class="divRightHome">
         <!-- <div class="divRightInnerHome"> 
             <?php if ($_SESSION[$valSiteManage . "core_session_level"] == "SuperAdmin" || $_SESSION[$valSiteManage . "core_session_level"] == "admin") {
@@ -95,8 +94,8 @@ include("../core/incLang.php");
                     ?> -->
 
 
-<!-- #######################################  สิทธิ์การใช้งานระบบ: Administrator ##############################################  -->
-                    <!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <!-- #######################################  สิทธิ์การใช้งานระบบ: Administrator ##############################################  -->
+        <!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
                         <tr>
                             <td width="16%" align="left">
                                 <div style="width:52px; height:52px;  background:url(<?php echo  $valPicProfileTop ?>) center no-repeat; border:#ffffff solid 1px;  background-size: cover;background-repeat: no-repeat;   "><img src="../img/home/cycle.png" /></div>
@@ -151,9 +150,9 @@ include("../core/incLang.php");
                 </div> -->
 
 
-<!-- #################################### ผู้ใช้งานระบบ  ###################################-->
+        <!-- #################################### ผู้ใช้งานระบบ  ###################################-->
 
-                <!-- <div class="divRightInnerTopBoxHome">
+        <!-- <div class="divRightInnerTopBoxHome">
 
                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                         <tr>
@@ -186,8 +185,8 @@ include("../core/incLang.php");
 
 
 
-<!--####################################### สิทธิ์การใช้งานระบบ ########################################-->
-                <!-- <div class="divRightInnerTopBoxHome">
+        <!--####################################### สิทธิ์การใช้งานระบบ ########################################-->
+        <!-- <div class="divRightInnerTopBoxHome">
 
                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                         <tr>
@@ -221,8 +220,8 @@ include("../core/incLang.php");
             <?php } ?>
             <?php if ($_SESSION[$valSiteManage . "core_session_level"] == "SuperAdmin" || $_SESSION[$valSiteManage . "core_session_level"] == "admin") {
             ?> -->
-<!-- ########## Start Box Big ##########-->
-                <!-- <div class="divRightInnerBigBoxHome">
+        <!-- ########## Start Box Big ##########-->
+        <!-- <div class="divRightInnerBigBoxHome">
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="divRightTitleHomeBoxAll">
                         <tr>
                             <td width="3%" class="divRightTitleHome" valign="middle" align="left">
@@ -231,8 +230,8 @@ include("../core/incLang.php");
                                         <td align="left"><span class="fontTitlTbHome">&nbsp;&nbsp;<?php echo  $langTxt["home:used"] ?></span></td> -->
 
 
-<!-- ################### export log #################### -->
-                                        <!-- <td align="right"><a href="../core/exportLog.php" title="<?php echo  $langTxt["btn:export"] ?>"><img src="../img/iconfile/3.png" style="padding-right:3px;" width="25" border="0" /></a></td>
+        <!-- ################### export log #################### -->
+        <!-- <td align="right"><a href="../core/exportLog.php" title="<?php echo  $langTxt["btn:export"] ?>"><img src="../img/iconfile/3.png" style="padding-right:3px;" width="25" border="0" /></a></td>
                                     
                                     </tr>
                                 </table>
@@ -256,14 +255,14 @@ include("../core/incLang.php");
 
                     </table>
                 </div> -->
-<!-- ########## End Box Big ##########-->
+        <!-- ########## End Box Big ##########-->
 
 
-                <div class="clearAll"></div>
-            <?php } ?>
+        <div class="clearAll"></div>
+    <?php } ?>
 
-            <?php
-            $sql = "SELECT
+    <?php
+    $sql = "SELECT
 " . $core_tb_sort . "_id,
 " . $core_tb_menu . "_masterkey,
 " . $core_tb_menu . "_moduletype,
@@ -278,7 +277,7 @@ FROM " . $core_tb_menu . "
 INNER JOIN " . $core_tb_sort . "
 ON  " . $core_tb_menu . "." . $core_tb_menu . "_id = " . $core_tb_sort . "." . $core_tb_sort . "_menuID
 WHERE  " . $core_tb_menu . "_status='Enable' AND  " . $core_tb_sort . "_memberID='" . $_SESSION[$valSiteManage . 'core_session_id'] . "'   ";
-            $sql .= "GROUP BY " . $core_tb_sort . "_order,
+    $sql .= "GROUP BY " . $core_tb_sort . "_order,
   " . $core_tb_sort . "_id,
 " . $core_tb_menu . "_masterkey,
 " . $core_tb_menu . "_moduletype,
@@ -288,216 +287,285 @@ WHERE  " . $core_tb_menu . "_status='Enable' AND  " . $core_tb_sort . "_memberID
 " . $core_tb_menu . "_icon ,
 " . $core_tb_menu . "_id,
 " . $core_tb_menu . "_target ";
-            $sql .= "ORDER BY " . $core_tb_sort . "_order DESC  ";
-            // print_pre($sql);
-            $Query = wewebQueryDB($coreLanguageSQL, $sql);
-            $RecordCount = wewebNumRowsDB($coreLanguageSQL, $Query);
-            if ($RecordCount >= 1) {
-            ?> <form action="?" method="get" name="myFormSort" id="myFormSort">
-                    <input name="execute" type="hidden" id="execute" value="insert" />
-                    <input name="masterkey" type="hidden" id="masterkey" value="<?php echo  $_REQUEST['masterkey'] ?>" />
-                    <input name="menukeyid" type="hidden" id="menukeyid" value="<?php echo  $_REQUEST['menukeyid'] ?>" />
-                    <input name="inputSort" type="hidden" id="inputSort" value="" />
+    $sql .= "ORDER BY " . $core_tb_sort . "_order DESC  ";
+    // print_pre($sql);
+    $Query = wewebQueryDB($coreLanguageSQL, $sql);
+    $RecordCount = wewebNumRowsDB($coreLanguageSQL, $Query);
+    if ($RecordCount >= 1) {
+    ?> <form action="?" method="get" name="myFormSort" id="myFormSort">
+            <input name="execute" type="hidden" id="execute" value="insert" />
+            <input name="masterkey" type="hidden" id="masterkey" value="<?php echo  $_REQUEST['masterkey'] ?>" />
+            <input name="menukeyid" type="hidden" id="menukeyid" value="<?php echo  $_REQUEST['menukeyid'] ?>" />
+            <input name="inputSort" type="hidden" id="inputSort" value="" />
 
-                    <ul id="boxHomeSort">
-                        <?php
-                        while ($RowMenu = wewebFetchArrayDB($coreLanguageSQL, $Query)) {
-                            $txtMenuID = $RowMenu[0];
-                            $txtModuleCode = $RowMenu[1];
-                            $txtModuleType = $RowMenu[2];
-                            $valMenuID = $RowMenu[7];
-                            $valIDAll = $RowMenu[7];
-                            if ($txtModuleType == "Group") {
-                                $sqlPath = "SELECT " . $core_tb_menu . "_linkpath," . $core_tb_menu . "_masterkey," . $core_tb_menu . "_id FROM " . $core_tb_menu . " WHERE " . $core_tb_menu . "_parentid='" . $valMenuID . "' ";
-                                $sqlPath = $sqlPath . " ORDER BY " . $core_tb_menu . "_order DESC ";
-                                $queryPath = wewebQueryDB($coreLanguageSQL, $sqlPath);
-                                $rowPath = wewebFetchArrayDB($coreLanguageSQL, $queryPath);
-                                $txtNameLinkpath = $rowPath[0];
-                                $txt_menu_modType = explode("/", $txtNameLinkpath);
-                                $txtPathMod = $txt_menu_modType[1];
-                                $txtPathModFile = $txt_menu_modType[2];
-                                $txtModuleCode = $rowPath[1];
-                                $valMenuID = $rowPath[2];
+            <ul id="boxHomeSort">
+                <?php
+                while ($RowMenu = wewebFetchArrayDB($coreLanguageSQL, $Query)) {
+                    $txtMenuID = $RowMenu[0];
+                    $txtModuleCode = $RowMenu[1];
+                    $txtModuleType = $RowMenu[2];
+                    $valMenuID = $RowMenu[7];
+                    $valIDAll = $RowMenu[7];
+                    if ($txtModuleType == "Group") {
+                        $sqlPath = "SELECT " . $core_tb_menu . "_linkpath," . $core_tb_menu . "_masterkey," . $core_tb_menu . "_id FROM " . $core_tb_menu . " WHERE " . $core_tb_menu . "_parentid='" . $valMenuID . "' ";
+                        $sqlPath = $sqlPath . " ORDER BY " . $core_tb_menu . "_order DESC ";
+                        $queryPath = wewebQueryDB($coreLanguageSQL, $sqlPath);
+                        $rowPath = wewebFetchArrayDB($coreLanguageSQL, $queryPath);
+                        $txtNameLinkpath = $rowPath[0];
+                        $txt_menu_modType = explode("/", $txtNameLinkpath);
+                        $txtPathMod = $txt_menu_modType[1];
+                        $txtPathModFile = $txt_menu_modType[2];
+                        $txtModuleCode = $rowPath[1];
+                        $valMenuID = $rowPath[2];
+                    } else {
+                        $txtNameLinkpath = $RowMenu[3];
+                        $txt_menu_modType = explode("/", $txtNameLinkpath);
+                        $txtPathMod = $txt_menu_modType[1];
+                        $txtPathModFile = $txt_menu_modType[2];
+                    }
+
+                    $txtNameMenuTh = $RowMenu[4];
+                    $txtNameMenuEn = $RowMenu[5];
+                    if ($_SESSION[$valSiteManage . 'core_session_language'] == "Thai") {
+                        $txtNameMenu = $txtNameMenuTh;
+                    } else {
+                        $txtNameMenu = $txtNameMenuEn;
+                    }
+
+                    $txtNameIcon = $RowMenu[6];
+                    $txtTagetName = $RowMenu[8];
+
+                    $permissionID = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_session_groupid"], $valIDAll);
+                    if ($permissionID != "NA" || $_SESSION[$valSiteManage . "core_session_level"] == "SuperAdmin") {
+
+                        if ($txtPathMod == "mod_name") {
+                            if ($txtPathModFile == "name.php") {
+                                $valCellFile = "loadBoxName";
+                            } else if ($txtPathModFile == "boss.php") {
+                                $valCellFile = "loadBoxBoss";
+                            } else if ($txtPathModFile == "part.php") {
+                                $valCellFile = "loadBoxPart";
+                            } else if ($txtPathModFile == "group.php") {
+                                $valCellFile = "loadBoxGroup";
                             } else {
-                                $txtNameLinkpath = $RowMenu[3];
-                                $txt_menu_modType = explode("/", $txtNameLinkpath);
-                                $txtPathMod = $txt_menu_modType[1];
-                                $txtPathModFile = $txt_menu_modType[2];
+                                $valCellFile = "loadBoxHome";
                             }
+                        } else {
+                            $valCellFile = "loadBoxHome";
+                        }
+                ?>
+                        <li class="boxHomeSortli" id="listItem_<?php echo  $txtMenuID ?>">
+                            <div class="divRightInnerBoxHome">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="divRightTitleHomeBoxAll">
+                                    <tr>
+                                        <td width="3%" class="divRightTitleHome" valign="middle" align="left">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td align="center" width="31" style="cursor:move;"><?php if ($txtNameIcon) { ?><img src="<?php echo  $txtNameIcon ?>" border="0" align="absmiddle" /><?php } else {
+                                                                                                                                                                                                            echo " - ";
+                                                                                                                                                                                                        } ?></td>
+                                                    <td align="left" style="cursor:move;"><?php echo  $txtNameMenu ?></td>
+                                                    <td align="center" width="31"><a href="javascript:void(0)" onclick="delContactHome('../core/deleteHome.php', '<?php echo  $txtMenuID ?>', 'listItem_<?php echo  $txtMenuID ?>');" title="<?php echo  $langTxt["btn:close"] ?>"><img src="../img/btn/close.png" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="divRightTrHome" align="center" bgcolor="#FFFFFF" id="loadContantHome<?php echo  $txtMenuID ?>" valign="top">
+                                            <img src="../img/loader/ajax-loaderHome.gif" style="padding-top:40px;" />
+                                            <script language="JavaScript" type="text/javascript">
+                                                jQuery(function() {
+                                                    loadContantHome('../<?php echo  $txtPathMod ?>/<?php echo  $valCellFile ?>.php', 'loadContantHome<?php echo  $txtMenuID ?>', '<?php echo  $txtModuleCode ?>', <?php echo  $valMenuID ?>);
+                                                });
+                                            </script>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                <?php }
+                } ?>
+            </ul>
+        </form>
+    <?php } else { ?> <div class="clearAll"></div>
 
-                            $txtNameMenuTh = $RowMenu[4];
-                            $txtNameMenuEn = $RowMenu[5];
-                            if ($_SESSION[$valSiteManage . 'core_session_language'] == "Thai") {
-                                $txtNameMenu = $txtNameMenuTh;
-                            } else {
-                                $txtNameMenu = $txtNameMenuEn;
-                            }
-
-                            $txtNameIcon = $RowMenu[6];
-                            $txtTagetName = $RowMenu[8];
-
-                            $permissionID = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_session_groupid"], $valIDAll);
-                            if ($permissionID != "NA" || $_SESSION[$valSiteManage . "core_session_level"] == "SuperAdmin") {
-
-                                if ($txtPathMod == "mod_name") {
-                                    if ($txtPathModFile == "name.php") {
-                                        $valCellFile = "loadBoxName";
-                                    } else if ($txtPathModFile == "boss.php") {
-                                        $valCellFile = "loadBoxBoss";
-                                    } else if ($txtPathModFile == "part.php") {
-                                        $valCellFile = "loadBoxPart";
-                                    } else if ($txtPathModFile == "group.php") {
-                                        $valCellFile = "loadBoxGroup";
-                                    } else {
-                                        $valCellFile = "loadBoxHome";
-                                    }
-                                } else {
-                                    $valCellFile = "loadBoxHome";
-                                }
-                        ?>
-                                <li class="boxHomeSortli" id="listItem_<?php echo  $txtMenuID ?>">
-                                    <div class="divRightInnerBoxHome">
-                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="divRightTitleHomeBoxAll">
-                                            <tr>
-                                                <td width="3%" class="divRightTitleHome" valign="middle" align="left">
-                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                        <tr>
-                                                            <td align="center" width="31" style="cursor:move;"><?php if ($txtNameIcon) { ?><img src="<?php echo  $txtNameIcon ?>" border="0" align="absmiddle" /><?php } else {
-                                                                                                                                                                                                                    echo " - ";
-                                                                                                                                                                                                                } ?></td>
-                                                            <td align="left" style="cursor:move;"><?php echo  $txtNameMenu ?></td>
-                                                            <td align="center" width="31"><a href="javascript:void(0)" onclick="delContactHome('../core/deleteHome.php', '<?php echo  $txtMenuID ?>', 'listItem_<?php echo  $txtMenuID ?>');" title="<?php echo  $langTxt["btn:close"] ?>"><img src="../img/btn/close.png" /></a></td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="divRightTrHome" align="center" bgcolor="#FFFFFF" id="loadContantHome<?php echo  $txtMenuID ?>" valign="top">
-                                                    <img src="../img/loader/ajax-loaderHome.gif" style="padding-top:40px;" />
-                                                    <script language="JavaScript" type="text/javascript">
-                                                        jQuery(function() {
-                                                            loadContantHome('../<?php echo  $txtPathMod ?>/<?php echo  $valCellFile ?>.php', 'loadContantHome<?php echo  $txtMenuID ?>', '<?php echo  $txtModuleCode ?>', <?php echo  $valMenuID ?>);
-                                                        });
-                                                    </script>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </li>
-                        <?php }
-                        } ?>
-                    </ul>
-                </form>
-            <?php } else { ?> <div class="clearAll"></div>
-
-                <div>
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <!-- <tr>
+        <div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <!-- <tr>
                             <td height="250" align="center"><?php echo  $langTxt["home:app"] ?> <img src="../img/btn/add.png" align="absmiddle" hspace="10" onclick="window.open('box.php', '_self');" style="cursor:pointer;" /> <?php echo  $langTxt["home:appLast"] ?></td>
                         </tr> -->
-                    </table>
-                </div>
-            <?php } ?>
-
-            <div class="clearAll"></div>
-
-
-        </div>
-        <?php
-        if ($RecordCount >= 1) {
-        ?>
-            <table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
-                <tr>
-                    <td align="right" valign="middle" class="formEndContantTb"><a href="#defTop" title="<?php echo  $langTxt["btn:gototop"] ?>"><?php echo  $langTxt["btn:gototop"] ?> <img src="../img/btn/top.png" align="absmiddle" /></a></td>
-                </tr>
             </table>
-        <?php } ?>
+        </div>
+    <?php } ?>
 
-        <script src="../js/highcharts/code/highcharts.js"></script>
+    <div class="clearAll"></div>
+
+
+    </div>
+    <?php
+    if ($RecordCount >= 1) {
+    ?>
+        <table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td align="right" valign="middle" class="formEndContantTb"><a href="#defTop" title="<?php echo  $langTxt["btn:gototop"] ?>"><?php echo  $langTxt["btn:gototop"] ?> <img src="../img/btn/top.png" align="absmiddle" /></a></td>
+            </tr>
+        </table>
+    <?php } ?>
+
+    <script src="../js/highcharts/code/highcharts.js"></script>
     <script src="../js/highcharts/code/modules/exporting.js"></script>
     <script src="../js/highcharts/code/modules/accessibility.js"></script>
 
-        <figure class="highcharts-figure">
-    <div id="container"></div>
-    <p class="highcharts-description">
-        Pie charts are very popular for showing a compact overview of a
-        composition or comparison. While they can be harder to read than
-        column charts, they remain a popular choice for small datasets.
-    </p>
-</figure>
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+            Pie charts are very popular for showing a compact overview of a
+            composition or comparison. While they can be harder to read than
+            column charts, they remain a popular choice for small datasets.
+        </p>
+    </figure>
+    <figure class="highcharts-figure">
+        <div id="container2"></div>
+        <p class="highcharts-description">
+            Pie charts are very popular for showing a compact overview of a
+            composition or comparison. While they can be harder to read than
+            column charts, they remain a popular choice for small datasets.
+        </p>
+    </figure>
+
+    <script type="text/javascript">
+        Highcharts.chart('container', {
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: 'Egg Yolk Composition'
+            },
+            tooltip: {
+                valueSuffix: '%'
+            },
+            // subtitle: {
+            //     text: 'Source:<a href="https://www.mdpi.com/2072-6643/11/3/684/htm" target="_default">MDPI</a>'
+            // },
+            plotOptions: {
+                series: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: [{
+                        enabled: true,
+                        distance: 20
+                    }, {
+                        enabled: true,
+                        distance: -40,
+                        format: '{point.percentage:.1f}%',
+                        style: {
+                            fontSize: '1.2em',
+                            textOutline: 'none',
+                            opacity: 0.7
+                        },
+                        filter: {
+                            operator: '>',
+                            property: 'percentage',
+                            value: 10
+                        }
+                    }]
+                }
+            },
+            series: [{
+                name: 'Percentage',
+                colorByPoint: true,
+                data: [{
+                        name: 'Water',
+                        y: 55.02
+                    },
+                    {
+                        name: 'Fat',
+
+                        y: 26.71
+                    },
+                    {
+                        name: 'Carbohydrates',
+                        y: 1.09
+                    },
+                    {
+                        name: 'Protein',
+                        y: 15.5
+                    },
+                    {
+                        name: 'Ash',
+                        y: 1.68
+                    }
+                ]
+            }]
+        });
+    </script>
 
 <script type="text/javascript">
-Highcharts.chart('container', {
-    chart: {
-        type: 'pie'
-    },
-    title: {
-        text: 'Egg Yolk Composition'
-    },
-    tooltip: {
-        valueSuffix: '%'
-    },
-    subtitle: {
-        text:
-        'Source:<a href="https://www.mdpi.com/2072-6643/11/3/684/htm" target="_default">MDPI</a>'
-    },
-    plotOptions: {
-        series: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            dataLabels: [{
-                enabled: true,
-                distance: 20
-            }, {
-                enabled: true,
-                distance: -40,
-                format: '{point.percentage:.1f}%',
-                style: {
-                    fontSize: '1.2em',
-                    textOutline: 'none',
-                    opacity: 0.7
-                },
-                filter: {
-                    operator: '>',
-                    property: 'percentage',
-                    value: 10
+        Highcharts.chart('container2', {
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: 'Egg Yolk Composition'
+            },
+            tooltip: {
+                valueSuffix: '%'
+            },
+            // subtitle: {
+            //     text: 'Source:<a href="https://www.mdpi.com/2072-6643/11/3/684/htm" target="_default">MDPI</a>'
+            // },
+            plotOptions: {
+                series: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: [{
+                        enabled: true,
+                        distance: 20
+                    }, {
+                        enabled: true,
+                        distance: -40,
+                        format: '{point.percentage:.1f}%',
+                        style: {
+                            fontSize: '1.2em',
+                            textOutline: 'none',
+                            opacity: 0.7
+                        },
+                        filter: {
+                            operator: '>',
+                            property: 'percentage',
+                            value: 10
+                        }
+                    }]
                 }
-            }]
-        }
-    },
-    series: [
-        {
-            name: 'Percentage',
-            colorByPoint: true,
-            data: [
-                {
-                    name: 'Water',
-                    y: 55.02
-                },
-                {
-                    name: 'Fat',
-                    sliced: true,
-                    selected: true,
-                    y: 26.71
-                },
-                {
-                    name: 'Carbohydrates',
-                    y: 1.09
-                },
-                {
-                    name: 'Protein',
-                    y: 15.5
-                },
-                {
-                    name: 'Ash',
-                    y: 1.68
-                }
-            ]
-        }
-    ]
-});
+            },
+            series: [{
+                name: 'Percentage',
+                colorByPoint: true,
+                data: [{
+                        name: 'Water',
+                        y: 55.02
+                    },
+                    {
+                        name: 'Fat',
 
-</script>
+                        y: 26.71
+                    },
+                    {
+                        name: 'Carbohydrates',
+                        y: 1.09
+                    },
+                    {
+                        name: 'Protein',
+                        y: 15.5
+                    },
+                    {
+                        name: 'Ash',
+                        y: 1.68
+                    }
+                ]
+            }]
+        });
+    </script>
 
 
     </div>
