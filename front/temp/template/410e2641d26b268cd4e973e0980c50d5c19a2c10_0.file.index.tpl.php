@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-07 11:11:20
+/* Smarty version 3.1.30, created on 2024-02-07 17:33:52
   from "/var/www/html/dmsc_votedesign/front/controller/script/home_bk/template/index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c302e86b3be0_17134086',
+  'unifunc' => 'content_65c35c90b9d139_40632772',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '410e2641d26b268cd4e973e0980c50d5c19a2c10' => 
     array (
       0 => '/var/www/html/dmsc_votedesign/front/controller/script/home_bk/template/index.tpl',
-      1 => 1707279079,
+      1 => 1707302030,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c302e86b3be0_17134086 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c35c90b9d139_40632772 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <center>
 <h1 style="color: red;">This is home BK</h1>
-<form action="#" >
+<form id="myForm" data-toggle="validator" >
         <h2 style="margin-top: 20px;">Question 1</h2>
         <label for="q1_1">
             <input type="radio" id="q1_1" name="q1" value="1">
@@ -73,7 +73,7 @@ function content_65c302e86b3be0_17134086 (Smarty_Internal_Template $_smarty_tpl)
         <br>
 
         <h2 style="margin-top: 20px;">ข้อเสนอแนะ</h2>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="ถ้าไม่มีกรุณาใส่ -"></textarea><br>
         <br>
 
         <input type="submit" value="Submit">

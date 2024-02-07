@@ -1,6 +1,6 @@
 <center>
 <h1 style="color: red;">This is home BK</h1>
-<form action="#" id="myForm" >
+<form id="myForm" data-toggle="validator" >
         <h2 style="margin-top: 20px;">Question 1</h2>
         <label for="q1_1">
             <input type="radio" id="q1_1" name="q1" value="1">
@@ -49,7 +49,7 @@
         <br>
 
         <h2 style="margin-top: 20px;">ข้อเสนอแนะ</h2>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="ถ้าไม่มีกรุณาใส่ -"></textarea><br>
         <br>
 
         <input type="submit" value="Submit">
