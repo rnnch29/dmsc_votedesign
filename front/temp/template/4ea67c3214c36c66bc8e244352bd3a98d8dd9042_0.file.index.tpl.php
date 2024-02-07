@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-07 13:15:51
+/* Smarty version 3.1.30, created on 2024-02-07 14:19:46
   from "C:\xampp\htdocs\dmsc_votedesign\front\controller\script\home\template\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c32017b91004_62434951',
+  'unifunc' => 'content_65c32f12643058_10284361',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4ea67c3214c36c66bc8e244352bd3a98d8dd9042' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\controller\\script\\home\\template\\index.tpl',
-      1 => 1707286549,
+      1 => 1707290383,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c32017b91004_62434951 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c32f12643058_10284361 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="votedesign">
   <div class="vote-logo">
@@ -95,8 +95,8 @@ function content_65c32017b91004_62434951 (Smarty_Internal_Template $_smarty_tpl)
         <div class="row">
           <div class="col-6">
             <div class="choice">
-              <input type="radio" id="theme1" name="theme" value="1">
-              <label>รูปแบบที่ 1</label>
+              <input class="choice-input" type="radio" id="theme1" name="theme" value="1">
+              <label class="control-label">รูปแบบที่ 1</label>
             </div>
           </div>
           <div class="col-6">
@@ -199,7 +199,7 @@ function content_65c32017b91004_62434951 (Smarty_Internal_Template $_smarty_tpl)
 
       <section class="suggestions">
         <div class="form-group">
-          <label for="comment">ข้อเสนอแนะ:</label>
+          <label class="heading" for="comment">ข้อเสนอแนะ:</label>
           <textarea class="form-control" rows="5" id="comment" placeholder="กรอกข้อเสนอแนะ"></textarea>
         </div>
       </section>

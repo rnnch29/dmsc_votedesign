@@ -66,8 +66,8 @@
         <div class="row">
           <div class="col-6">
             <div class="choice">
-              <input type="radio" id="theme1" name="theme" value="1">
-              <label>รูปแบบที่ 1</label>
+              <input class="choice-input" type="radio" id="theme1" name="theme" value="1">
+              <label class="control-label">รูปแบบที่ 1</label>
             </div>
           </div>
           <div class="col-6">
@@ -166,7 +166,7 @@
 
       <section class="suggestions">
         <div class="form-group">
-          <label for="comment">ข้อเสนอแนะ:</label>
+          <label class="heading" for="comment">ข้อเสนอแนะ:</label>
           <textarea class="form-control" rows="5" id="comment" placeholder="กรอกข้อเสนอแนะ"></textarea>
         </div>
       </section>

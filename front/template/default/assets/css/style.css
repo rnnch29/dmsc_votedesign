@@ -46,9 +46,9 @@
 
 /* BODY */
 
-/* body{
+body{
     font-family: 'db_helvethaica';
-} */
+}
 
 .votedesign{
     margin: 150px 0px;
@@ -74,6 +74,7 @@
 
 .hero-banner .item-list{
     margin: 0 -10px;
+    display: block;
 }
 
 .hero-banner .item-list::after,.hero-banner .item-list::before{
@@ -87,6 +88,11 @@
     list-style: none;
     float: left;
 }
+
+.hero-banner .item-list li a{
+    display: block;
+}
+
 .hero-banner .thumb{
     position: relative;
 }
@@ -147,11 +153,20 @@
 }
 
 .heading{
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 10px;
+    align-items: center;
     font-size: 16px;
+    color: #ffffff;
     background-color: #004298;
     width: 100%;
-    height: 70px;
+    height: 60px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 20px 0px;
 }
+
 
 /* FOOTER */
 
