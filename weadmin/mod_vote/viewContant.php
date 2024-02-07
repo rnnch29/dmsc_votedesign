@@ -60,7 +60,7 @@ $valLinkNav1="../core/index.php";
             $valQ2 = rechangeQuot($Row[2]);
             $valQ3 = rechangeQuot($Row[3]);
             $valSuggest  = rechangeQuot($Row[4]);
-            $valCredate = dateFormatReal($Row[5]);
+            $valCredate = $Row[5];
             $valIP  = rechangeQuot($Row[6]);
 			
 		 	$valPermission= getUserPermissionOnMenu($_SESSION[$valSiteManage."core_session_groupid"],$_REQUEST["menukeyid"]);
@@ -150,17 +150,17 @@ $valLinkNav1="../core/index.php";
                 </tr>
 
                 <tr>
-                    <td width="35%" align="right" valign="top" class="formLeftContantTb">
+                    <td width="30%" align="right" valign="top" class="formLeftContantTb">
                         <?php echo $langMod["txt:id"]?>:<span class="fontContantAlert"></span></td>
-                    <td width="65%" colspan="6" align="left" valign="top" class="formRightContantTb">
+                    <td width="70%" colspan="6" align="left" valign="top" class="formRightContantTb">
                         <div class="formDivView"><?php echo $valID?></div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td width="35%" align="right" valign="top" class="formLeftContantTb">
+                    <td width="30%" align="right" valign="top" class="formLeftContantTb">
                         <?php echo $langMod["txt:q1"]?>:<span class="fontContantAlert"></span></td>
-                    <td width="65%" colspan="6" align="left" valign="top" class="formRightContantTb">
+                    <td width="70%" colspan="6" align="left" valign="top" class="formRightContantTb">
                         <div class="formDivView">
                             <?php
                                 for($i = 1; $i < 5 ; $i++){
@@ -174,9 +174,9 @@ $valLinkNav1="../core/index.php";
                 </tr>
 
                 <tr>
-                    <td width="35%" align="right" valign="top" class="formLeftContantTb">
+                    <td width="30%" align="right" valign="top" class="formLeftContantTb">
                         <?php echo $langMod["txt:q2"]?>:<span class="fontContantAlert"></span></td>
-                    <td width="65%" colspan="6" align="left" valign="top" class="formRightContantTb">
+                    <td width="70%" colspan="6" align="left" valign="top" class="formRightContantTb">
                         <div class="formDivView">
                             <?php
                                 for($i = 1; $i < 3 ; $i++){
@@ -190,9 +190,9 @@ $valLinkNav1="../core/index.php";
                 </tr>
 
                 <tr>
-                    <td width="35%" align="right" valign="top" class="formLeftContantTb">
+                    <td width="30%" align="right" valign="top" class="formLeftContantTb">
                         <?php echo $langMod["txt:q3"]?>:<span class="fontContantAlert"></span></td>
-                    <td width="65%" colspan="6" align="left" valign="top" class="formRightContantTb">
+                    <td width="70%" colspan="6" align="left" valign="top" class="formRightContantTb">
                         <div class="formDivView">
                             <?php
                                 for($i = 1; $i < 5 ; $i++){
@@ -206,9 +206,9 @@ $valLinkNav1="../core/index.php";
                 </tr>
 
                 <tr>
-                    <td width="35%" align="right" valign="top" class="formLeftContantTb">
+                    <td width="30%" align="right" valign="top" class="formLeftContantTb">
                         <?php echo $langMod["txt:suggest"]?>:<span class="fontContantAlert"></span></td>
-                    <td width="65%" colspan="6" align="left" valign="top" class="formRightContantTb">
+                    <td width="70%" colspan="6" align="left" valign="top" class="formRightContantTb">
                         <div class="formDivView">
                             <?php 
                                 if($valSuggest == ""){
