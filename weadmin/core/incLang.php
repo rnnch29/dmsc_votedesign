@@ -218,10 +218,9 @@ if ($_SESSION[$valSiteManage . "core_session_language"] == "Eng") {
     $langTxt["login:price"] = "ประหยัดค่าใช้จ่าย";
     $langTxt["login:priceDe"] = "คุณสามารถเปลี่ยนข้อมูลบนเว็บไซตเองได้ โดยใช้ไม่ต้องมีค่าใช้จ่ายเพิ่มเติมในระยะยาว ไม่ว่าจะเป็นค่าออกแบบเนื้อ ค่าเพิ่มเนื้อในเว็บไซต์ ฯลฯ";
     $langTxt["login:alert"] = "คุณกรอกชื่อผู้ใช้งาน/รหัสผ่านไม่ถูกต้อง";
-    $langTxt["login:footecopy"] = "ที่ตั้ง : 49 อาคารกรมส่งเสริมคุณภาพสิ่งแวดล้อม ชั้น 9 ถนนพระราม 6 
-ซอย 30 พญาไท กรุงเทพมหานคร 10400<br/>
-Tel : 0 2265 6273, 0 2278 8500 ต่อ 8860 Fax : 0 2265 6180";
-    $langTxt["login:footecontact"] = "Copyright &copy;2023 AEON All rights reserved.";
+    $langTxt["login:footecopy"] = "ที่ตั้ง : 88/7 ซอยบำราศนราดูร ถ.ติวานนท์ ต.ตลาดขวัญ อ.เมือง จ.นนทบุรี 11000<br/>
+    โทรศัพท์. 0-2589-9850 ถึง 8, โทรสาร. 0-2591-5974";
+    $langTxt["login:footecontact"] = "Copyright © 2024 Department of Medical Sciences, Ministry of Public Health. All rights reserved.";
 
     $langTxt["menu:logout"] = "ออกจากระบบ";
     $langTxt["menu:topmenu"] = "เมนูผู้ใช้งานระบบ";
