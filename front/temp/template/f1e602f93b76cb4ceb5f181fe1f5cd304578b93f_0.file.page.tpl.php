@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-06 16:23:09
+/* Smarty version 3.1.30, created on 2024-02-07 11:39:08
   from "C:\xampp\htdocs\dmsc_votedesign\front\template\default\page.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c1fa7d68fd03_93657183',
+  'unifunc' => 'content_65c3096cae6780_60665975',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f1e602f93b76cb4ceb5f181fe1f5cd304578b93f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\template\\default\\page.tpl',
-      1 => 1707204169,
+      1 => 1707280746,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c1fa7d68fd03_93657183 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c3096cae6780_60665975 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $_smarty_tpl->tpl_vars['langon']->value;?>
@@ -46,6 +46,9 @@ $_smarty_tpl->_subTemplateRender($_prefixVariable1, $_smarty_tpl->cache_id, $_sm
 ?>
 
     <?php $_smarty_tpl->_subTemplateRender(((string)$_smarty_tpl->tpl_vars['incfile']->value['loadscript']), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'title'), 0, true);
+?>
+
+    <?php $_smarty_tpl->_subTemplateRender(((string)$_smarty_tpl->tpl_vars['incfile']->value['footer']), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'title'), 0, true);
 ?>
 
 </body>
