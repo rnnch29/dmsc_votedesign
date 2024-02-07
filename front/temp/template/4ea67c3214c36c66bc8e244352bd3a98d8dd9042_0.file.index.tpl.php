@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-07 14:19:46
+/* Smarty version 3.1.30, created on 2024-02-07 16:23:07
   from "C:\xampp\htdocs\dmsc_votedesign\front\controller\script\home\template\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c32f12643058_10284361',
+  'unifunc' => 'content_65c34bfb7a5917_51081046',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4ea67c3214c36c66bc8e244352bd3a98d8dd9042' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\controller\\script\\home\\template\\index.tpl',
-      1 => 1707290383,
+      1 => 1707297786,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c32f12643058_10284361 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c34bfb7a5917_51081046 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="votedesign">
   <div class="vote-logo">
@@ -95,26 +95,26 @@ function content_65c32f12643058_10284361 (Smarty_Internal_Template $_smarty_tpl)
         <div class="row">
           <div class="col-6">
             <div class="choice">
-              <input class="choice-input" type="radio" id="theme1" name="theme" value="1">
+              <input class="choice-input" type="radio" id="q1_1" name="q1" value="1">
               <label class="control-label">รูปแบบที่ 1</label>
             </div>
           </div>
           <div class="col-6">
             <div class="choice">
-              <input type="radio" id="theme2" name="theme" value="2">
+              <input type="radio" id="q1_2" name="q1" value="2">
               <label>รูปแบบที่ 2</label>
             </div>
           </div>
           <div class="col-6">
 
             <div class="choice">
-              <input type="radio" id="theme3" name="theme" value="3">
+              <input type="radio" id="q1_3" name="q1" value="3">
               <label>รูปแบบที่ 3</label>
             </div>
           </div>
           <div class="col-6">
             <div class="choice">
-              <input type="radio" id="theme4" name="theme" value="4">
+              <input type="radio" id="q1_4" name="q1" value="4">
               <label>รูปแบบที่ 4</label>
             </div>
           </div>
@@ -128,13 +128,13 @@ function content_65c32f12643058_10284361 (Smarty_Internal_Template $_smarty_tpl)
         <div class="row">
           <div class="col">
             <div class="choice">
-              <input type="radio" id="sequence1" name="sequence" value="1">
+              <input type="radio" id="q2_1" name="q2" value="1">
               <label>หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
             </div>
           </div>
           <div class="col">
             <div class="choice">
-              <input type="radio" id="sequence2" name="sequence" value="2">
+              <input type="radio" id="q2_2" name="q2" value="2">
               <label>หัวข้องานวิจัยและนวัตกรรม - หัวข้อบริการ</label>
             </div>
           </div>
@@ -148,7 +148,7 @@ function content_65c32f12643058_10284361 (Smarty_Internal_Template $_smarty_tpl)
         <div class="row">
           <div class="col-6">
             <div class="choice">
-              <input type="radio" id="service1" name="service" value="1">
+              <input type="radio" id="q3_1" name="q3" value="1">
               <label>รูปแบบที่ 1</label>
             </div>
             <div class="thumb">
@@ -160,7 +160,7 @@ function content_65c32f12643058_10284361 (Smarty_Internal_Template $_smarty_tpl)
           </div>
           <div class="col-6">
             <div class="choice">
-              <input type="radio" id="service2" name="service" value="2">
+              <input type="radio" id="q3_2" name="q3" value="2">
               <label>รูปแบบที่ 2</label>
             </div>
             <div class="thumb">
@@ -172,7 +172,7 @@ function content_65c32f12643058_10284361 (Smarty_Internal_Template $_smarty_tpl)
           </div>
           <div class="col-6">
             <div class="choice">
-              <input type="radio" id="service3" name="service" value="3">
+              <input type="radio" id="q3_3" name="q3" value="3">
               <label>รูปแบบที่ 3</label>
             </div>
             <div class="thumb">
@@ -184,7 +184,7 @@ function content_65c32f12643058_10284361 (Smarty_Internal_Template $_smarty_tpl)
           </div>
           <div class="col-6">
             <div class="choice">
-              <input type="radio" id="service4" name="service" value="4">
+              <input type="radio" id="q3_4" name="q3" value="4">
               <label>รูปแบบที่ 4</label>
             </div>
             <div class="thumb">
@@ -199,7 +199,7 @@ function content_65c32f12643058_10284361 (Smarty_Internal_Template $_smarty_tpl)
 
       <section class="suggestions">
         <div class="form-group">
-          <label class="heading" for="comment">ข้อเสนอแนะ:</label>
+          <div class="heading" for="comment">ข้อเสนอแนะ:</div>
           <textarea class="form-control" rows="5" id="comment" placeholder="กรอกข้อเสนอแนะ"></textarea>
         </div>
       </section>

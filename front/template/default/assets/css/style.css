@@ -24,7 +24,7 @@
 
 /* HEAD */
 
-.nav-bar{
+.nav-bar {
     position: fixed;
     top: 0;
     background-color: #004298;
@@ -46,24 +46,24 @@
 
 /* BODY */
 
-body{
+body {
     font-family: 'db_helvethaica';
 }
 
-.votedesign{
+.votedesign {
     margin: 150px 0px;
 }
 
-.vote-logo{
+.vote-logo {
     display: flex;
     justify-content: center;
 }
 
-.vote-logo img{
+.vote-logo img {
     width: 120px;
 }
 
-.vote-title{
+.vote-title {
     display: flex;
     justify-content: center;
 }
@@ -72,30 +72,48 @@ body{
 
 } */
 
-.hero-banner .item-list{
+.hero-banner .item-list {
     margin: 0 -10px;
-    display: block;
+    display: flex;
 }
 
-.hero-banner .item-list::after,.hero-banner .item-list::before{
-    content:'';
+.hero-banner .item-list::after,
+.hero-banner .item-list::before {
+    content: '';
     display: table;
 }
 
-.hero-banner .item-list li{
+.hero-banner .item-list li {
     width: calc(100% / 4);
     padding: 10px;
     list-style: none;
     float: left;
 }
 
-.hero-banner .item-list li a{
+.hero-banner .item-list li a {
     display: block;
 }
 
-.hero-banner .thumb{
-    position: relative;
+.hero-banner .item-list li a:hover img {
+    transform: scale(1.1);
+    background-color: aliceblue;
+    filter: grayscale(0);
 }
+
+.hero-banner .thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+/* .hero-banner .thumb::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+} */
 
 .hero-banner .thumb figure.cover {
     margin: 0;
@@ -106,6 +124,7 @@ body{
 }
 
 .hero-banner .thumb .cover img {
+    filter: grayscale(0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -115,9 +134,10 @@ body{
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
+    transition: All 400ms ease;
 }
 
-.service-theme .thumb{
+.service-theme .thumb {
     position: relative;
 }
 
@@ -141,7 +161,7 @@ body{
     object-position: center;
 }
 
-.sending{
+.sending {
     background-color: #004298;
     color: #ffffff;
     font-size: 20px;
@@ -152,12 +172,12 @@ body{
     border-radius: 4px;
 }
 
-.heading{
+.heading {
     display: flex;
     /* justify-content: center; */
     padding-left: 10px;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
     background-color: #004298;
     width: 100%;
@@ -167,10 +187,25 @@ body{
     margin: 20px 0px;
 }
 
+/* radio */
+.choice-input {
+    height: 25px;
+    width: 25px;
+}
+
+.control-label {
+    position: absolute;
+    top: 0px;
+    margin-left: 10px;
+    line-height: 23px;
+    font-size: 18px;
+}
+
+
 
 /* FOOTER */
 
-.layout-footer{
+.layout-footer {
     opacity: 1;
     transform: translateZ(0);
     bottom: 0;
