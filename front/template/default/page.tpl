@@ -10,6 +10,7 @@
     {include file="{$incfile.header}" title=title}
     {include file="{$fileInclude|templateInclude}" title=pageContent}
     {include file="{$incfile.loadscript}" title=title}
+    {include file="{$incfile.footer}" title=title}
 </body>
 
 </html>

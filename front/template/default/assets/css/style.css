@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'db_helvethaica';
+    src: url('../font/helvethaica/db_helvethaica_x_bd_v3.2-webfont.eot');
+    src: url('../font/helvethaica/db_helvethaica_x_bd_v3.2-webfont.eot?#iefix') format('embedded-opentype'), url('../font/helvethaica/db_helvethaica_x_bd_v3.2-webfont.woff2') format('woff2'), url('../font/helvethaica/db_helvethaica_x_bd_v3.2-webfont.woff') format('woff'), url('../font/helvethaica/db_helvethaica_x_bd_v3.2-webfont.ttf') format('truetype'), url('../font/helvethaica/db_helvethaica_x_bd_v3.2-webfont.svg#db_helvethaica_x75_bd') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'db_helvethaica';
+    src: url('../font/helvethaica/db_helvethaica_x_med_v3.2-webfont.eot');
+    src: url('../font/helvethaica/db_helvethaica_x_med_v3.2-webfont.eot?#iefix') format('embedded-opentype'), url('../font/helvethaica/db_helvethaica_x_med_v3.2-webfont.woff2') format('woff2'), url('../font/helvethaica/db_helvethaica_x_med_v3.2-webfont.woff') format('woff'), url('../font/helvethaica/db_helvethaica_x_med_v3.2-webfont.ttf') format('truetype'), url('../font/helvethaica/db_helvethaica_x_med_v3.2-webfont.svg#db_helvethaica_x65_med') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'db_helvethaica';
+    src: url('../font/helvethaica/db_helvethaica_x_v3.2-webfont.eot');
+    src: url('../font/helvethaica/db_helvethaica_x_v3.2-webfont.eot?#iefix') format('embedded-opentype'), url('../font/helvethaica/db_helvethaica_x_v3.2-webfont.woff2') format('woff2'), url('../font/helvethaica/db_helvethaica_x_v3.2-webfont.woff') format('woff'), url('../font/helvethaica/db_helvethaica_x_v3.2-webfont.ttf') format('truetype'), url('../font/helvethaica/db_helvethaica_x_v3.2-webfont.svg#db_helvethaica_x55_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* HEAD */
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    background-color: #004298;
+    padding: 20px 100px;
+    z-index: 999;
+    width: 100%;
+}
+
+.nav-bar .link .nav-title {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.nav-bar .link img {
+    width: 60px;
+    height: 60px;
+}
+
+/* BODY */
+
+/* body{
+    font-family: 'db_helvethaica';
+} */
+
+.votedesign{
+    margin: 150px 0px;
+}
+
+.vote-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.vote-logo img{
+    width: 120px;
+}
+
+.vote-title{
+    display: flex;
+    justify-content: center;
+}
+
+/* .hero-banner .container{
+
+} */
+
+.hero-banner .item-list{
+    margin: 0 -10px;
+}
+
+.hero-banner .item-list::after,.hero-banner .item-list::before{
+    content:'';
+    display: table;
+}
+
+.hero-banner .item-list li{
+    width: calc(100% / 4);
+    padding: 10px;
+    list-style: none;
+    float: left;
+}
+.hero-banner .thumb{
+    position: relative;
+}
+
+.hero-banner .thumb figure.cover {
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100%;
+}
+
+.hero-banner .thumb .cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.service-theme .thumb{
+    position: relative;
+}
+
+.service-theme .thumb figure.cover {
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 60%;
+}
+
+.service-theme .thumb .cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.sending{
+    background-color: #004298;
+    color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.heading{
+    font-size: 16px;
+    background-color: #004298;
+    width: 100%;
+    height: 70px;
+}
+
+/* FOOTER */
+
+.layout-footer{
+    opacity: 1;
+    transform: translateZ(0);
+    bottom: 0;
+    background-color: #004298;
+    padding: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.layout-footer .copyright {
+    padding: 2rem 0;
+    color: #ffffff;
+}
+
+.copyright {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    text-align: center;
+    margin: 0;
+}
