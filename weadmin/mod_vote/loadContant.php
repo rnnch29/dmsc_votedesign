@@ -126,8 +126,10 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                                 <td align="right">
                                     <?php if ($valPermission == "RW") { ?>
 
-                                    <div class="btnExport" title="<?php echo  $langTxt["btn:export"] ?>" onclick="document.myFormHome.inputLt.value = 'Thai';
-                                    addContactNew('addContant.php');"></div>
+                                        <div class="btnExport" title="<?php echo $langTxt["btn:export"] ?>" onclick="
+                                        document.myFormExport.action ='exportReport.php';
+                                        document.myFormExport.submit(); ">
+                                        </div>
 
                                     <!-- <div class="btnAdd" title="<?php echo  $langTxt["btn:add"] ?>" onclick="document.myFormHome.inputLt.value = 'Thai';
                                                     addContactNew('addContant.php');"></div>
@@ -168,13 +170,13 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                     <!-- Top graphic name table head  -->
                     <td width="5%" class="divRightTitleTbL" valign="middle" align="left" style="padding-left: 40px;"><?php echo $langMod["txt:id"] ?></span></td>   
 
-                    <td align="left" width="20%" valign="middle" class="divRightTitleTb" style="padding-left: 10px;"><span class="fontTitlTbRight"><?php echo $langMod["txt:q1short"] ?></span></td> 
+                    <td align="center" width="15%" valign="middle" class="divRightTitleTb" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q1"] ?></span></td> 
 
-                    <td align="left" width="25%" valign="middle" class="divRightTitleTb" style="padding-left: 10px;"><span class="fontTitlTbRight"><?php echo $langMod["txt:q2short"] ?></span></td>
+                    <td align="center" width="20%" valign="middle" class="divRightTitleTb"><span class="fontTitlTbRight"><?php echo $langMod["txt:q2"] ?></span></td>
 
-                    <td align="left" width="20%" valign="middle" class="divRightTitleTb" style="padding-left: 10px;"><span class="fontTitlTbRight"><?php echo $langMod["txt:q3short"] ?></span></td>
+                    <td align="center" width="20%" valign="middle" class="divRightTitleTb" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q3"] ?></span></td>
 
-                    <td align="left" width="10%" valign="middle" class="divRightTitleTbR" style="padding-left: 10px;"><span class="fontTitlTbRight"><?php echo $langMod["txt:suggest"] ?></span></td>
+                    <td align="center" width="10%" valign="middle" class="divRightTitleTbR" ><span class="fontTitlTbRight"><?php echo $langMod["txt:suggest"] ?></span></td>
                     
                     <!-- <td width="9%" class="divRightTitleTb" valign="middle" align="center"><span
                             class="fontTitlTbRight"><?php echo  $langTxt["mg:status"] ?></span></td>
@@ -270,14 +272,14 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
 <?php
                 // SQL SELECT #########################
                 $sqlSelect = "
-            " . $mod_tb_root . "_id,
-            " . $mod_tb_root . "_q1,
-            " . $mod_tb_root . "_q2,
-            " . $mod_tb_root . "_q3,
-            " . $mod_tb_root . "_suggest,
-            " . $mod_tb_root . "_credate,
-            " . $mod_tb_root . "_ip
-            ";  
+                " . $mod_tb_root . "_id,
+                " . $mod_tb_root . "_q1,
+                " . $mod_tb_root . "_q2,
+                " . $mod_tb_root . "_q3,
+                " . $mod_tb_root . "_suggest,
+                " . $mod_tb_root . "_credate,
+                " . $mod_tb_root . "_ip
+                ";  
 
                 $sql = "SELECT " . $sqlSelect . "    FROM " . $mod_tb_root;
                 $sql = $sql . "  WHERE " . $mod_tb_root . "_masterkey ='" . $_REQUEST['masterkey'] . "'   ";
@@ -286,6 +288,10 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                 $query = wewebQueryDB($coreLanguageSQL, $sql);
                 $count_totalrecord = wewebNumRowsDB($coreLanguageSQL, $query);
 
+                $sql = $sql . $sqlSearch;
+                $sql_export = $sql;
+
+                // print_pre($sql_export);
                 // Find max page size #########################
                 if ($count_totalrecord > $module_pagesize) {
                     $numberofpage = ceil($count_totalrecord / $module_pagesize);
@@ -387,13 +393,13 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                     </td>
 
                     <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
-                        <td class="divRightContantOverTb" valign="top" align="left">
+                        <td class="divRightContantOverTb" valign="top" align="center">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <!-- <td class="displayTdImg" align="left" valign="top">
+                                    <!-- <td class="displayTdImg" align="center" valign="top">
                                         <div class="displayClickImg" style=" background:url(<?php echo  $valPicEN ?>) center no-repeat;border-radius: 50%;"></div>
                                     </td> -->
-                                <td align="left">
+                                <td align="center">
                                     <?php
                                         for($i = 1; $i < 5 ; $i++){
                                             if($valQ1 == $i) {
@@ -408,13 +414,13 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                         <?php } ?>
 
                         <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
-                        <td class="divRightContantOverTb" valign="top" align="left">
+                        <td class="divRightContantOverTb" valign="top" align="center">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <!-- <td class="displayTdImg" align="left" valign="top">
+                                    <!-- <td class="displayTdImg" align="center" valign="top">
                                         <div class="displayClickImg" style=" background:url(<?php echo  $valPicEN ?>) center no-repeat;border-radius: 50%;"></div>
                                     </td> -->
-                                <td align="left">
+                                <td align="center">
                                     <?php
                                         for($i = 1; $i < 3 ; $i++){
                                             if($valQ2 == $i) {
@@ -429,13 +435,13 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                         <?php } ?>
 
                         <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
-                        <td class="divRightContantOverTb" valign="top" align="left">
+                        <td class="divRightContantOverTb" valign="top" align="center">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <!-- <td class="displayTdImg" align="left" valign="top">
+                                    <!-- <td class="displayTdImg" align="center" valign="top">
                                         <div class="displayClickImg" style=" background:url(<?php echo  $valPicEN ?>) center no-repeat;border-radius: 50%;"></div>
                                     </td> -->
-                                <td align="left">
+                                <td align="center">
                                     <?php
                                         for($i = 1; $i < 5; $i++){
                                             if($valQ3 == $i) {
@@ -450,13 +456,13 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                         <?php } ?>
 
                         <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
-                        <td class="divRightContantOverTb" valign="top" align="left">
+                        <td class="divRightContantOverTb" valign="top" align="center">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <!-- <td class="displayTdImg" align="left" valign="top">
+                                    <!-- <td class="displayTdImg" align="center" valign="top">
                                         <div class="displayClickImg" style=" background:url(<?php echo  $valPicEN ?>) center no-repeat;border-radius: 50%;"></div>
                                     </td> -->
-                                    <td align="left">
+                                    <td align="center">
                                         <a href="javascript:void(0)" 
                                             onclick="
                                             document.myFormHome.inputLt.value = 'Thai';
@@ -695,6 +701,14 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
         </div>
 
     </form>
+
+   <form action="?" method="post" name="myFormExport" id="myFormExport">
+    <input name="sql_export" type="hidden" id="sql_export" value="<?php echo $sql_export ?>" />
+    <input name="language_export" type="hidden" id="language_export" value="<?php echo $_SESSION[$valSiteManage . 'core_session_language'] ?>" />
+    <input name="masterkey" type="hidden" id="masterkey" value="<?php echo $_REQUEST["masterkey"] ?>" />
+    <input name="menukeyid" type="hidden" id="menukeyid" value="<?php echo $_REQUEST["menukeyid"] ?>" />
+   </form>
+
     <?php include("../lib/disconnect.php"); ?>
 
 </body>
