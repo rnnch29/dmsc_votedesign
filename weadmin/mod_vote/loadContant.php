@@ -172,11 +172,11 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
 
                     <td align="center" width="8%" valign="middle" class="divRightTitleTbL" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q1short"] ?></span></td> 
 
-                    <td align="center" width="15%" valign="middle" class="divRightTitleTb"><span class="fontTitlTbRight"><?php echo $langMod["txt:q2short"] ?></span></td>
+                    <td align="center" width="10%" valign="middle" class="divRightTitleTb"><span class="fontTitlTbRight"><?php echo $langMod["txt:q2short"] ?></span></td>
 
                     <td align="center" width="10%" valign="middle" class="divRightTitleTb" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q3short"] ?></span></td>
 
-                    <td align="center" width="20%" valign="middle" class="divRightTitleTb" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q4short"] ?></span></td>
+                    <td align="center" width="25%" valign="middle" class="divRightTitleTb" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q4short"] ?></span></td>
 
                     <td align="center" width="8%" valign="middle" class="divRightTitleTbR" ><span class="fontTitlTbRight"><?php echo $langMod["txt:detail"] ?></span></td>
                     
@@ -719,10 +719,31 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                 </tr>
             </table>
             <input name="TotalCheckBoxID" type="hidden" id="TotalCheckBoxID" value="<?php echo  $index - 1 ?>" />
+
+            <table width="96%" border="0" cellspacing="0" cellpadding="0" class="" align="center" style="margin-top: 30px;">
+                <tbody>
+                    <tr>
+                        <td height="77" align="left" style="line-height: 2;">
+                            <span><b>หมายเหตุ*</b></span><br>
+                            <span><?php echo $langMod['txt:q1short']."&nbsp; หมายถึง  &nbsp;ความชื่นชอบการออกแบบเว็บไซต์" ?></span><br>
+                            <span><?php echo $langMod['txt:q2short']."&nbsp; หมายถึง  &nbsp;การจัดลำดับหัวข้อในการแสดงผล ก่อน - หลัง" ?></span><br>
+                            <span><?php echo $langMod['txt:q3short']."&nbsp; หมายถึง  &nbsp;ความชื่นชอบการออกแบบเว็บไซต์ หัวข้อบริการ" ?></span><br>
+                            <span><?php echo $langMod['txt:q4short']."&nbsp; หมายถึง  &nbsp;".$langMod['txt:suggest']?></span><br>         
+                        </td>
+                    </tr>              
+                </tbody>
+            </table>
+
             <div class="divRightContantEnd"></div>
+
         </div>
 
     </form>
+
+    
+
+    
+    
 
    <form action="?" method="post" name="myFormExport" id="myFormExport">
     <input name="sql_export" type="hidden" id="sql_export" value="<?php echo $sql_export ?>" />

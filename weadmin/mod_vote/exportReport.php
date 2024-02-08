@@ -99,9 +99,9 @@ $objPHPExcel->getActiveSheet()->getColumnDimension("G")->setWidth(20);
 
 $active_row = 1;
 $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "ลำดับ");
-$objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, "คำถามข้อที่ 1");
-$objPHPExcel->getActiveSheet()->setCellValue("C" . $active_row, "คำถามข้อที่ 2");
-$objPHPExcel->getActiveSheet()->setCellValue("D" . $active_row, "คำถามข้อที่ 3");
+$objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, "ข้อที่ 1");
+$objPHPExcel->getActiveSheet()->setCellValue("C" . $active_row, "ข้อที่ 2");
+$objPHPExcel->getActiveSheet()->setCellValue("D" . $active_row, "ข้อที่ 3");
 $objPHPExcel->getActiveSheet()->setCellValue("E" . $active_row, "ข้อเสนอแนะ");
 $objPHPExcel->getActiveSheet()->setCellValue("F" . $active_row, "วันที่โหวต");
 $objPHPExcel->getActiveSheet()->setCellValue("G" . $active_row, "IP Address");

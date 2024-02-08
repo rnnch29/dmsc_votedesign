@@ -71,10 +71,10 @@ if($_SESSION[$valSiteManage."core_session_language"]=="Eng"){
 		$langMod["txt:detail"] = "ดูรายละเอียด";
 
 		// Question
-		$langMod["txt:q1short"] = "คำถามข้อที่ 1";
-		$langMod["txt:q2short"] = "คำถามข้อที่ 2";
-		$langMod["txt:q3short"] = "คำถามข้อที่ 3";
-		$langMod["txt:q4short"] = "คำถามข้อที่ 4";
+		$langMod["txt:q1short"] = "ข้อที่ 1";
+		$langMod["txt:q2short"] = "ข้อที่ 2";
+		$langMod["txt:q3short"] = "ข้อที่ 3";
+		$langMod["txt:q4short"] = "ข้อที่ 4";
 
 		$langMod["txt:q1"] = "1. ความชื่นชอบการออกแบบเว็บไซต์";
 		$langMod["txt:q2"] = "2. การจัดลำดับหัวข้อในการแสดงผล ก่อน - หลัง";
