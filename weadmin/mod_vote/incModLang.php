@@ -94,7 +94,7 @@ if($_SESSION[$valSiteManage."core_session_language"]=="Eng"){
 		$langMod["q3:a1"] = "รูปแบบที่ 1";
 		$langMod["q3:a2"] = "รูปแบบที่ 2";
 		$langMod["q3:a3"] = "รูปแบบที่ 3";
-		$langMod["q3:a3"] = "รูปแบบที่ 4";
+		$langMod["q3:a4"] = "รูปแบบที่ 4";
 
 
 }

@@ -8,10 +8,13 @@ $ip = getip();
 
 // Check num of IP 
 $sql_ip = "SELECT COUNT(" . $config['vote']['db'] . "_ip) AS count_result FROM ". $config['vote']['db'] . " WHERE " . $config['vote']['db'] . "_ip = '$ip'";
+// print_pre($sql_ip);
 $query_ip = $db->execute($sql_ip);
 $count_ip = $query_ip->fields[0];
 
 // print_pre("get ip: ".$ip." Count = ".$count_ip);
+$siteKey = '6LcjYmspAAAAAOg9vEosPbnSFqtRITr2qcB-w-kF';
+$secretKey = '6LcjYmspAAAAAGBW502ZfbvhXvRTp8NZsPPVzpXv';
 
 
 
