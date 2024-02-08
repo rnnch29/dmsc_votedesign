@@ -1,28 +1,10 @@
 <?php
 $menuActive = "home";
-$listjs[] = '<script type="text/javascript" src="' . _URL . 'front/controller/script/' . $menuActive . '/js/script.js"></script>';
+$lastModify = "?u=" . date("YdmHis");
+$listjs[] = '<script type="text/javascript" src="' . _URL . 'front/controller/script/' . $menuActive . '/js/script.js'.$lastModify.'"></script>';
 $HomePage = new HomePage;
 
-#Top graphic
-$callTopGraphic  = $HomePage->callTopGraphic($config['tgp']['masterkey']);
-$smarty->assign("callTopGraphic", $callTopGraphic);
 
-#About
-$callAbout  = $HomePage->callAbout($config['cms_about']['masterkey']);
-$smarty->assign("callAbout", $callAbout);
-
-#Benefit
-$callBnf  = $HomePage->callBnf($config['cms_bnf']['masterkey']);
-$smarty->assign("callBnf", $callBnf);
-
-
-#ตอบสนองทุกความต้องการ
-$callReg  = $HomePage->callReg($config['cms_reg']['masterkey']);
-$smarty->assign("callReg", $callReg);
-
-#Aeon Thai Mobile
-$callMobile  = $HomePage->callMobile($config['cms_mbl']['masterkey']);
-$smarty->assign("callMobile", $callMobile);
 
 /*## Start SEO #####*/
 $seo_desc = "";

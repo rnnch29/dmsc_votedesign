@@ -19,10 +19,10 @@
 <meta property="og:locale" content="">
 <meta property="og:locale:alternate" content="">
 
-{* <link rel="apple-touch-icon" sizes="180x180" href="{$template}/assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="{$template}/assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="{$template}/assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="{$template}/assets/favicon/site.webmanifest">
+{* <link rel="apple-touch-icon" sizes="180x180" href="{$template}/assets/favicon/apple-touch-icon.png"> *}
+<link rel="icon" type="image/png" sizes="32x32" href="{$template}/assets/img/dmsc-logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{$template}/assets/img/dmsc-logo.png">
+{* <link rel="manifest" href="{$template}/assets/favicon/site.webmanifest">
 <link rel="mask-icon" href="{$template}/assets/favicon/safari-pinned-tab.svg" color="#ffffff"> *}
 <meta name="msapplication-TileColor" content="#0f6939">
 <meta name="theme-color" content="#ffffff">

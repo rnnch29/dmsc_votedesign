@@ -1,10 +1,9 @@
 
 var baseUrl = $("base").attr("href");
 // console.log(baseUrl);
-$('#myForm').validator().on('submit',function (e) { 
-    if (e.isDefaultPrevented()) {
-        $('#myForm').validator('validate');
-    } else {
+$('#myForm').on('submit',function (e) { 
+
+        e.preventDefault();
         // var response = grecaptcha.getResponse();
         // if(response.length == 0) 
         // { 
@@ -36,6 +35,8 @@ $('#myForm').validator().on('submit',function (e) {
                         icon: obj.icon,
                         title: obj.title,
                         text: obj.msg,
+                        confirmButtonColor: "#3085d6",
+                        confirmButtonText: "ตกลง"
                     }).then((result) => {
                         // หากผู้ใช้กด OK
                         if (result.isConfirmed) {
@@ -48,12 +49,23 @@ $('#myForm').validator().on('submit',function (e) {
                 } else {
                       
                     console.log('[GTAG] event conversion : POST FAIL');
+                    Swal.fire({
+                        icon: obj.icon,
+                        title: obj.title,
+                        text: obj.msg,
+                        confirmButtonColor: "#3085d6",
+                        confirmButtonText: "ตกลง"
+                    }).then((result) => {
+                        // หากผู้ใช้กด OK
+                        if (result.isConfirmed) {
+                        }
+                    });
                     // gtag_report_conversion(baseUrl + "/contactus");
                     // window.location.href = baseUrl+"/contactus";
                 }
             },
         });
-    }
+    
     return false;
 });
 
