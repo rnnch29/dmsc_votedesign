@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-07 21:59:43
+/* Smarty version 3.1.30, created on 2024-02-08 12:47:55
   from "/var/www/html/dmsc_votedesign/front/template/default/inc/inc-metatag.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c39adff396f0_56465180',
+  'unifunc' => 'content_65c46b0b4268b4_34032657',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c39adff396f0_56465180 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c46b0b4268b4_34032657 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <base href="<?php echo $_smarty_tpl->tpl_vars['base']->value;?>
 ">
@@ -61,8 +61,8 @@ function content_65c39adff396f0_56465180 (Smarty_Internal_Template $_smarty_tpl)
 
 <?php ob_start();
 echo (($tmp = @$_smarty_tpl->tpl_vars['assigncss']->value)===null||$tmp==='' ? null : $tmp);
-$_prefixVariable1=ob_get_clean();
-if ($_prefixVariable1) {
+$_prefixVariable2=ob_get_clean();
+if ($_prefixVariable2) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['assigncss']->value, 'addAssetCss');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['addAssetCss']->value) {
