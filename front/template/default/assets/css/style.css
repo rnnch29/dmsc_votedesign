@@ -27,8 +27,8 @@
 .nav-bar {
     /* position: fixed; */
     top: 0;
-    background-color: #004298;
-    padding: 10px 100px;
+    background: -webkit-linear-gradient(6deg, #004298, #006838 100%);
+    padding: 5px 100px;
     z-index: 999;
     width: 100%;
 }
@@ -51,10 +51,28 @@ body {
 }
 
 .votedesign {
+    position: relative;
+    background-position: top center;
     background-image: url(../img/bg-dmsc.png);
     background-size: cover;
-    margin: 40px 0px;
+    margin-top: 40px;
+    padding-bottom: 220px;
 }
+
+.votedesign::before {
+    content: '';
+    background-image: url(../img/bg-btt.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 955px;
+    z-index: 0;
+}
+/* .bg-dmsc {
+
+} */
 
 .vote-logo {
     display: flex;
@@ -73,9 +91,10 @@ body {
 .vote-info .title {
     justify-content: center;
     font-size: 24px;
+    font-weight: 500;
 }
 
-.vote-info .title small{
+.vote-info .title small {
     font-size: 16px;
 }
 
@@ -84,10 +103,11 @@ body {
     justify-content: center;
 }
 
-.vote-title .title h1{
+.vote-title .title h1 {
     font-size: 30px;
     color: #004298;
     margin: 40px 0px;
+    font-weight: 500;
 }
 
 /* .hero-banner .container{
@@ -159,9 +179,10 @@ body {
     transition: All 400ms ease;
 } */
 
-.general-theme .des{
+.general-theme .des {
     font-size: 18px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .general-theme .thumb {
@@ -190,10 +211,30 @@ body {
     /* border-radius: 5px; */
 }
 
+.general-theme .btn-I {
+    background-color: #004298;
+    color: #ffffff;
+    font-size: 18px;
+    width: 100%;
+    padding: 1px;
+    line-height: 45px;
+    border: transparent;
+    margin: 10px 0px;
+    box-shadow: 0 0 15px 1px rgb(34 34 34 / 45%);
+}
+
+.general-theme .heading {
+    margin-top: 20px;
+}
+
 
 .service-theme .thumb {
     position: relative;
-    margin-bottom: 15px;
+}
+
+.rdio {
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .service-theme .thumb figure.cover {
@@ -222,26 +263,26 @@ body {
     color: #ffffff;
     font-size: 18px;
     width: 100%;
-    height: 60px;
+    padding: 20px 0px;
     line-height: 58px;
     border: transparent;
     margin-top: 30px;
     box-shadow: 0 0 15px 1px rgb(0 84 255 / 45%);
+    padding: 5px;
 }
 
 .heading {
     display: flex;
     /* justify-content: center; */
-    padding-left: 20px;
+    padding: 15px;
     align-items: center;
     font-size: 16px;
     color: #ffffff;
     background-color: #006838;
     width: 100%;
-    height: 50px;
     /* border: 1px solid #000; */
     /* border-radius: 4px; */
-    margin: 5px 0px 20px 0px;
+    margin-top: 40px;
 }
 
 /* radio */
@@ -321,8 +362,8 @@ body {
 }
 
 .rdio label:before {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     position: absolute;
     top: 1px;
     left: 0;
@@ -354,8 +395,8 @@ body {
     left: 5px;
     display: inline-block;
     font-size: 11px;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     background-color: #004298;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;

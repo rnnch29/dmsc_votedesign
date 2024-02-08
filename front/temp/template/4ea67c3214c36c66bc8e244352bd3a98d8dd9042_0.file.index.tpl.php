@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-08 12:21:53
+/* Smarty version 3.1.30, created on 2024-02-08 14:47:27
   from "C:\xampp\htdocs\dmsc_votedesign\front\controller\script\home\template\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c464f19cb8a4_77787662',
+  'unifunc' => 'content_65c4870f975be0_14187156',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4ea67c3214c36c66bc8e244352bd3a98d8dd9042' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\controller\\script\\home\\template\\index.tpl',
-      1 => 1707369710,
+      1 => 1707378435,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c4870f975be0_14187156 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="votedesign">
   <div class="vote-logo">
@@ -50,7 +50,7 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
     <div class="container">
       <section class="general-theme">
         <div class="des">
-          <strong>คำชี้แจง</strong> กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
+          คำชี้แจง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
         </div>
         <div class="heading">
           1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด
@@ -67,6 +67,10 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
 /assets/img/gr-1.png" alt="">
               </figure>
             </div>
+            <a href="https://xd.adobe.com/view/6642ce70-b0cf-4d84-84bb-e1a4bc920467-3311/" target="_blank">
+              <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
+              </button>
+            </a>
           </div>
           <div class="col-6">
             
@@ -79,6 +83,10 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
 /assets/img/gr-2.png" alt="">
               </figure>
             </div>
+            <a href="https://xd.adobe.com/view/f27e8d8e-7dda-4cd3-8f6c-f694559211f4-a72d/" target="_blank">
+              <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
+              </button>
+            </a>
           </div>
           <div class="col-6">
             
@@ -91,6 +99,10 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
 /assets/img/gr-3.png" alt="">
               </figure>
             </div>
+            <a href="https://xd.adobe.com/view/17d12af3-9f06-49b5-b10d-0c6ebd917851-4282/" target="_blank">
+              <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
+              </button>
+            </a>
           </div>
           <div class="col-6">
             
@@ -103,6 +115,10 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
 /assets/img/gr-4.png" alt="">
               </figure>
             </div>
+            <a href="https://xd.adobe.com/view/32b75125-59cd-4892-ad63-e6f6a885bda9-67e4/" target="_blank">
+              <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -113,7 +129,7 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
           ควรเป็นแบบใด
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-sm">
             <div class="rdio rdio-primary radio-inline"> <input name="q2" value="1" id="q2_1" type="radio">
               <label for="q2_1">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
             </div>
@@ -135,7 +151,7 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
         <div class="row">
           <div class="col-6">
             <div class="rdio rdio-primary radio-inline"> <input name="q3" value="1" id="q3_1" type="radio">
-              <label for="q3_1">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
+              <label for="q3_1">รูปแบบที่ 1</label>
             </div>
             
             <div class="thumb">
@@ -147,7 +163,7 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
           </div>
           <div class="col-6">
             <div class="rdio rdio-primary radio-inline"> <input name="q3" value="2" id="q3_2" type="radio">
-              <label for="q3_2">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
+              <label for="q3_2">รูปแบบที่ 2</label>
             </div>
             
             <div class="thumb">
@@ -159,7 +175,7 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
           </div>
           <div class="col-6">
             <div class="rdio rdio-primary radio-inline"> <input name="q3" value="3" id="q3_3" type="radio">
-              <label for="q3_3">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
+              <label for="q3_3">รูปแบบที่ 3</label>
             </div>
             
             <div class="thumb">
@@ -171,7 +187,7 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
           </div>
           <div class="col-6">
             <div class="rdio rdio-primary radio-inline"> <input name="q3" value="4" id="q3_4" type="radio">
-              <label for="q3_4">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
+              <label for="q3_4">รูปแบบที่ 4</label>
             </div>
             
             <div class="thumb">
@@ -194,5 +210,6 @@ function content_65c464f19cb8a4_77787662 (Smarty_Internal_Template $_smarty_tpl)
       <input class="sending" type="submit" value="ส่งข้อมูล">
     </div>
   </form>
+
 </div><?php }
 }

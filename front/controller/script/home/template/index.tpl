@@ -66,7 +66,7 @@
     <div class="container">
       <section class="general-theme">
         <div class="des">
-          <strong>คำชี้แจง</strong> กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
+          คำชี้แจง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
         </div>
         <div class="heading">
           1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด
@@ -85,6 +85,10 @@
                 <img src="{$template}/assets/img/gr-1.png" alt="">
               </figure>
             </div>
+            <a href="https://xd.adobe.com/view/6642ce70-b0cf-4d84-84bb-e1a4bc920467-3311/" target="_blank">
+              <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
+              </button>
+            </a>
           </div>
           <div class="col-6">
             {* <div class="choice">
@@ -99,6 +103,10 @@
                 <img src="{$template}/assets/img/gr-2.png" alt="">
               </figure>
             </div>
+            <a href="https://xd.adobe.com/view/f27e8d8e-7dda-4cd3-8f6c-f694559211f4-a72d/" target="_blank">
+              <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
+              </button>
+            </a>
           </div>
           <div class="col-6">
             {* <div class="choice">
@@ -113,6 +121,10 @@
                 <img src="{$template}/assets/img/gr-3.png" alt="">
               </figure>
             </div>
+            <a href="https://xd.adobe.com/view/17d12af3-9f06-49b5-b10d-0c6ebd917851-4282/" target="_blank">
+              <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
+              </button>
+            </a>
           </div>
           <div class="col-6">
             {* <div class="choice">
@@ -127,6 +139,10 @@
                 <img src="{$template}/assets/img/gr-4.png" alt="">
               </figure>
             </div>
+            <a href="https://xd.adobe.com/view/32b75125-59cd-4892-ad63-e6f6a885bda9-67e4/" target="_blank">
+              <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -137,7 +153,7 @@
           ควรเป็นแบบใด
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-sm">
             <div class="rdio rdio-primary radio-inline"> <input name="q2" value="1" id="q2_1" type="radio">
               <label for="q2_1">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
             </div>
@@ -165,7 +181,7 @@
         <div class="row">
           <div class="col-6">
             <div class="rdio rdio-primary radio-inline"> <input name="q3" value="1" id="q3_1" type="radio">
-              <label for="q3_1">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
+              <label for="q3_1">รูปแบบที่ 1</label>
             </div>
             {* <div class="choice">
               <input type="radio" id="q3_1" name="q3" value="1">
@@ -179,7 +195,7 @@
           </div>
           <div class="col-6">
             <div class="rdio rdio-primary radio-inline"> <input name="q3" value="2" id="q3_2" type="radio">
-              <label for="q3_2">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
+              <label for="q3_2">รูปแบบที่ 2</label>
             </div>
             {* <div class="choice">
               <input type="radio" id="q3_2" name="q3" value="2">
@@ -193,7 +209,7 @@
           </div>
           <div class="col-6">
             <div class="rdio rdio-primary radio-inline"> <input name="q3" value="3" id="q3_3" type="radio">
-              <label for="q3_3">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
+              <label for="q3_3">รูปแบบที่ 3</label>
             </div>
             {* <div class="choice">
               <input type="radio" id="q3_3" name="q3" value="3">
@@ -207,7 +223,7 @@
           </div>
           <div class="col-6">
             <div class="rdio rdio-primary radio-inline"> <input name="q3" value="4" id="q3_4" type="radio">
-              <label for="q3_4">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
+              <label for="q3_4">รูปแบบที่ 4</label>
             </div>
             {* <div class="choice">
               <input type="radio" id="q3_4" name="q3" value="4">
@@ -232,4 +248,5 @@
       <input class="sending" type="submit" value="ส่งข้อมูล">
     </div>
   </form>
+
 </div>
