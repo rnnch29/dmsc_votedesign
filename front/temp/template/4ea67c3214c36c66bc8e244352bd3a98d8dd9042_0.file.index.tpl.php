@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-08 14:47:27
+/* Smarty version 3.1.30, created on 2024-02-08 14:57:45
   from "C:\xampp\htdocs\dmsc_votedesign\front\controller\script\home\template\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c4870f975be0_14187156',
+  'unifunc' => 'content_65c48979f0bda6_04761788',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4ea67c3214c36c66bc8e244352bd3a98d8dd9042' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\controller\\script\\home\\template\\index.tpl',
-      1 => 1707378435,
+      1 => 1707379016,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c4870f975be0_14187156 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c48979f0bda6_04761788 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="votedesign">
   <div class="vote-logo">
@@ -199,7 +199,6 @@ function content_65c4870f975be0_14187156 (Smarty_Internal_Template $_smarty_tpl)
           </div>
         </div>
       </section>
-
       <section class="suggestions">
         <div class="form-group">
           <div class="heading" for="comment">4.

@@ -237,7 +237,6 @@
           </div>
         </div>
       </section>
-
       <section class="suggestions">
         <div class="form-group">
           <div class="heading" for="comment">4.
