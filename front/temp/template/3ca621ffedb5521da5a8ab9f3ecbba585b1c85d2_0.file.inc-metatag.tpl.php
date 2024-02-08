@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-06 16:23:09
+/* Smarty version 3.1.30, created on 2024-02-07 17:38:01
   from "C:\xampp\htdocs\dmsc_votedesign\front\template\default\inc\inc-metatag.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c1fa7d6d3543_90353620',
+  'unifunc' => 'content_65c35d892a3119_23104717',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3ca621ffedb5521da5a8ab9f3ecbba585b1c85d2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\template\\default\\inc\\inc-metatag.tpl',
-      1 => 1707204169,
+      1 => 1707302263,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c1fa7d6d3543_90353620 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c35d892a3119_23104717 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <base href="<?php echo $_smarty_tpl->tpl_vars['base']->value;?>
 ">
@@ -50,23 +50,14 @@ function content_65c1fa7d6d3543_90353620 (Smarty_Internal_Template $_smarty_tpl)
 <meta property="og:locale" content="">
 <meta property="og:locale:alternate" content="">
 
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
-/assets/favicon//apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
-/assets/favicon//favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
-/assets/favicon//favicon-16x16.png">
-<link rel="manifest" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
-/assets/favicon//site.webmanifest">
-<link rel="mask-icon" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
-/assets/favicon//safari-pinned-tab.svg" color="#ffffff">
+
 <meta name="msapplication-TileColor" content="#0f6939">
 <meta name="theme-color" content="#ffffff">
 
 <?php ob_start();
 echo (($tmp = @$_smarty_tpl->tpl_vars['assigncss']->value)===null||$tmp==='' ? null : $tmp);
-$_prefixVariable2=ob_get_clean();
-if ($_prefixVariable2) {
+$_prefixVariable1=ob_get_clean();
+if ($_prefixVariable1) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['assigncss']->value, 'addAssetCss');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['addAssetCss']->value) {
