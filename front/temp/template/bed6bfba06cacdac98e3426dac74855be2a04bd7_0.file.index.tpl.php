@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-08 22:01:55
+/* Smarty version 3.1.30, created on 2024-02-08 22:58:23
   from "/var/www/html/dmsc_votedesign/front/controller/script/home/template/index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c4ece3cad1e8_06313575',
+  'unifunc' => 'content_65c4fa1fc592b4_63321684',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bed6bfba06cacdac98e3426dac74855be2a04bd7' => 
     array (
       0 => '/var/www/html/dmsc_votedesign/front/controller/script/home/template/index.tpl',
-      1 => 1707404472,
+      1 => 1707407899,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c4ece3cad1e8_06313575 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c4fa1fc592b4_63321684 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="votedesign">
   <div class="position-relative">
@@ -221,6 +221,7 @@ function content_65c4ece3cad1e8_06313575 (Smarty_Internal_Template $_smarty_tpl)
             <textarea class="form-control" name="suggest" rows="5" id="comment" placeholder="กรอกข้อเสนอแนะ"></textarea>
           </div>
         </section>
+        <input type="hidden" name="recaptcha" id="recaptcha">
         <input class="sending" type="submit" value="ส่งข้อมูล">
       </div>
     </form>
