@@ -49,6 +49,9 @@ include("../core/incLang.php");
                                             <form action="?" method="post" name="myFormHome" id="myFormHome">
                                                 <input name="masterkey" type="hidden" id="masterkey" value="1<?php echo  $masterkey ?>" />
                                                 <input name="menukeyid" type="hidden" id="menukeyid" value="<?php echo  $menukeyid ?>" />
+                                                <input name="module_pageshow" type="hidden" id="module_pageshow" value="<?php echo $_REQUEST['module_pageshow']?>" />
+                                                <input name="module_pagesize" type="hidden" id="module_pagesize" value="<?php echo $_REQUEST['module_pagesize']?>" />
+                                                <input name="module_orderby" type="hidden" id="module_orderby" value="<?php echo $_REQUEST['module_orderby']?>" />
                                             </form>
 
                                             <div class="mRightBackOffice" id="boxContantLoad">

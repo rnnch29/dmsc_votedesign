@@ -485,8 +485,8 @@ $langMod["q1:a3M"] = "รูปแบบที่ 3";
 $langMod["q1:a4M"] = "รูปแบบที่ 4";
 
 //Ans Q2
-$langMod["q2:a1M"] = "หัวข้อที่ 1";
-$langMod["q2:a2M"] = "หัวข้อที่ 2";
+$langMod["q2:a1M"] = "หัวข้อที่บริการ ";
+$langMod["q2:a2M"] = "หัวข้องานวิจัย";
 
 //Ans Q3
 $langMod["q3:a1M"] = "รูปแบบที่ 1";
@@ -495,6 +495,8 @@ $langMod["q3:a3M"] = "รูปแบบที่ 3";
 $langMod["q3:a4M"] = "รูปแบบที่ 4";
 
 $langMod["txt:suggest"] =  "ข้อเสนอแนะ";
+$langMod["txt:voteDate"] =  "วันที่โหวต";
+
 
 }
 ?>
