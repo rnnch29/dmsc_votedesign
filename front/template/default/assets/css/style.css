@@ -25,10 +25,10 @@
 /* HEAD */
 
 .nav-bar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     background-color: #004298;
-    padding: 20px 100px;
+    padding: 10px 100px;
     z-index: 999;
     width: 100%;
 }
@@ -51,7 +51,9 @@ body {
 }
 
 .votedesign {
-    margin: 150px 0px;
+    background-image: url(../img/bg-dmsc.png);
+    background-size: cover;
+    margin: 80px 0px;
 }
 
 .vote-logo {
@@ -72,7 +74,7 @@ body {
 
 } */
 
-.hero-banner .item-list {
+/* .hero-banner .item-list {
     margin: 0 -10px;
     display: flex;
 }
@@ -105,7 +107,7 @@ body {
     overflow: hidden;
 }
 
-/* .hero-banner .thumb::before{
+.hero-banner .thumb::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -113,7 +115,7 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
-} */
+}
 
 .hero-banner .thumb figure.cover {
     margin: 0;
@@ -135,10 +137,38 @@ body {
     -o-object-position: center;
     object-position: center;
     transition: All 400ms ease;
+} */
+
+.general-theme .thumb {
+    position: relative;
+    margin-bottom: 15px;
 }
+
+.general-theme .thumb figure.cover {
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 115%;
+}
+
+.general-theme .thumb .cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    /* border-radius: 5px; */
+}
+
 
 .service-theme .thumb {
     position: relative;
+    margin-bottom: 15px;
 }
 
 .service-theme .thumb figure.cover {
@@ -146,7 +176,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 60%;
+    padding-top: 50%;
 }
 
 .service-theme .thumb .cover img {
@@ -159,32 +189,34 @@ body {
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
+    /* border-radius: 5px; */
 }
 
 .sending {
     background-color: #004298;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
-    height: 50px;
-    line-height: 48px;
-    border: 1px solid #000;
-    border-radius: 4px;
+    height: 60px;
+    line-height: 58px;
+    border: transparent;
+    margin-top: 30px;
+    box-shadow: 0 0 15px 1px rgb(0 84 255 / 45%);
 }
 
 .heading {
     display: flex;
     /* justify-content: center; */
-    padding-left: 10px;
+    padding-left: 20px;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
-    background-color: #004298;
+    background-color: #006838;
     width: 100%;
-    height: 60px;
-    border: 1px solid #000;
-    border-radius: 4px;
-    margin: 20px 0px;
+    height: 50px;
+    /* border: 1px solid #000; */
+    /* border-radius: 4px; */
+    margin: 5px 0px 20px 0px;
 }
 
 /* radio */
@@ -201,11 +233,26 @@ body {
     font-size: 18px;
 }
 
+.form-control {
+    padding: 1rem 1.5rem;
+    line-height: 1.5;
+    border-radius: 0;
+    /* border: 1px solid #6A6B6C; */
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #004298;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 77 255 / 31%);
+}
+
 
 
 /* FOOTER */
 
-.layout-footer {
+/* .layout-footer {
     opacity: 1;
     transform: translateZ(0);
     bottom: 0;
@@ -226,7 +273,7 @@ body {
     line-height: 1.6em;
     text-align: center;
     margin: 0;
-}
+} */
 
 
 
@@ -239,9 +286,11 @@ body {
     opacity: 0;
 }
 .rdio label {
-    padding-left: 10px;
+    padding-left: 12px;
     cursor: pointer;
-    margin-bottom: 7px !important;
+    margin-bottom: 12px !important;
+    font-size: 16px;
+    color: #004298;
 }
 .rdio label:before {
     width: 18px;
@@ -254,7 +303,7 @@ body {
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    border: 2px solid #fbc52d;
+    border: 2px solid #004298;
     background: #fff;
 }
 .rdio input[type="radio"] {
@@ -264,7 +313,7 @@ body {
     color: #999;
 }
 .rdio input[type="radio"]:disabled + label:before {
-    background-color: #fbc52d;
+    background-color: #004298;
 }
 .rdio input[type="radio"]:checked + label::after {
     content: '';
@@ -275,19 +324,19 @@ body {
     font-size: 11px;
     width: 8px;
     height: 8px;
-    background-color: #fbc52d;
+    background-color: #004298;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
 }
 .rdio-default input[type="radio"]:checked + label:before {
-    border-color: #fbc52d;
+    border-color: #004298;
 }
 .rdio-primary input[type="radio"]:checked + label:before {
-    border-color: #fbc52d;
+    border-color: #004298;
 }
 .rdio-primary input[type="radio"]:checked + label::after {
-    background-color: #fbc52d;
+    background-color: #004298;
 }
 .custom-checkbox {
    /*margin-bottom:0px !important;
@@ -318,7 +367,7 @@ body {
     margin-top: -9px;
     width: 17px;
     height: 17px;
-    border: 1px solid #fbc52d;
+    border: 1px solid #004298;
     background: #fff;
     border-radius: 2px;
 }
@@ -329,7 +378,7 @@ body {
     top: 50%;
     margin-top: -7px;
     left: 2px;
-    color: #fbc52d;
+    color: #004298;
     xtransition: all 0.2s;
 }
 .custom-checkbox > [type="checkbox"]:not(:checked) + label:after {
@@ -360,10 +409,10 @@ body {
     border-color: #eee;
     cursor: not-allowed;
     opacity: 1;
-    color: #fbc52d;
+    color: #004298;
 }
 .custom-checkbox > [type="checkbox"]:disabled:checked + label:after {
-    color: #fbc52d;
+    color: #004298;
     cursor: not-allowed;
 }
 .custom-checkbox > [type="checkbox"]:disabled + label {
@@ -371,12 +420,12 @@ body {
     cursor: not-allowed;
 }
 .custom-checkbox > [type="checkbox"]:checked:focus + label:before, .custom-checkbox > [type="checkbox"]:not(:checked):focus + label:before {
-    border: 1px solid #fbc52d;
+    border: 1px solid #004298;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .custom-checkbox label:hover:before {
-    border: 1px solid #fbc52d !important;
+    border: 1px solid #004298 !important;
 }
 .custom-checkbox [type="checkbox"]:disabled:not(:checked) + label:hover:before, .custom-checkbox [type="checkbox"]:disabled:checked + label:hover:before {
-    border: 1px solid #fbc52d !important;
+    border: 1px solid #004298 !important;
 }

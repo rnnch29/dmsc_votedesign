@@ -11,7 +11,8 @@
       <h1>แบบสอบถามความพึงพอใจ การออกแบบเว็บไซต์กรมวิยาศาสตร์การแพทย์</h1>
     </div>
   </div>
-  <section class="hero-banner">
+
+  {* <section class="hero-banner">
     <div class="container-fluid">
       <ul class="item-list">
         <li>
@@ -52,16 +53,16 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section> *}
 
   <form id="myForm">
     <div class="container">
       <section class="general-theme">
         <div class="des">
-          <strong>คำชี้แจง</strong> กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากที่สุด
+          <strong>คำชี้แจง</strong> กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
         </div>
         <div class="heading">
-          ข้อที่ 1 ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ในรูปแบบใด
+          1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด
         </div>
         <div class="row">
           <div class="col-6">
@@ -72,6 +73,11 @@
             <div class="rdio rdio-primary radio-inline"> <input name="q1" value="1" id="q1_1" type="radio">
               <label for="q1_1">รูปแบบที่ 1</label>
             </div>
+            <div class="thumb">
+              <figure class="cover">
+                <img src="{$template}/assets/img/gr-1.png" alt="">
+              </figure>
+            </div>
           </div>
           <div class="col-6">
             {* <div class="choice">
@@ -81,15 +87,24 @@
             <div class="rdio rdio-primary radio-inline"> <input name="q1" value="2" id="q1_2" type="radio">
               <label for="q1_2">รูปแบบที่ 2</label>
             </div>
+            <div class="thumb">
+              <figure class="cover">
+                <img src="{$template}/assets/img/gr-2.png" alt="">
+              </figure>
+            </div>
           </div>
           <div class="col-6">
-
             {* <div class="choice">
               <input type="radio" id="q1_3" name="q1" value="3">
               <label>รูปแบบที่ 3</label>
             </div> *}
             <div class="rdio rdio-primary radio-inline"> <input name="q1" value="3" id="q1_3" type="radio">
               <label for="q1_3">รูปแบบที่ 3</label>
+            </div>
+            <div class="thumb">
+              <figure class="cover">
+                <img src="{$template}/assets/img/gr-3.png" alt="">
+              </figure>
             </div>
           </div>
           <div class="col-6">
@@ -100,13 +115,19 @@
             <div class="rdio rdio-primary radio-inline"> <input name="q1" value="4" id="q1_4" type="radio">
               <label for="q1_4">รูปแบบที่ 4</label>
             </div>
+            <div class="thumb">
+              <figure class="cover">
+                <img src="{$template}/assets/img/gr-4.png" alt="">
+              </figure>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="show-sequence">
         <div class="heading">
-          ข้อที่ 2 การจัดลำดับหัวข้อในการแสดงผล ก่อน-หลัง หัวข้อบริการและงานวิจัยและนวัตกรรม ควรเป็นแบบใด
+          2. ในความคิดเห็นของท่านการจัดลำดับหัวข้อในการแสดงผล ก่อน-หลัง ของหัวข้อบริการและงานวิจัยและนวัตกรรม
+          ควรเป็นแบบใด
         </div>
         <div class="row">
           <div class="col">
@@ -132,7 +153,7 @@
 
       <section class="service-theme">
         <div class="heading">
-          ข้อที่ 3 ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด
+          3. ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด
         </div>
         <div class="row">
           <div class="col-6">
@@ -145,7 +166,7 @@
             </div> *}
             <div class="thumb">
               <figure class="cover">
-                <img src="{$template}/assets/img/sv-01.png" alt="">
+                <img src="{$template}/assets/img/sv-1.png" alt="">
               </figure>
             </div>
           </div>
@@ -159,7 +180,7 @@
             </div> *}
             <div class="thumb">
               <figure class="cover">
-                <img src="{$template}/assets/img/sv-02.png" alt="">
+                <img src="{$template}/assets/img/sv-2.png" alt="">
               </figure>
             </div>
           </div>
@@ -173,7 +194,7 @@
             </div> *}
             <div class="thumb">
               <figure class="cover">
-                <img src="{$template}/assets/img/sv-03.png" alt="">
+                <img src="{$template}/assets/img/sv-3.png" alt="">
               </figure>
             </div>
           </div>
@@ -187,7 +208,7 @@
             </div> *}
             <div class="thumb">
               <figure class="cover">
-                <img src="{$template}/assets/img/sv-04.png" alt="">
+                <img src="{$template}/assets/img/sv-4.png" alt="">
               </figure>
             </div>
           </div>
@@ -196,7 +217,7 @@
 
       <section class="suggestions">
         <div class="form-group">
-          <div class="heading" for="comment">ข้อเสนอแนะ:</div>
+          <div class="heading" for="comment">4. ท่านมีข้อเสนอแนะเพิ่มเติมเกี่ยวกับการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์หรือไม่</div>
           <textarea class="form-control" name="suggest" rows="5" id="comment" placeholder="กรอกข้อเสนอแนะ"></textarea>
         </div>
       </section>
