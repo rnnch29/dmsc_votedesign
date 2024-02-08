@@ -344,7 +344,7 @@ if ($_SESSION[$valSiteManage . "core_session_language"] == "Eng") {
     $langTxt["us:inputpic"] = "รูปภาพผู้ใช้งานระบบ";
     $langTxt["us:inputpicselect"] = "เลือกไฟล์ที่ต้องการอัพโหลด";
 
-    $langTxt["us:credate"] = "วันที่สร้าง";
+    $langTxt["us:credate"] = "วันที่โหวต";
     $langTxt["us:lastdate"] = "วันที่ปรับปรุง";
     $langTxt["us:creby"] = "โดย";
     $langTxt["ex:creby"] = "สร้างโดย";

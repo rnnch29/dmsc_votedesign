@@ -74,6 +74,7 @@ if($_SESSION[$valSiteManage."core_session_language"]=="Eng"){
 		$langMod["txt:q1short"] = "คำถามข้อที่ 1";
 		$langMod["txt:q2short"] = "คำถามข้อที่ 2";
 		$langMod["txt:q3short"] = "คำถามข้อที่ 3";
+		$langMod["txt:q4short"] = "คำถามข้อที่ 4";
 
 		$langMod["txt:q1"] = "1. ความชื่นชอบการออกแบบเว็บไซต์";
 		$langMod["txt:q2"] = "2. การจัดลำดับหัวข้อในการแสดงผล ก่อน - หลัง";
@@ -87,8 +88,8 @@ if($_SESSION[$valSiteManage."core_session_language"]=="Eng"){
 		$langMod["q1:a4"] = "รูปแบบที่ 4";
 
 		//Ans Q2
-		$langMod["q2:a1"] = "หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม";
-		$langMod["q2:a2"] = "หัวข้องานวิจัยและนวัตกรรม - หัวข้อบริการ";
+		$langMod["q2:a1"] = "บริการ - งานวิจัยและนวัตกรรม";
+		$langMod["q2:a2"] = "งานวิจัยและนวัตกรรม - บริการ";
 
 		//Ans Q3
 		$langMod["q3:a1"] = "รูปแบบที่ 1";
