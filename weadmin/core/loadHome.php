@@ -412,6 +412,7 @@ WHERE  " . $core_tb_menu . "_status='Enable' AND  " . $core_tb_sort . "_memberID
         </table>
     <?php } ?>
 
+<<<<<<< Updated upstream
 
 <?php
 $sqlSelect = "
@@ -424,6 +425,30 @@ $sql = "SELECT " . $sqlSelect . ", COUNT(*) AS count_per_category
         
 $query = wewebQueryDB($coreLanguageSQL, $sql);
 $count_record = wewebNumRowsDB($coreLanguageSQL, $query);
+=======
+    <script src="../js/highcharts/code/highcharts.js"></script>
+    <script src="../js/highcharts/code/modules/exporting.js"></script>
+    <script src="../js/highcharts/code/modules/accessibility.js"></script>
+    
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+            Pie charts are very popular for showing a compact overview of a
+            composition or comparison. While they can be harder to read than
+            column charts, they remain a popular choice for small datasets.
+        </p>
+    </figure>
+
+
+    <figure class="highcharts-figure">
+        <div id="container2"></div>
+        <p class="highcharts-description">
+            Pie charts are very popular for showing a compact overview of a
+            composition or comparison. While they can be harder to read than
+            column charts, they remain a popular choice for small datasets.
+        </p>
+    </figure>
+>>>>>>> Stashed changes
 
 // $row = wewebFetchArrayDB($coreLanguageSQL, $query);
 // print_r($row);die();
@@ -517,6 +542,8 @@ $jsonData = json_encode($data);
 
 
     
+
+
 
 
     </div>
