@@ -6,6 +6,13 @@
       </figure>
     </div>
   </div>
+  <div class="vote-info">
+    <div class="title">
+      กรมวิทยาศาสตร์การแพทย์ กระทรวงสาธารณสุข
+      <br>
+      <small>Department of Medical Sciences Ministry Ministry of Public Health</small>
+    </div>
+  </div>
   <div class="vote-title">
     <div class="title">
       <h1>แบบสอบถามความพึงพอใจ การออกแบบเว็บไซต์กรมวิยาศาสตร์การแพทย์</h1>
@@ -217,7 +224,8 @@
 
       <section class="suggestions">
         <div class="form-group">
-          <div class="heading" for="comment">4. ท่านมีข้อเสนอแนะเพิ่มเติมเกี่ยวกับการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์หรือไม่</div>
+          <div class="heading" for="comment">4.
+            ท่านมีข้อเสนอแนะเพิ่มเติมเกี่ยวกับการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์หรือไม่</div>
           <textarea class="form-control" name="suggest" rows="5" id="comment" placeholder="กรอกข้อเสนอแนะ"></textarea>
         </div>
       </section>
