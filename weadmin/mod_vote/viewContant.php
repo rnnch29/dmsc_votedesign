@@ -149,13 +149,13 @@ $valLinkNav1="../core/index.php";
                     </td>
                 </tr>
 
-                <tr>
+                <!-- <tr>
                     <td width="30%" align="right" valign="top" class="formLeftContantTb">
                         <?php echo $langMod["txt:id"]?>:<span class="fontContantAlert"></span></td>
                     <td width="70%" colspan="6" align="left" valign="top" class="formRightContantTb">
                         <div class="formDivView"><?php echo $valID?></div>
                     </td>
-                </tr>
+                </tr> -->
 
                 <tr>
                     <td width="30%" align="right" valign="top" class="formLeftContantTb">

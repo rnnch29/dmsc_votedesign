@@ -59,7 +59,7 @@ body {
     padding-bottom: 220px;
 }
 
-/* .votedesign::before {
+.votedesign::before {
     content: '';
     background-image: url(../img/bg-btt.png);
     background-size: cover;
@@ -69,7 +69,7 @@ body {
     width: 100%;
     height: 955px;
     z-index: 0;
-} */
+}
 /* .bg-dmsc {
 
 } */
@@ -92,6 +92,7 @@ body {
     justify-content: center;
     font-size: 24px;
     font-weight: 500;
+    line-height: 28px;
 }
 
 .vote-info .title small {
@@ -109,6 +110,16 @@ body {
     margin: 40px 0px;
     font-weight: 500;
 }
+
+/* .vote-info{
+    position: relative;
+    z-index: 2;
+}
+
+.vote-title{
+    position: relative;
+    z-index: 2;
+} */
 
 /* .hero-banner .container{
 
@@ -179,6 +190,28 @@ body {
     transition: All 400ms ease;
 } */
 
+/* hover */
+
+
+label:hover img {
+    transform: scale(1.1);
+    background-color: aliceblue;
+    filter: grayscale(0)!important;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.thumb .cover img {
+    filter: grayscale(0.7);
+    transition: All 500ms ease;
+}
+
+/* end */
+
 .general-theme .des {
     font-size: 18px;
     margin-bottom: 20px;
@@ -187,7 +220,6 @@ body {
 
 .general-theme .thumb {
     position: relative;
-    margin-bottom: 15px;
 }
 
 .general-theme .thumb figure.cover {
@@ -218,23 +250,37 @@ body {
     width: 100%;
     padding: 1px;
     line-height: 45px;
-    border: transparent;
-    margin: 10px 0px;
-    box-shadow: 0 0 15px 1px rgb(34 34 34 / 45%);
+    border: 2px solid #004298;
+    box-shadow: 0 0 15px 1px rgb(60 60 60 / 46%);
+    margin: 25px 0px;
+    transition: All 400ms ease;
+}
+
+.general-theme .btn-I:hover {
+    background-color: #ffffff;
+    color: #004298;
 }
 
 .general-theme .heading {
-    margin-top: 20px;
+    margin-top: 25px;
+}
+
+.show-sequence .heading {
+    margin-top: 35px;
+}
+
+.service-theme .heading {
+    margin-top: 60px;
+}
+
+.suggestions .heading{
+    margin-top: 35px;
 }
 
 
 .service-theme .thumb {
     position: relative;
-}
-
-.rdio {
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 .service-theme .thumb figure.cover {
@@ -265,10 +311,18 @@ body {
     width: 100%;
     padding: 20px 0px;
     line-height: 58px;
-    border: transparent;
-    margin-top: 30px;
+    border: 2px solid #004298;
+    margin-top: 60px;
     box-shadow: 0 0 15px 1px rgb(0 84 255 / 45%);
     padding: 5px;
+    transition: All 400ms ease;
+}
+
+.sending:hover{
+    background-color: #ffffff;
+    color: #004298;
+    border: 2px solid #004298;
+
 }
 
 .heading {
@@ -282,8 +336,10 @@ body {
     width: 100%;
     /* border: 1px solid #000; */
     /* border-radius: 4px; */
-    margin-top: 40px;
+    margin-top: 35px;
+    margin-bottom: 25px;
 }
+
 
 /* radio */
 .choice-input {
@@ -314,6 +370,20 @@ body {
     box-shadow: 0 0 0 0.2rem rgb(0 77 255 / 31%);
 }
 
+.general-theme .rdio label .title {
+    margin-bottom: 25px;
+}
+
+.service-theme .rdio label .title {
+    margin-bottom: 25px;
+}
+
+.show-sequence .rdio label .title {
+    margin-bottom: 0px;
+}
+
+
+
 
 
 /* FOOTER */
@@ -341,6 +411,31 @@ body {
     margin: 0;
 } */
 
+.general-theme input:checked ~ label{
+    border-color:  #004298;
+}
+
+.show-sequence input:checked ~ label{
+    border-color:  #004298;
+}
+
+.service-theme input:checked ~ label{
+    border-color: #004298;
+}
+
+.was-validated :invalid~label{
+    border: 2px solid #980000;
+}
+
+.suggestions .form-group{
+    margin-bottom: 0px;
+}
+
+.was-validated .form-control:valid{
+    background-image:none;
+    border-color: unset;
+}
+
 
 
 /* radio custom */
@@ -351,14 +446,21 @@ body {
 
 .rdio input[type="radio"] {
     opacity: 0;
+    visibility: hidden;
 }
 
 .rdio label {
-    padding-left: 12px;
+    position: relative;
     cursor: pointer;
-    margin-bottom: 12px !important;
     font-size: 16px;
     color: #004298;
+    width: 100%;
+    margin-bottom: 0;
+    border: 2px solid transparent;
+}
+
+.rdio label .title{
+    padding-left: 35px;
 }
 
 .rdio label:before {
@@ -378,6 +480,7 @@ body {
 
 .rdio input[type="radio"] {
     margin: 0px;
+    position: absolute;
 }
 
 .rdio input[type="radio"]:disabled+label {
@@ -528,3 +631,4 @@ body {
 .custom-checkbox [type="checkbox"]:disabled:checked+label:hover:before {
     border: 1px solid #004298 !important;
 }
+

@@ -1,43 +1,25 @@
 <?php
+
 $menuActive = "home";
 $lastModify = "?u=" . date("YdmHis");
 $listjs[] = '<script type="text/javascript" src="' . _URL . 'front/controller/script/' . $menuActive . '/js/script.js'.$lastModify.'"></script>';
-$listjs[] = '<script src="https://www.google.com/recaptcha/api.js?render='.$siteKey.'"></script>';
 $HomePage = new HomePage;
 
-$check_ip_value = 0;  // 1 = true , 0 = false
+$ip = getip();
 
-if($check_ip_value == 1) {
+// Check num of IP 
+$sql_ip = "SELECT COUNT(" . $config['vote']['db'] . "_ip) AS count_result FROM ". $config['vote']['db'] . " WHERE " . $config['vote']['db'] . "_ip = '$ip'";
+// print_pre($sql_ip);
+$query_ip = $db->execute($sql_ip);
+$count_ip = $query_ip->fields[0];
 
-    $ip = getip();
-    // Check num of IP 
-    $sql_ip = "SELECT COUNT(" . $config['vote']['db'] . "_ip) AS count_result FROM ". $config['vote']['db'] . " WHERE " . $config['vote']['db'] . "_ip = '$ip'";
-    // print_pre($sql_ip);
-    $query_ip = $db->execute($sql_ip);
-    
-    $count_ip = $query_ip->fields[0];
+// print_pre("get ip: ".$ip." Count = ".$count_ip);
+$siteKey = '6LcjYmspAAAAAOg9vEosPbnSFqtRITr2qcB-w-kF';
+$secretKey = '6LcjYmspAAAAAGBW502ZfbvhXvRTp8NZsPPVzpXv';
 
-} else {
-
-    $count_ip = 0;
-
-}
 
 
 if(!empty($_POST)){
-
-    
-        if(empty($_POST['recaptcha'])){
-
-            $result = array();
-            $result['status'] = 'fail';
-            $result['icon'] = 'error';
-            $result['title'] = 'เกิดข้อผิดพลาดในการยืนยันตัวตนของคุณ';
-            $result['msg'] = 'กรุณาลองอีกครั้ง เกิดปัญหาในการตรวจสอบตัวตนของคุณ';
-        
-            echo json_encode($result);
-            exit();
-        }
 
         //Check Question 1,2,3 is empty!
         if(empty($_POST['q1'] && $_POST['q2'] && $_POST['q3'])) {
@@ -53,9 +35,7 @@ if(!empty($_POST)){
         }
 
         //Check duplicate ip
-
         if($count_ip >= 1) {
-            
             $result = array();
             $result['status'] = 'success';
             $result['icon'] = 'error';
@@ -90,6 +70,7 @@ if(!empty($_POST)){
     
 }
 
+
 /*## Start SEO #####*/
 $seo_desc = "";
 $seo_title = $lang['menu']['home'];
@@ -106,7 +87,3 @@ $settingPage = array(
 
 $smarty->assign("menuActive", $menuActive);
 $smarty->assign("fileInclude", $settingPage);
-
-
-
-
