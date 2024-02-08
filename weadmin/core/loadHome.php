@@ -448,7 +448,7 @@ $sql = "SELECT " . $sqlSelect . ", COUNT(*) AS count_per_category
         
 $query = wewebQueryDB($coreLanguageSQL, $sql);
 $count_record = wewebNumRowsDB($coreLanguageSQL, $query);
-
+$sql_export = $sql;
 // $row = wewebFetchArrayDB($coreLanguageSQL, $query);
 // print_r($row);die();
 // Fetch the data from the query
@@ -549,6 +549,7 @@ $sql = "SELECT " . $sqlSelect . ", COUNT(*) AS count_per_category
         
 $query = wewebQueryDB($coreLanguageSQL, $sql);
 $count_record = wewebNumRowsDB($coreLanguageSQL, $query);
+$sql_export2 = $sql;
 
 // $row = wewebFetchArrayDB($coreLanguageSQL, $query);
 // print_r($row);die();
@@ -638,6 +639,7 @@ $sql = "SELECT " . $sqlSelect . ", COUNT(*) AS count_per_category
         
 $query = wewebQueryDB($coreLanguageSQL, $sql);
 $count_record = wewebNumRowsDB($coreLanguageSQL, $query);
+$sql_export3 = $sql;
 
 // $row = wewebFetchArrayDB($coreLanguageSQL, $query);
 // print_r($row);die();
@@ -722,13 +724,18 @@ $jsonData = json_encode($data);
 </script>
 
 
-    </div>
-    <form action="?" method="post" name="myFormExport" id="myFormExport">
+<form action="?" method="post" name="myFormExport" id="myFormExport">
     <input name="sql_export" type="hidden" id="sql_export" value="<?php echo $sql_export ?>" />
+    <input name="sql_export2" type="hidden" id="sql_export2" value="<?php echo $sql_export2 ?>" />
+    <input name="sql_export3" type="hidden" id="sql_export3" value="<?php echo $sql_export3 ?>" />
+
     <input name="language_export" type="hidden" id="language_export" value="<?php echo $_SESSION[$valSiteManage . 'core_session_language'] ?>" />
     <input name="masterkey" type="hidden" id="masterkey" value="<?php echo $_REQUEST["masterkey"] ?>" />
     <input name="menukeyid" type="hidden" id="menukeyid" value="<?php echo $_REQUEST["menukeyid"] ?>" />
    </form>
+
+    </div>
+    
     <?php include("../lib/disconnect.php"); ?>
 </body>
 

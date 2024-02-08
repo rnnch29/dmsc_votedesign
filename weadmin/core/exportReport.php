@@ -182,6 +182,157 @@ if ($count_record >= 1) {
   $active_row++;
 }
 
+
+
+$objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':G' . $active_row)->applyFromArray($thead_cell_style);
+$active_row++;
+
+$sql = str_replace('\\', '', $_POST['sql_export2']);
+print_pre($sql);
+$query = wewebQueryDB($coreLanguageSQL, $sql);
+$count_record = wewebNumRowsDB($coreLanguageSQL, $query);
+$date_print = DateFormat(date("Y-m-d h:i:s"));
+$index_count = 1;
+if ($count_record >= 1) {
+  $index = 1;
+  $total_paid = 0;
+  $finalprice_sum = 0;
+  while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
+    $valID = $row[0];
+    $valQ1 = $row[1];
+    $valQ2 = $row[2];
+    $valQ3 = $row[3];
+    $valSuggest  =$row[4];
+    $valCredate = $row[5];
+    $valIP  = $row[6];
+
+    // print_r($valCreId);die();
+
+		// if($_SESSION[$valSiteManage.'core_session_language']=="Thai"){
+		// 	echo getUserThai($valCreId);
+		// }else if($_SESSION[$valSiteManage.'core_session_language']=="Eng"){
+		// 	echo getUserEng($valCreId);
+		// }
+
+
+
+    // if ($valPrefix == 'Mr.') {
+    //   $valPrefix = $langTxt["us:mr"];
+    // }elseif ($valPrefix == 'Miss'){
+    //   $valPrefix = $langTxt["us:miss"];
+    // }else{
+    //   $valPrefix = $langTxt["us:mrs"];
+    // }
+
+    // $valCredate = DateFormat($row['credate']);
+
+    // print_pre($valCredate);
+    // die;
+    $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, $index_count, PHPExcel_Cell_DataType::TYPE_NUMERIC);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, $valQ1);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("C" . $active_row, $valQ2);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("D" . $active_row, $valQ3);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("E" . $active_row, $valSuggest);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("F" . $active_row, $valCredate);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("G" . $active_row, $valIP);
+
+    // $objPHPExcel->getActiveSheet()->setCellValue("H" . $active_row, $valLong);
+
+    // $objPHPExcel->getActiveSheet()->setCellValue("I" . $active_row, $valView);
+
+    // $objPHPExcel->getActiveSheet()->setCellValue("J" . $active_row, $valCredate);
+    
+    // $objPHPExcel->getActiveSheet()->setCellValue("K" . $active_row, $valStatus);
+
+    $objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':G' . $active_row)->applyFromArray($tbody_cell_style);
+
+    $active_row++;
+    $index_count++;
+  }
+  $active_row++;
+}
+
+
+$objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':G' . $active_row)->applyFromArray($thead_cell_style);
+$active_row++;
+
+$sql = str_replace('\\', '', $_POST['sql_export3']);
+print_pre($sql);
+$query = wewebQueryDB($coreLanguageSQL, $sql);
+$count_record = wewebNumRowsDB($coreLanguageSQL, $query);
+$date_print = DateFormat(date("Y-m-d h:i:s"));
+$index_count = 1;
+if ($count_record >= 1) {
+  $index = 1;
+  $total_paid = 0;
+  $finalprice_sum = 0;
+  while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
+    $valID = $row[0];
+    $valQ1 = $row[1];
+    $valQ2 = $row[2];
+    $valQ3 = $row[3];
+    $valSuggest  =$row[4];
+    $valCredate = $row[5];
+    $valIP  = $row[6];
+
+    // print_r($valCreId);die();
+
+		// if($_SESSION[$valSiteManage.'core_session_language']=="Thai"){
+		// 	echo getUserThai($valCreId);
+		// }else if($_SESSION[$valSiteManage.'core_session_language']=="Eng"){
+		// 	echo getUserEng($valCreId);
+		// }
+
+
+
+    // if ($valPrefix == 'Mr.') {
+    //   $valPrefix = $langTxt["us:mr"];
+    // }elseif ($valPrefix == 'Miss'){
+    //   $valPrefix = $langTxt["us:miss"];
+    // }else{
+    //   $valPrefix = $langTxt["us:mrs"];
+    // }
+
+    // $valCredate = DateFormat($row['credate']);
+
+    // print_pre($valCredate);
+    // die;
+    $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, $index_count, PHPExcel_Cell_DataType::TYPE_NUMERIC);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, $valQ1);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("C" . $active_row, $valQ2);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("D" . $active_row, $valQ3);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("E" . $active_row, $valSuggest);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("F" . $active_row, $valCredate);
+
+    $objPHPExcel->getActiveSheet()->setCellValue("G" . $active_row, $valIP);
+
+    // $objPHPExcel->getActiveSheet()->setCellValue("H" . $active_row, $valLong);
+
+    // $objPHPExcel->getActiveSheet()->setCellValue("I" . $active_row, $valView);
+
+    // $objPHPExcel->getActiveSheet()->setCellValue("J" . $active_row, $valCredate);
+    
+    // $objPHPExcel->getActiveSheet()->setCellValue("K" . $active_row, $valStatus);
+
+    $objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':G' . $active_row)->applyFromArray($tbody_cell_style);
+
+    $active_row++;
+    $index_count++;
+  }
+  $active_row++;
+}
+
 $startColumn = 'A';
 $endColumn = 'B';
 $mergeRange = $startColumn . $active_row . ':' . $endColumn . $active_row;
