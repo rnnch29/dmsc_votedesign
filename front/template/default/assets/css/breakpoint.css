@@ -1,0 +1,61 @@
+@media(max-width:575px) {
+
+    .vote-logo img {
+        width: 90px;
+    }
+
+    .vote-info .title {
+        font-size: 18px;
+    }
+
+    .vote-info .title small {
+        font-size: 12px;
+    }
+
+    .votedesign{
+        background-image: none;
+        padding-bottom: 30px;
+    }
+
+    .vote-title .title h1 {
+        font-size: 12px;
+        margin: 20px 0px;
+    }
+
+    .general-theme .des {
+        font-size: 8px;
+    }
+
+    .votedesign::before {
+        background-image: none;
+        padding-bottom: 30px;
+    }
+
+    .general-theme>.row {
+        margin-right: -7.5px;
+        margin-left: -7.5px;
+    }
+
+    .general-theme>.row>div {
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+    }
+
+    .service-theme>.row {
+        margin-right: -7.5px;
+        margin-left: -7.5px;
+    }
+
+    .service-theme>.row>div {
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+    }
+
+    .show-sequence .rdio label .title {
+        margin-bottom: 25px;
+    }
+
+    .service-theme .heading {
+        margin-top: 25px;
+    }
+}
