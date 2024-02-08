@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-06 13:15:29
+/* Smarty version 3.1.30, created on 2024-02-08 12:47:55
   from "/var/www/html/dmsc_votedesign/front/template/default/inc/inc-loadscript.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c1ce8140b6b7_93600232',
+  'unifunc' => 'content_65c46b0bc52bc2_67847054',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c1ce8140b6b7_93600232 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c46b0bc52bc2_67847054 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- Core -->
 <?php echo '<script'; ?>
@@ -132,8 +132,8 @@ function content_65c1ce8140b6b7_93600232 (Smarty_Internal_Template $_smarty_tpl)
 
 <?php ob_start();
 echo (($tmp = @$_smarty_tpl->tpl_vars['assignjs']->value)===null||$tmp==='' ? null : $tmp);
-$_prefixVariable6=ob_get_clean();
-if ($_prefixVariable6) {
+$_prefixVariable3=ob_get_clean();
+if ($_prefixVariable3) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['assignjs']->value, 'addAssetScript');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['addAssetScript']->value) {

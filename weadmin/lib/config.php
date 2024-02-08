@@ -51,6 +51,8 @@ $core_tb_service = "md_srs";
 $core_tb_user = "sy_usr";
 $core_tb_store = "md_llg";
 $core_tb_transfer = "sy_trf";
+$core_tb_vote = "md_vote";
+
 
 ## Other Table  ######################################################
 $other_tb_geography = "ot_geo";

@@ -4082,3 +4082,10 @@ a.download-file-all{
 input[type="number"] {
     min-width: 50px;
 }
+
+.highcharts-figure {
+    overflow: hidden !important;
+ }
+.highcharts-figure > div {
+    overflow: unset !important;
+}
