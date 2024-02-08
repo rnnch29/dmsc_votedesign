@@ -92,6 +92,7 @@ body {
     justify-content: center;
     font-size: 24px;
     font-weight: 500;
+    line-height: 28px;
 }
 
 .vote-info .title small {
@@ -242,11 +243,6 @@ body {
     position: relative;
 }
 
-.rdio {
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
 .service-theme .thumb figure.cover {
     margin: 0;
     background-size: cover;
@@ -351,6 +347,23 @@ body {
     margin: 0;
 } */
 
+.general-theme input:checked ~ label{
+    border: 2px solid #004298;
+}
+
+.show-sequence input:checked ~ label{
+    border: 2px solid #004298;
+}
+
+.service-theme input:checked ~ label{
+    border: 2px solid #004298;
+}
+
+.was-validated :invalid~label{
+    border: 2px solid #980000;
+}
+
+
 
 
 /* radio custom */
@@ -361,14 +374,20 @@ body {
 
 .rdio input[type="radio"] {
     opacity: 0;
+    visibility: hidden;
 }
 
 .rdio label {
-    padding-left: 12px;
+    position: relative;
     cursor: pointer;
-    margin-bottom: 12px !important;
     font-size: 16px;
     color: #004298;
+    width: 100%;
+
+}
+
+.rdio label .title{
+    padding-left: 35px;
 }
 
 .rdio label:before {
@@ -538,3 +557,4 @@ body {
 .custom-checkbox [type="checkbox"]:disabled:checked+label:hover:before {
     border: 1px solid #004298 !important;
 }
+

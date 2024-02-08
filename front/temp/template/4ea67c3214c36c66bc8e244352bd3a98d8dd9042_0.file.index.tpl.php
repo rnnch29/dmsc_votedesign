@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-08 15:39:42
+/* Smarty version 3.1.30, created on 2024-02-08 20:18:33
   from "C:\xampp\htdocs\dmsc_votedesign\front\controller\script\home\template\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c4934e3812c6_59009687',
+  'unifunc' => 'content_65c4d4a95a0904_41368467',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4ea67c3214c36c66bc8e244352bd3a98d8dd9042' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\controller\\script\\home\\template\\index.tpl',
-      1 => 1707381571,
+      1 => 1707398312,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c4934e3812c6_59009687 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c4d4a95a0904_41368467 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="votedesign">
   <div class="position-relative">
@@ -47,7 +47,7 @@ function content_65c4934e3812c6_59009687 (Smarty_Internal_Template $_smarty_tpl)
 
     
 
-    <form id="myForm">
+    <form class="needs-validation" id="myForm" novalidate>
       <div class="container">
         <section class="general-theme">
           <div class="des">
@@ -58,15 +58,17 @@ function content_65c4934e3812c6_59009687 (Smarty_Internal_Template $_smarty_tpl)
           </div>
           <div class="row">
             <div class="col-6">
-              
-              <div class="rdio rdio-primary radio-inline"> <input name="q1" value="1" id="q1_1" type="radio">
-                <label for="q1_1">รูปแบบที่ 1</label>
-              </div>
-              <div class="thumb">
-                <figure class="cover">
-                  <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+              <div class="rdio rdio-primary radio-inline"> <input name="q1" value="1" id="q1_1" type="radio" required>
+                <label for="q1_1">
+                  <div class="title">รูปแบบที่ 1</div>
+                  <div class="thumb">
+                    <figure class="cover">
+                      <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/img/gr-1.png" alt="">
-                </figure>
+                    </figure>
+                  </div>
+                </label>
+                
               </div>
               <a href="https://xd.adobe.com/view/6642ce70-b0cf-4d84-84bb-e1a4bc920467-3311/" target="_blank">
                 <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
@@ -74,47 +76,52 @@ function content_65c4934e3812c6_59009687 (Smarty_Internal_Template $_smarty_tpl)
               </a>
             </div>
             <div class="col-6">
-              
-              <div class="rdio rdio-primary radio-inline"> <input name="q1" value="2" id="q1_2" type="radio">
-                <label for="q1_2">รูปแบบที่ 2</label>
-              </div>
-              <div class="thumb">
-                <figure class="cover">
-                  <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+              <div class="rdio rdio-primary radio-inline"> <input name="q1" value="2" id="q1_2" type="radio" required>
+                <label for="q1_2">
+                  <div class="title">รูปแบบที่ 2</div>
+                  <div class="thumb">
+                    <figure class="cover">
+                      <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/img/gr-2.png" alt="">
-                </figure>
+                    </figure>
+                  </div>
+                </label>
               </div>
+
               <a href="https://xd.adobe.com/view/f27e8d8e-7dda-4cd3-8f6c-f694559211f4-a72d/" target="_blank">
                 <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
                 </button>
               </a>
             </div>
             <div class="col-6">
-              
-              <div class="rdio rdio-primary radio-inline"> <input name="q1" value="3" id="q1_3" type="radio">
-                <label for="q1_3">รูปแบบที่ 3</label>
-              </div>
-              <div class="thumb">
-                <figure class="cover">
-                  <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+              <div class="rdio rdio-primary radio-inline"> <input name="q1" value="3" id="q1_3" type="radio" required>
+                <label for="q1_3">
+                  <div class="title">รูปแบบที่ 3</div>
+                  <div class="thumb">
+                    <figure class="cover">
+                      <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/img/gr-3.png" alt="">
-                </figure>
+                    </figure>
+                  </div>
+                </label>
               </div>
+
               <a href="https://xd.adobe.com/view/17d12af3-9f06-49b5-b10d-0c6ebd917851-4282/" target="_blank">
                 <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
                 </button>
               </a>
             </div>
             <div class="col-6">
-              
-              <div class="rdio rdio-primary radio-inline"> <input name="q1" value="4" id="q1_4" type="radio">
-                <label for="q1_4">รูปแบบที่ 4</label>
-              </div>
-              <div class="thumb">
-                <figure class="cover">
-                  <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+              <div class="rdio rdio-primary radio-inline"> <input name="q1" value="4" id="q1_4" type="radio" required>
+                <label for="q1_4">
+                  <div class="title">รูปแบบที่ 4</div>
+                  <div class="thumb">
+                    <figure class="cover">
+                      <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/img/gr-4.png" alt="">
-                </figure>
+                    </figure>
+                  </div>
+                </label>
               </div>
               <a href="https://xd.adobe.com/view/32b75125-59cd-4892-ad63-e6f6a885bda9-67e4/" target="_blank">
                 <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
@@ -131,16 +138,18 @@ function content_65c4934e3812c6_59009687 (Smarty_Internal_Template $_smarty_tpl)
           </div>
           <div class="row">
             <div class="col-sm">
-              <div class="rdio rdio-primary radio-inline"> <input name="q2" value="1" id="q2_1" type="radio">
-                <label for="q2_1">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
+              <div class="rdio rdio-primary radio-inline"> <input name="q2" value="1" id="q2_1" type="radio" required>
+                <label for="q2_1">
+                  <div class="title">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</div>
+                </label>
               </div>
-              
             </div>
             <div class="col">
-              <div class="rdio rdio-primary radio-inline"> <input name="q2" value="2" id="q2_2" type="radio">
-                <label for="q2_2">หัวข้องานวิจัยและนวัตกรรม - หัวข้อบริการ</label>
+              <div class="rdio rdio-primary radio-inline"> <input name="q2" value="2" id="q2_2" type="radio" required>
+                <label for="q2_2">
+                  <div class="title">หัวข้องานวิจัยและนวัตกรรม - หัวข้อบริการ</div>
+                </label>
               </div>
-              
             </div>
           </div>
         </section>
@@ -151,51 +160,56 @@ function content_65c4934e3812c6_59009687 (Smarty_Internal_Template $_smarty_tpl)
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="rdio rdio-primary radio-inline"> <input name="q3" value="1" id="q3_1" type="radio">
-                <label for="q3_1">รูปแบบที่ 1</label>
-              </div>
-              
-              <div class="thumb">
-                <figure class="cover">
-                  <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+              <div class="rdio rdio-primary radio-inline"> <input name="q3" value="1" id="q3_1" type="radio" required>
+                <label for="q3_1">
+                  <div class="title">รูปแบบที่ 1</div>
+                  <div class="thumb">
+                    <figure class="cover">
+                      <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/img/sv-1.png" alt="">
-                </figure>
+                    </figure>
+                  </div>
+                </label>
               </div>
+
             </div>
             <div class="col-6">
-              <div class="rdio rdio-primary radio-inline"> <input name="q3" value="2" id="q3_2" type="radio">
-                <label for="q3_2">รูปแบบที่ 2</label>
-              </div>
-              
-              <div class="thumb">
-                <figure class="cover">
-                  <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+              <div class="rdio rdio-primary radio-inline"> <input name="q3" value="2" id="q3_2" type="radio" required>
+                <label for="q3_2">
+                  <div class="title">รูปแบบที่ 2</div>
+                  <div class="thumb">
+                    <figure class="cover">
+                      <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/img/sv-2.png" alt="">
-                </figure>
+                    </figure>
+                  </div>
+                </label>
               </div>
+
             </div>
             <div class="col-6">
-              <div class="rdio rdio-primary radio-inline"> <input name="q3" value="3" id="q3_3" type="radio">
-                <label for="q3_3">รูปแบบที่ 3</label>
-              </div>
-              
-              <div class="thumb">
-                <figure class="cover">
-                  <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+              <div class="rdio rdio-primary radio-inline"> <input name="q3" value="3" id="q3_3" type="radio" required>
+                <label for="q3_3">
+                  <div class="title">รูปแบบที่ 3</div>
+                  <div class="thumb">
+                    <figure class="cover">
+                      <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/img/sv-3.png" alt="">
-                </figure>
+                    </figure>
+                  </div>
+                </label>
               </div>
             </div>
             <div class="col-6">
-              <div class="rdio rdio-primary radio-inline"> <input name="q3" value="4" id="q3_4" type="radio">
-                <label for="q3_4">รูปแบบที่ 4</label>
-              </div>
-              
-              <div class="thumb">
-                <figure class="cover">
-                  <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+              <div class="rdio rdio-primary radio-inline"> <input name="q3" value="4" id="q3_4" type="radio" required>
+                <label for="q3_4"><div class="title">รูปแบบที่ 4</div>
+                  <div class="thumb">
+                    <figure class="cover">
+                      <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/img/sv-4.png" alt="">
-                </figure>
+                    </figure>
+                  </div>
+                </label>
               </div>
             </div>
           </div>
