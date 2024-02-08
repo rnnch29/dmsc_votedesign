@@ -54,7 +54,7 @@
     </div>
   </section>
 
-  <form id="myForm1" method="post">
+  <form id="myForm">
     <div class="container">
       <section class="general-theme">
         <div class="des">
@@ -197,7 +197,7 @@
       <section class="suggestions">
         <div class="form-group">
           <div class="heading" for="comment">ข้อเสนอแนะ:</div>
-          <textarea class="form-control" rows="5" id="comment" placeholder="กรอกข้อเสนอแนะ"></textarea>
+          <textarea class="form-control" name="suggest" rows="5" id="comment" placeholder="กรอกข้อเสนอแนะ"></textarea>
         </div>
       </section>
       <input class="sending" type="submit" value="ส่งข้อมูล">

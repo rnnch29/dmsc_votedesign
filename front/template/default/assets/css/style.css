@@ -254,7 +254,7 @@ body {
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    border: 1px solid #fbc52d;
+    border: 2px solid #fbc52d;
     background: #fff;
 }
 .rdio input[type="radio"] {
@@ -269,12 +269,12 @@ body {
 .rdio input[type="radio"]:checked + label::after {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 4px;
+    top: 6px;
+    left: 5px;
     display: inline-block;
     font-size: 11px;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: #fbc52d;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
