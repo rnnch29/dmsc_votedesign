@@ -674,7 +674,19 @@ include("../core/incLang.php");
                         </table>
                     </td>
                 </tr>
-
+                <table width="96%" border="0" cellspacing="0" cellpadding="0" class="" align="center" style="margin-top: 30px;">
+                <tbody>
+                    <tr>
+                        <td height="77" align="left" style="line-height: 2;">
+                            <span><b>หมายเหตุ*</b></span><br>
+                            <span><?php echo $langMod['txt:q1shortM']."&nbsp; หมายถึง  &nbsp;ความชื่นชอบการออกแบบเว็บไซต์" ?></span><br>
+                            <span><?php echo $langMod['txt:q2shortM']."&nbsp; หมายถึง  &nbsp;การจัดลำดับหัวข้อในการแสดงผล ก่อน - หลัง" ?></span><br>
+                            <span><?php echo $langMod['txt:q3shortM']."&nbsp; หมายถึง  &nbsp;ความชื่นชอบการออกแบบเว็บไซต์ หัวข้อบริการ" ?></span><br>
+                                   
+                        </td>
+                    </tr>              
+                </tbody>
+            </table>
 
      <!--################################### Chart 1 ###################################-->
 

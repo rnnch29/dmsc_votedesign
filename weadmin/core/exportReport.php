@@ -143,7 +143,7 @@ if ($count_record >= 1) {
   $finalprice_sum = 0;
   while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
     $valQ1 = $row['count_per_category'];
-    $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row,"รูปแบบที่ ". $index_count);
+    $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row,"หัวข้อที่ ". $index_count);
     $objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, $valQ1);
 
     $objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':B' . $active_row)->applyFromArray($tbody_cell_style);

@@ -498,5 +498,7 @@ $langMod["txt:suggest"] =  "ข้อเสนอแนะ";
 $langMod["txt:voteDate"] =  "วันที่โหวต";
 
 
+
+
 }
 ?>
