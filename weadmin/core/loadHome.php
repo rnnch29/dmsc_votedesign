@@ -52,8 +52,26 @@ include("../core/incLang.php");
             <tr>
                 <td height="77" align="left"><span class="fontHeadRight"><?php echo  $langTxt["nav:home2"] ?></span></td>
                 <td align="left">
+                    
                     <table border="0" cellspacing="0" cellpadding="0" align="right">
                         <tr>
+                        <table border="0" cellspacing="0" cellpadding="0" align="right">
+                            <tr>
+                                <td align="right">
+                                
+
+                                        <div class="btnExport" title="<?php echo $langTxt["btn:export"] ?>" onclick="
+                                        document.myFormExport.action ='exportReport.php';
+                                        document.myFormExport.submit(); ">
+                                        </div>
+
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                            
+
+                            
                             <!-- #################################### add menu to load Home ############################ -->
 
                             <!-- <td align="right">
@@ -62,6 +80,7 @@ include("../core/incLang.php");
 
                         </tr>
                     </table>
+                    
                 </td>
             </tr>
         </table>
@@ -69,7 +88,7 @@ include("../core/incLang.php");
 
 
     <!--################################################# Select Pic ############################################################-->
-    <div class="divRightHome">
+
         <!-- <div class="divRightInnerHome"> 
             <?php if ($_SESSION[$valSiteManage . "core_session_level"] == "SuperAdmin" || $_SESSION[$valSiteManage . "core_session_level"] == "admin") {
             ?>
@@ -406,11 +425,16 @@ WHERE  " . $core_tb_menu . "_status='Enable' AND  " . $core_tb_sort . "_memberID
     if ($RecordCount >= 1) {
     ?>
         <table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+            
             <tr>
                 <td align="right" valign="middle" class="formEndContantTb"><a href="#defTop" title="<?php echo  $langTxt["btn:gototop"] ?>"><?php echo  $langTxt["btn:gototop"] ?> <img src="../img/btn/top.png" align="absmiddle" /></a></td>
             </tr>
         </table>
     <?php } ?>
+
+    
+<!--################################### Chart 1 ###################################-->
+
 
 
 <?php
@@ -512,14 +536,199 @@ $jsonData = json_encode($data);
 </script>
 
 
+<!--################################### Chart 2 ###################################-->
 
+<?php
+$sqlSelect = "
+    " . $core_tb_vote . "_q2
+";
+$sql = "SELECT " . $sqlSelect . ", COUNT(*) AS count_per_category 
+        FROM " . $core_tb_vote . " 
+        WHERE " . $core_tb_vote . "_masterkey ='vote'
+        GROUP BY " . $core_tb_vote . "_q2";
+        
+$query = wewebQueryDB($coreLanguageSQL, $sql);
+$count_record = wewebNumRowsDB($coreLanguageSQL, $query);
 
+// $row = wewebFetchArrayDB($coreLanguageSQL, $query);
+// print_r($row);die();
+// Fetch the data from the query
+$data = array();
+while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
 
-
+    if($row[$core_tb_vote . '_q2'] == 1){
+        $data[] = array(
+            'name' => $langMod["q2:a1M"],
+            'y' => (int)$row['count_per_category']
+        );
+    }
+    else {
+        $data[] = array(
+            'name' => $langMod["q2:a2M"],
+            'y' => (int)$row['count_per_category']
+        );
+    }
     
+}
+
+// Convert the PHP data to JSON format for use in JavaScript
+$jsonData = json_encode($data);
+
+// print_r($data);
+
+?>
+
+
+<figure class="highcharts-figure test">
+    <div id="container2"></div>
+    <p class="highcharts-description">
+        
+    </p>
+</figure>
+
+<script type="text/javascript">
+    // Use the PHP data in JavaScript
+    var jsonData = <?php echo $jsonData; ?>;
+    Highcharts.chart('container2', {
+        chart: {
+            type: 'pie'
+        },
+        title: {
+            text: '2.การจัดลำดับหัวข้อในการแสดงผล ก่อน - หลัง'
+        },
+        // tooltip: {
+        //     valueSuffix: 'unit'
+        // },
+        // subtitle: {
+        //     text: 'Source:<a href="https://www.mdpi.com/2072-6643/11/3/684/htm" target="_default">MDPI</a>'
+        // },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    distance: 20
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            name: 'จำนวน',
+            colorByPoint: true,
+            data: jsonData
+        }]
+    });
+</script>
+
+
+
+
+<!--################################### Chart 2 ###################################-->
+
+
+<?php
+$sqlSelect = "
+    " . $core_tb_vote . "_q3
+";
+$sql = "SELECT " . $sqlSelect . ", COUNT(*) AS count_per_category 
+        FROM " . $core_tb_vote . " 
+        WHERE " . $core_tb_vote . "_masterkey ='vote'
+        GROUP BY " . $core_tb_vote . "_q3";
+        
+$query = wewebQueryDB($coreLanguageSQL, $sql);
+$count_record = wewebNumRowsDB($coreLanguageSQL, $query);
+
+// $row = wewebFetchArrayDB($coreLanguageSQL, $query);
+// print_r($row);die();
+// Fetch the data from the query
+$data = array();
+while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
+
+    if($row[$core_tb_vote . '_q3'] == 1){
+        $data[] = array(
+            'name' => $langMod["q3:a1M"],
+            'y' => (int)$row['count_per_category']
+        );
+    }
+    else if($row[$core_tb_vote . '_q3'] == 2){
+        $data[] = array(
+            'name' => $langMod["q3:a2M"],
+            'y' => (int)$row['count_per_category']
+        );
+    }
+    else if($row[$core_tb_vote . '_q3'] == 3){
+        $data[] = array(
+            'name' => $langMod["q3:a3M"],
+            'y' => (int)$row['count_per_category']
+        );
+    }
+    else{
+        $data[] = array(
+            'name' => $langMod["q3:a4M"],
+            'y' => (int)$row['count_per_category']
+        );
+    }
+    
+}
+
+// Convert the PHP data to JSON format for use in JavaScript
+$jsonData = json_encode($data);
+
+// print_r($data);
+
+?>
+
+<figure class="highcharts-figure test">
+    <div id="container3"></div>
+    <p class="highcharts-description">
+        
+    </p>
+</figure>
+
+<script type="text/javascript">
+    // Use the PHP data in JavaScript
+    var jsonData = <?php echo $jsonData; ?>;
+    Highcharts.chart('container3', {
+        chart: {
+            type: 'pie'
+        },
+        title: {
+            text: '3.ความชื่นชอบการออกแบบเว็บไซต์ หัวข้อบริการ'
+        },
+        // tooltip: {
+        //     valueSuffix: 'unit'
+        // },
+        // subtitle: {
+        //     text: 'Source:<a href="https://www.mdpi.com/2072-6643/11/3/684/htm" target="_default">MDPI</a>'
+        // },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    distance: 20
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            name: 'จำนวน',
+            colorByPoint: true,
+            data: jsonData
+        }]
+    });
+</script>
 
 
     </div>
+    <form action="?" method="post" name="myFormExport" id="myFormExport">
+    <input name="sql_export" type="hidden" id="sql_export" value="<?php echo $sql_export ?>" />
+    <input name="language_export" type="hidden" id="language_export" value="<?php echo $_SESSION[$valSiteManage . 'core_session_language'] ?>" />
+    <input name="masterkey" type="hidden" id="masterkey" value="<?php echo $_REQUEST["masterkey"] ?>" />
+    <input name="menukeyid" type="hidden" id="menukeyid" value="<?php echo $_REQUEST["menukeyid"] ?>" />
+   </form>
     <?php include("../lib/disconnect.php"); ?>
 </body>
 
