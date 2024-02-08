@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-07 14:40:35
+/* Smarty version 3.1.30, created on 2024-02-07 21:59:43
   from "/var/www/html/dmsc_votedesign/front/template/default/inc/inc-metatag.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c333f3281a99_08714460',
+  'unifunc' => 'content_65c39adff396f0_56465180',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '59b853473e30b353361b8b45d326acefdba9160f' => 
     array (
       0 => '/var/www/html/dmsc_votedesign/front/template/default/inc/inc-metatag.tpl',
-      1 => 1707291628,
+      1 => 1707317978,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c333f3281a99_08714460 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c39adff396f0_56465180 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <base href="<?php echo $_smarty_tpl->tpl_vars['base']->value;?>
 ">
@@ -50,6 +50,11 @@ function content_65c333f3281a99_08714460 (Smarty_Internal_Template $_smarty_tpl)
 <meta property="og:locale" content="">
 <meta property="og:locale:alternate" content="">
 
+
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/img/dmsc-logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/img/dmsc-logo.png">
 
 <meta name="msapplication-TileColor" content="#0f6939">
 <meta name="theme-color" content="#ffffff">

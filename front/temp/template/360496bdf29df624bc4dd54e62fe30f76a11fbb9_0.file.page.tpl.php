@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-06 13:44:26
+/* Smarty version 3.1.30, created on 2024-02-07 17:41:08
   from "/var/www/html/dmsc_votedesign/front/template/default/page.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c1d54aef8644_92454587',
+  'unifunc' => 'content_65c35e44bffc95_19366180',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '360496bdf29df624bc4dd54e62fe30f76a11fbb9' => 
     array (
       0 => '/var/www/html/dmsc_votedesign/front/template/default/page.tpl',
-      1 => 1707201859,
+      1 => 1707302113,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c1d54aef8644_92454587 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c35e44bffc95_19366180 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $_smarty_tpl->tpl_vars['langon']->value;?>
@@ -46,6 +46,9 @@ $_smarty_tpl->_subTemplateRender($_prefixVariable1, $_smarty_tpl->cache_id, $_sm
 ?>
 
     <?php $_smarty_tpl->_subTemplateRender(((string)$_smarty_tpl->tpl_vars['incfile']->value['loadscript']), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'title'), 0, true);
+?>
+
+    <?php $_smarty_tpl->_subTemplateRender(((string)$_smarty_tpl->tpl_vars['incfile']->value['footer']), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('title'=>'title'), 0, true);
 ?>
 
 </body>

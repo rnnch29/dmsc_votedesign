@@ -11,11 +11,26 @@ $sql_ip = "SELECT COUNT(" . $config['vote']['db'] . "_ip) AS count_result FROM "
 $query_ip = $db->execute($sql_ip);
 $count_ip = $query_ip->fields[0];
 
-// print_pre($ip." Count = ".$count_ip);
+// print_pre("get ip: ".$ip." Count = ".$count_ip);
+
 
 
 if(!empty($_POST)){
 
+        //Check Question 1,2,3 is empty!
+        if(empty($_POST['q1'] && $_POST['q2'] && $_POST['q3'])) {
+
+            $result = array();
+            $result['status'] = 'fail';
+            $result['icon'] = 'warning';
+            $result['title'] = 'คุณกรอกข้อมูลไม่ครบถ้วน';
+            $result['msg'] = 'ไม่สามารถบันทึกข้อมูลได้ กรุณากรอกข้อมูลให้ครบถ้วน!';
+        
+            echo json_encode($result);
+            exit(); 
+        }
+
+        //Check duplicate ip
         if($count_ip >= 1) {
             $result = array();
             $result['status'] = 'success';
@@ -27,6 +42,7 @@ if(!empty($_POST)){
             exit(); 
         }
 
+        //Successfully
         $data = array();
         $data[$config['vote']['db'] . "_masterkey"] = "'" . $config['vote']['masterkey'] . "'";
         $data[$config['vote']['db'] . "_q1"] = "'" . changeQuot($_POST["q1"]) . "'";
