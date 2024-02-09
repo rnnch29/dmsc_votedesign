@@ -30,7 +30,9 @@
         <div class="form-group mb-0">
           <section class="general-theme">
             <div class="heading">
-              1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด<span class="moon">&nbsp;&nbsp;*</span>
+              <div>  
+                1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด<span class="moon">&nbsp;&nbsp;*</span>
+              </div>  
             </div>
             <span class="alert">**กรุณาเลือกคำตอบ</span>
             <div class="row">
@@ -111,8 +113,10 @@
         <div class="form-group mb-0">
           <section class="show-sequence">
             <div class="heading">
+            <div>
               2. ในความคิดเห็นของท่านการจัดลำดับหัวข้อในการแสดงผล ก่อน-หลัง ของหัวข้อบริการและงานวิจัยและนวัตกรรม
               ควรเป็นแบบใด<span class="moon">&nbsp;&nbsp;*</span>
+            </div>
             </div>
             <span class="alert">**กรุณาเลือกคำตอบ</span>
             <div class="row mb-sm-0 mb-3">
@@ -136,7 +140,9 @@
         <div class="form-group mb-0">
           <section class="service-theme">
             <div class="heading">
+            <div>
               3. ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด<span class="moon">&nbsp;&nbsp;*</span>
+            </div>
             </div>
             <span class="alert">**กรุณาเลือกคำตอบ</span>
             <div class="row">
