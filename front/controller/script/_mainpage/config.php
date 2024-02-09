@@ -17,3 +17,7 @@ $config['cms_bnf']['masterkey'] = "bnf";
 
 #section Aeon Thai Mobile
 $config['cms_mbl']['masterkey'] = "mbl";
+
+
+$siteKey = '6LcjYmspAAAAAOg9vEosPbnSFqtRITr2qcB-w-kF';
+$secretKey = '6LcjYmspAAAAAGBW502ZfbvhXvRTp8NZsPPVzpXv';

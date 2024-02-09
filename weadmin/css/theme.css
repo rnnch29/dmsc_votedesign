@@ -808,13 +808,14 @@ textarea {
 }
 
 .divRightMain {
-    float: left;
+    float: none;
     width: 100%;
-    margin: 0;
+    margin: 0 auto; /* Set margin to auto to center horizontally */
     padding: 0;
     margin-top: -2px;
     height: auto;
 }
+
 
 .divRightNavTb {
     height: 38px;
@@ -1429,14 +1430,14 @@ textarea {
 }
 
 .divRightInnerBigBoxHome {
-    float: left;
-    width: 96.4%;
+    float: none; /* Remove the float */
+    width: 80%;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 auto; /* Set margin to auto to center horizontally */
     height: auto;
-    margin-left: 1.7%;
     margin-bottom: 1.7%;
 }
+
 
 .divRightTitleHome {
     height: 38px;
@@ -1995,7 +1996,7 @@ body {
 }
 
 .divRightInnerBigBoxHome .divRightTitleHomeBoxAll>tbody>tr:first-child>td {
-    border-bottom: 2px solid #969696;
+    border-bottom: 0px solid #969696;
 }
 
 .login-form .btn {
@@ -2455,7 +2456,7 @@ a:visited {
     background-color: #fff;
     border: none;
     padding: 15px;
-    height: 155px;
+    height: 450px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -4088,4 +4089,9 @@ input[type="number"] {
  }
 .highcharts-figure > div {
     overflow: unset !important;
+}
+
+.highcharts-figure .highcharts-title {
+    font-size: 14px; /* ปรับขนาดตัวหนังสือตามที่ต้องการ */
+    font-weight: normal; /* ถ้าต้องการปรับน้ำหนักตัวหนังสือ */
 }

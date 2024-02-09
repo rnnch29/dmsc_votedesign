@@ -85,7 +85,7 @@ $objPHPExcel->getActiveSheet()->setTitle('Export Report');
 
 $objPHPExcel->getActiveSheet()->getColumnDimension("A")->setWidth(16.29);
 $objPHPExcel->getActiveSheet()->getColumnDimension("B")->setWidth(20);
-$objPHPExcel->getActiveSheet()->getColumnDimension("C")->setWidth(20);
+$objPHPExcel->getActiveSheet()->getColumnDimension("C")->setWidth(28);
 $objPHPExcel->getActiveSheet()->getColumnDimension("D")->setWidth(20);
 $objPHPExcel->getActiveSheet()->getColumnDimension("E")->setWidth(50);
 $objPHPExcel->getActiveSheet()->getColumnDimension("F")->setWidth(20);
@@ -99,11 +99,11 @@ $objPHPExcel->getActiveSheet()->getColumnDimension("G")->setWidth(20);
 
 $active_row = 1;
 $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "ลำดับ");
-$objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, "คำถามข้อที่ 1");
-$objPHPExcel->getActiveSheet()->setCellValue("C" . $active_row, "คำถามข้อที่ 2");
-$objPHPExcel->getActiveSheet()->setCellValue("D" . $active_row, "คำถามข้อที่ 3");
+$objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, "ข้อที่ 1");
+$objPHPExcel->getActiveSheet()->setCellValue("C" . $active_row, "ข้อที่ 2");
+$objPHPExcel->getActiveSheet()->setCellValue("D" . $active_row, "ข้อที่ 3");
 $objPHPExcel->getActiveSheet()->setCellValue("E" . $active_row, "ข้อเสนอแนะ");
-$objPHPExcel->getActiveSheet()->setCellValue("F" . $active_row, "วันที่สร้าง");
+$objPHPExcel->getActiveSheet()->setCellValue("F" . $active_row, "วันที่โหวต");
 $objPHPExcel->getActiveSheet()->setCellValue("G" . $active_row, "IP Address");
 
 
@@ -137,7 +137,24 @@ if ($count_record >= 1) {
 		// }else if($_SESSION[$valSiteManage.'core_session_language']=="Eng"){
 		// 	echo getUserEng($valCreId);
 		// }
+    
+    for($i = 1; $i < 5 ; $i++){
+      if($valQ1 == $i) {
+        $valQ1 = $langMod['q1:a'.$i];
+      }
+    } 
 
+    for($i = 1; $i < 3 ; $i++){
+      if($valQ2 == $i) {
+        $valQ2 = $langMod['q2:a'.$i];
+      }
+    } 
+
+    for($i = 1; $i < 5 ; $i++){
+      if($valQ3 == $i) {
+        $valQ3 = $langMod['q3:a'.$i];
+      }
+    } 
 
 
     // if ($valPrefix == 'Mr.') {

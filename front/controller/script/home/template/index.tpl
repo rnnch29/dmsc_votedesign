@@ -233,6 +233,7 @@
             <textarea class="form-control" name="suggest" rows="5" id="comment" placeholder="กรอกข้อเสนอแนะ"></textarea>
           </div>
         </section>
+        <input type="hidden" name="recaptcha" id="recaptcha">
         <input class="sending" type="submit" value="ส่งข้อมูล">
       </div>
     </form>

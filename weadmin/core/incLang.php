@@ -227,6 +227,8 @@ if ($_SESSION[$valSiteManage . "core_session_language"] == "Eng") {
 
 
     $langTxt["mg:subject"] = "ชื่อเมนู";
+    $langTxt["mg:suggest"] = "ข้อเสนอแนะ";
+
     $langTxt["mg:type"] = "ประเภท";
     $langTxt["mg:status"] = "สถานะ";
     $langTxt["mg:manage"] = "จัดการ";
@@ -344,7 +346,7 @@ if ($_SESSION[$valSiteManage . "core_session_language"] == "Eng") {
     $langTxt["us:inputpic"] = "รูปภาพผู้ใช้งานระบบ";
     $langTxt["us:inputpicselect"] = "เลือกไฟล์ที่ต้องการอัพโหลด";
 
-    $langTxt["us:credate"] = "วันที่สร้าง";
+    $langTxt["us:credate"] = "วันที่โหวต";
     $langTxt["us:lastdate"] = "วันที่ปรับปรุง";
     $langTxt["us:creby"] = "โดย";
     $langTxt["ex:creby"] = "สร้างโดย";
@@ -483,14 +485,20 @@ $langMod["q1:a3M"] = "รูปแบบที่ 3";
 $langMod["q1:a4M"] = "รูปแบบที่ 4";
 
 //Ans Q2
-$langMod["q2:a1M"] = "หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม";
-$langMod["q2:a2M"] = "หัวข้องานวิจัยและนวัตกรรม - หัวข้อบริการ";
+$langMod["q2:a1M"] = "หัวข้อที่บริการ ";
+$langMod["q2:a2M"] = "หัวข้องานวิจัย";
 
 //Ans Q3
 $langMod["q3:a1M"] = "รูปแบบที่ 1";
 $langMod["q3:a2M"] = "รูปแบบที่ 2";
 $langMod["q3:a3M"] = "รูปแบบที่ 3";
 $langMod["q3:a4M"] = "รูปแบบที่ 4";
+
+$langMod["txt:suggest"] =  "ข้อเสนอแนะ";
+$langMod["txt:voteDate"] =  "วันที่โหวต";
+
+
+
 
 }
 ?>

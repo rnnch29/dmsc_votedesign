@@ -80,6 +80,8 @@ $core_db_charecter_set = array(
 ## Core Val Setting #############################################
 $toolEditorStyle = "ToolbarAll";
 $core_default_pagesize = 15;
+$core_default_pagesize2 = 10;
+
 $core_default_maxpage = 15;
 $core_default_reduce = 10;
 $core_sort_number = "DESC";

@@ -83,14 +83,20 @@ $objPHPExcel->createSheet();
 $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setTitle('Export Report');
 
-$objPHPExcel->getActiveSheet()->getColumnDimension("A")->setWidth(20);
+$objPHPExcel->getActiveSheet()->getColumnDimension("A")->setWidth(16.29);
 $objPHPExcel->getActiveSheet()->getColumnDimension("B")->setWidth(20);
+$objPHPExcel->getActiveSheet()->getColumnDimension("C")->setWidth(20);
+$objPHPExcel->getActiveSheet()->getColumnDimension("D")->setWidth(20);
+$objPHPExcel->getActiveSheet()->getColumnDimension("E")->setWidth(20);
 
 $active_row = 1;
-$objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "คำถามที่ 1");
-$objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, "จำนวน");
+$objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "คำถามข้อที่ 1");
+$objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, "รูปแบบที่ 1");
+$objPHPExcel->getActiveSheet()->setCellValue("C" . $active_row, "รูปแบบที่ 2");
+$objPHPExcel->getActiveSheet()->setCellValue("D" . $active_row, "รูปแบบที่ 3");
+$objPHPExcel->getActiveSheet()->setCellValue("E" . $active_row, "รูปแบบที่ 4");
 
-$objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':B' . $active_row)->applyFromArray($thead_cell_style);
+$objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':E' . $active_row)->applyFromArray($thead_cell_style);
 $active_row++;
 
 $sql = str_replace('\\', '', $_POST['sql_export']);
@@ -99,124 +105,119 @@ $query = wewebQueryDB($coreLanguageSQL, $sql);
 $count_record = wewebNumRowsDB($coreLanguageSQL, $query);
 $date_print = DateFormat(date("Y-m-d h:i:s"));
 $index_count = 1;
-$num_row = "รูปแบบที่";
-
 if ($count_record >= 1) {
   $index = 1;
   $total_paid = 0;
   $finalprice_sum = 0;
-  while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
-    $valQ1 = $row['count_per_category'];
-    $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row,"รูปแบบที่ ". $index_count);
-    $objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, $valQ1);
+  
+  $columnIndex = 'B';
 
-    $objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':B' . $active_row)->applyFromArray($tbody_cell_style);
+    while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
+        $valQ1 = $row['count_per_category'];
 
-    $active_row++;
-    $index_count++;
-  }
-  $active_row++;
+        // Set the value in the current column
+        $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "จำนวน");
+        $objPHPExcel->getActiveSheet()->setCellValue($columnIndex . $active_row, $valQ1);
+
+        // Apply styles to the cell
+        $objPHPExcel->getActiveSheet()->getStyle("A" . $active_row . ':' . $columnIndex . $active_row)->applyFromArray($tbody_cell_style);
+
+        // Increment the column index for the next iteration
+        $columnIndex++;
+
+        $index_count++;
+    }
+
+    $active_row+=2;
 }
 
 
 
 
 $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "คำถามข้อที่ 2");
-$objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, "จำนวน");
+$objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, "รูปแบบที่ 1");
+$objPHPExcel->getActiveSheet()->setCellValue("C" . $active_row, "รูปแบบที่ 2");
 
-
-$objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':B' . $active_row)->applyFromArray($thead_cell_style);
+$objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':C' . $active_row)->applyFromArray($thead_cell_style);
 $active_row++;
 $objPHPExcel->getActiveSheet()->setTitle('Export Report 2');
-
 $sql = str_replace('\\', '', $_POST['sql_export2']);
 print_pre($sql);
 $query = wewebQueryDB($coreLanguageSQL, $sql);
 $count_record = wewebNumRowsDB($coreLanguageSQL, $query);
 $date_print = DateFormat(date("Y-m-d h:i:s"));
 $index_count = 1;
-$num_row = "รูปแบบที่";
-
 if ($count_record >= 1) {
   $index = 1;
   $total_paid = 0;
   $finalprice_sum = 0;
-  while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
-    $valQ1 = $row['count_per_category'];
-    $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row,"หัวข้อที่ ". $index_count);
-    $objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, $valQ1);
+  
+  $columnIndex = 'B';
 
-    $objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':B' . $active_row)->applyFromArray($tbody_cell_style);
+    while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
+        $valQ1 = $row['count_per_category'];
 
-    $active_row++;
-    $index_count++;
-  }
-  $active_row++;
+        // Set the value in the current column
+        $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "จำนวน");
+        $objPHPExcel->getActiveSheet()->setCellValue($columnIndex . $active_row, $valQ1);
+
+        // Apply styles to the cell
+        $objPHPExcel->getActiveSheet()->getStyle("A" . $active_row . ':' . $columnIndex . $active_row)->applyFromArray($tbody_cell_style);
+
+        // Increment the column index for the next iteration
+        $columnIndex++;
+
+        $index_count++;
+    }
+
+    $active_row+=2;
 }
 
 
 
-$objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "คำถามที่ 3");
-$objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, "จำนวน");
 
-$objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':B' . $active_row)->applyFromArray($thead_cell_style);
+
+
+$objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "คำถามข้อที่ 3");
+$objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, "รูปแบบที่ 1");
+$objPHPExcel->getActiveSheet()->setCellValue("C" . $active_row, "รูปแบบที่ 2");
+$objPHPExcel->getActiveSheet()->setCellValue("D" . $active_row, "รูปแบบที่ 3");
+$objPHPExcel->getActiveSheet()->setCellValue("E" . $active_row, "รูปแบบที่ 4");
+$objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':E' . $active_row)->applyFromArray($thead_cell_style);
 $active_row++;
-
+$objPHPExcel->getActiveSheet()->setTitle('Export Report 3');
 $sql = str_replace('\\', '', $_POST['sql_export3']);
 print_pre($sql);
 $query = wewebQueryDB($coreLanguageSQL, $sql);
 $count_record = wewebNumRowsDB($coreLanguageSQL, $query);
 $date_print = DateFormat(date("Y-m-d h:i:s"));
 $index_count = 1;
-$num_row = "รูปแบบที่";
-
 if ($count_record >= 1) {
   $index = 1;
   $total_paid = 0;
   $finalprice_sum = 0;
-  while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
-    $valQ1 = $row['count_per_category'];
-    $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row,"รูปแบบที่ ". $index_count);
-    $objPHPExcel->getActiveSheet()->setCellValue("B" . $active_row, $valQ1);
+  
+  $columnIndex = 'B';
 
-    $objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':B' . $active_row)->applyFromArray($tbody_cell_style);
+    while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
+        $valQ1 = $row['count_per_category'];
 
-    $active_row++;
-    $index_count++;
-  }
-  $active_row++;
+        // Set the value in the current column
+        $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "จำนวน");
+        $objPHPExcel->getActiveSheet()->setCellValue($columnIndex . $active_row, $valQ1);
+
+        // Apply styles to the cell
+        $objPHPExcel->getActiveSheet()->getStyle("A" . $active_row . ':' . $columnIndex . $active_row)->applyFromArray($tbody_cell_style);
+
+        // Increment the column index for the next iteration
+        $columnIndex++;
+
+        $index_count++;
+    }
+
+    $active_row+=2;
 }
 
-
-
-$objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, "ข้อเสนอแนะ");
-
-$objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':A' . $active_row)->applyFromArray($thead_cell_style);
-$active_row++;
-
-$sql = str_replace('\\', '', $_POST['sql_export4']);
-print_pre($sql);
-$query = wewebQueryDB($coreLanguageSQL, $sql);
-$count_record = wewebNumRowsDB($coreLanguageSQL, $query);
-$date_print = DateFormat(date("Y-m-d h:i:s"));
-$index_count = 1;
-$num_row = "รูปแบบที่";
-
-if ($count_record >= 1) {
-  $index = 1;
-  $total_paid = 0;
-  $finalprice_sum = 0;
-  while ($row = wewebFetchArrayDB($coreLanguageSQL, $query)) {
-    $valSug = $row[0];
-    $objPHPExcel->getActiveSheet()->setCellValue("A" . $active_row, $valSug);
-
-    $objPHPExcel->getActiveSheet()->getStyle('A' . $active_row . ':A' . $active_row)->applyFromArray($tbody_cell_style);
-
-    $active_row++;
-    $index_count++;
-  }
-  $active_row++;
-}
 
 
 

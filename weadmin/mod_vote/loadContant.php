@@ -168,15 +168,16 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                     <?php } ?> -->
 
                     <!-- Top graphic name table head  -->
-                    <td width="5%" class="divRightTitleTbL" valign="middle" align="left" style="padding-left: 40px;"><?php echo $langMod["txt:id"] ?></span></td>   
+                    <!-- <td width="5%" class="divRightTitleTbL" valign="middle" align="left" style="padding-left: 40px;"><?php echo $langMod["txt:id"] ?></span></td>    -->
 
-                    <td align="center" width="15%" valign="middle" class="divRightTitleTb" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q1"] ?></span></td> 
+                    <td align="center" width="10%" valign="middle" class="divRightTitleTbL" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q1short"] ?></span></td> 
 
-                    <td align="center" width="20%" valign="middle" class="divRightTitleTb"><span class="fontTitlTbRight"><?php echo $langMod["txt:q2"] ?></span></td>
+                    <td align="center" width="10%" valign="middle" class="divRightTitleTb"><span class="fontTitlTbRight"><?php echo $langMod["txt:q2short"] ?></span></td>
 
-                    <td align="center" width="20%" valign="middle" class="divRightTitleTb" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q3"] ?></span></td>
+                    <td align="center" width="10%" valign="middle" class="divRightTitleTb" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q3short"] ?></span></td>
 
-                    <td align="center" width="10%" valign="middle" class="divRightTitleTbR" ><span class="fontTitlTbRight"><?php echo $langMod["txt:suggest"] ?></span></td>
+                    <td align="center" width="25%" valign="middle" class="divRightTitleTb" ><span class="fontTitlTbRight"><?php echo $langMod["txt:q4short"] ?></span></td>
+
                     
                     <!-- <td width="9%" class="divRightTitleTb" valign="middle" align="center"><span
                             class="fontTitlTbRight"><?php echo  $langTxt["mg:status"] ?></span></td>
@@ -373,13 +374,11 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                             class="formCheckboxList"
                             onclick="Paging_CheckAllHandle(document.myForm.CheckBoxAll, 'CheckBoxID', document.myForm.TotalCheckBoxID.value)"
                             value="<?php echo  $valID ?>" /> </td> -->
-                    <td class="divRightContantOverTb" valign="top" align="left">
+
+
+                    <!-- <td class="divRightContantOverTb" valign="top" align="left">
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <!-- <td class="displayTdImg" align="left" valign="top">
-                                    <div class="displayClickImg"
-                                        style=" background:url(<?php echo  $valPic ?>) center no-repeat;"></div>
-                                </td> -->
                                 <td align="left" style="padding-left: 30px;">
                                     <a href="javascript:void(0)" 
                                     onclick="
@@ -390,84 +389,102 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                             </tr>
                         </table>
                         
-                    </td>
+                    </td> -->
 
+                    <!-- Q1  -->
                     <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
                         <td class="divRightContantOverTb" valign="top" align="center">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <!-- <td class="displayTdImg" align="center" valign="top">
-                                        <div class="displayClickImg" style=" background:url(<?php echo  $valPicEN ?>) center no-repeat;border-radius: 50%;"></div>
-                                    </td> -->
-                                <td align="center">
-                                    <?php
-                                        for($i = 1; $i < 5 ; $i++){
-                                            if($valQ1 == $i) {
-                                                echo $langMod['q1:a'.$i];
-                                            }
-                                        }                                                    
-                                    ?>
-                                </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <?php } ?>
-
-                        <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
-                        <td class="divRightContantOverTb" valign="top" align="center">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <!-- <td class="displayTdImg" align="center" valign="top">
-                                        <div class="displayClickImg" style=" background:url(<?php echo  $valPicEN ?>) center no-repeat;border-radius: 50%;"></div>
-                                    </td> -->
-                                <td align="center">
-                                    <?php
-                                        for($i = 1; $i < 3 ; $i++){
-                                            if($valQ2 == $i) {
-                                                echo $langMod['q2:a'.$i];
-                                            }
-                                        }                                                    
-                                    ?>
-                                </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <?php } ?>
-
-                        <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
-                        <td class="divRightContantOverTb" valign="top" align="center">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <!-- <td class="displayTdImg" align="center" valign="top">
-                                        <div class="displayClickImg" style=" background:url(<?php echo  $valPicEN ?>) center no-repeat;border-radius: 50%;"></div>
-                                    </td> -->
-                                <td align="center">
-                                    <?php
-                                        for($i = 1; $i < 5; $i++){
-                                            if($valQ3 == $i) {
-                                                echo $langMod['q3:a'.$i];
-                                            }
-                                        }                                                    
-                                    ?>
-                                </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <?php } ?>
-
-                        <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
-                        <td class="divRightContantOverTb" valign="top" align="center">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <!-- <td class="displayTdImg" align="center" valign="top">
-                                        <div class="displayClickImg" style=" background:url(<?php echo  $valPicEN ?>) center no-repeat;border-radius: 50%;"></div>
-                                    </td> -->
                                     <td align="center">
                                         <a href="javascript:void(0)" 
                                             onclick="
                                             document.myFormHome.inputLt.value = 'Thai';
                                             document.myFormHome.valEditID.value =<?php echo  $valID ?>;
-                                            viewContactNew('viewContant.php');"><?php echo  $langMod['txt:detail']; ?> </a>
+                                            viewContactNew('viewContant.php');"><?php
+
+                                            for($i = 1; $i < 5; $i++){
+                                                if($valQ3 == $i) {
+                                                    echo $langMod['q1:a'.$i];
+                                                }
+                                            }   
+                                             
+                                             ?> </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <?php } ?>
+
+                        <!-- Q2  -->
+                        <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
+                        <td class="divRightContantOverTb" valign="top" align="center">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center">
+                                        <a href="javascript:void(0)" 
+                                            onclick="
+                                            document.myFormHome.inputLt.value = 'Thai';
+                                            document.myFormHome.valEditID.value =<?php echo  $valID ?>;
+                                            viewContactNew('viewContant.php');"><?php
+
+                                            for($i = 1; $i < 3; $i++){
+                                                if($valQ2 == $i) {
+                                                    echo $langMod['q2:a'.$i];
+                                                }
+                                            }   
+                                             
+                                             ?> </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <?php } ?>
+
+                        <!-- Q3  -->
+                        <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
+                        <td class="divRightContantOverTb" valign="top" align="center">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center">
+                                        <a href="javascript:void(0)" 
+                                            onclick="
+                                            document.myFormHome.inputLt.value = 'Thai';
+                                            document.myFormHome.valEditID.value =<?php echo  $valID ?>;
+                                            viewContactNew('viewContant.php');"><?php
+
+                                            for($i = 1; $i < 5; $i++){
+                                                if($valQ3 == $i) {
+                                                    echo $langMod['q3:a'.$i];
+                                                }
+                                            }   
+                                             
+                                             ?> </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <?php } ?>
+
+                        <!-- Q4: Suggest  -->
+                        <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
+                        <td class="divRightContantOverTb" valign="top" align="center">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center">
+                                        <a href="javascript:void(0)" 
+                                            onclick="
+                                            document.myFormHome.inputLt.value = 'Thai';
+                                            document.myFormHome.valEditID.value =<?php echo  $valID ?>;
+                                            viewContactNew('viewContant.php');"><?php
+                                            
+                                                if($valSuggest == "") {
+                                                    echo "-";
+                                                }else {
+                                                    echo $valSuggest;
+                                                } 
+                                             
+                                             ?> </a>
                                     </td>
                                 </tr>
                             </table>
@@ -697,10 +714,31 @@ $valPermission = getUserPermissionOnMenu($_SESSION[$valSiteManage . "core_sessio
                 </tr>
             </table>
             <input name="TotalCheckBoxID" type="hidden" id="TotalCheckBoxID" value="<?php echo  $index - 1 ?>" />
+
+            <table width="96%" border="0" cellspacing="0" cellpadding="0" class="" align="center" style="margin-top: 30px;">
+                <tbody>
+                    <tr>
+                        <td height="77" align="left" style="line-height: 2;">
+                            <span><b>หมายเหตุ*</b></span><br>
+                            <span><?php echo $langMod['txt:q1short']."&nbsp; หมายถึง  &nbsp;ความชื่นชอบการออกแบบเว็บไซต์" ?></span><br>
+                            <span><?php echo $langMod['txt:q2short']."&nbsp; หมายถึง  &nbsp;การจัดลำดับหัวข้อในการแสดงผล ก่อน - หลัง" ?></span><br>
+                            <span><?php echo $langMod['txt:q3short']."&nbsp; หมายถึง  &nbsp;ความชื่นชอบการออกแบบเว็บไซต์ หัวข้อบริการ" ?></span><br>
+                            <span><?php echo $langMod['txt:q4short']."&nbsp; หมายถึง  &nbsp;".$langMod['txt:suggest']?></span><br>         
+                        </td>
+                    </tr>              
+                </tbody>
+            </table>
+
             <div class="divRightContantEnd"></div>
+
         </div>
 
     </form>
+
+    
+
+    
+    
 
    <form action="?" method="post" name="myFormExport" id="myFormExport">
     <input name="sql_export" type="hidden" id="sql_export" value="<?php echo $sql_export ?>" />
