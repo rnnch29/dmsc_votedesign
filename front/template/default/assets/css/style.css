@@ -196,11 +196,11 @@ body {
 /* hover */
 
 
-label:hover img {
+/* label:hover img {
     transform: scale(1);
     background-color: aliceblue;
     filter: grayscale(0)!important;
-}
+} */
 
 
 
@@ -210,9 +210,27 @@ label:hover img {
 }
 
 
-.thumb .cover img {
+/* .thumb .cover img {
     filter: grayscale(1);
     transition: All 500ms ease;
+} */
+
+.general-theme label:hover {
+    border: 2px solid #ffd700 !important;
+}
+
+.general-theme label:hover .title {
+    background-color: #ffd700 !important;
+    color: #fff !important;
+}
+
+.service-theme label:hover {
+    border: 2px solid #ffd700 !important;
+}
+
+.service-theme label:hover .title {
+    background-color: #ffd700 !important;
+    color: #fff !important;
 }
 
 /* end */
@@ -390,6 +408,7 @@ label:hover img {
     color: #ffffff;
     text-align: center;
     font-weight: 500;
+    transition: All 400ms ease;
 }
 
 .btn-I span{
@@ -413,6 +432,7 @@ label:hover img {
     text-align: center;
     font-weight: 500;
     margin-bottom: 0;
+    transition: All 400ms ease;
 }
 
 
@@ -520,6 +540,7 @@ label:hover img {
     width: 100%;
     margin-bottom: 0;
     border: 2px solid #004298;
+    transition: All 400ms ease;
 }
 
 .rdio label .title{

@@ -1,19 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-09 13:35:47
-/* Smarty version 3.1.30, created on 2024-02-09 13:52:49
+/* Smarty version 3.1.30, created on 2024-02-09 15:58:21
   from "C:\xampp\htdocs\dmsc_votedesign\front\controller\script\home\template\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c5cbc1899529_38930633',
+  'unifunc' => 'content_65c5e92d3622e1_46409683',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4ea67c3214c36c66bc8e244352bd3a98d8dd9042' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\controller\\script\\home\\template\\index.tpl',
-      1 => 1707461566,
+      1 => 1707469091,
       2 => 'file',
     ),
   ),
@@ -21,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c5cbc1899529_38930633 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c5e92d3622e1_46409683 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="votedesign">
   <div class="position-relative">
@@ -51,14 +50,16 @@ function content_65c5cbc1899529_38930633 (Smarty_Internal_Template $_smarty_tpl)
     <form id = "myForm" data-toggle="validator" role="form">
       <div class="container">
         <div class="des">
-          <span class="mr-3">คำชี้แจง</span>กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
+          <span class="mr-1">คำชี้แจง :</span>กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
         </div>
         <div class="form-group mb-0">
           <section class="general-theme">
             <div class="heading">
-              1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด*
+              <div>  
+                1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด<span class="moon">&nbsp;&nbsp;*</span>
+              </div>  
             </div>
-            <span class="alert">**กรุณาเลือกรูปแบบทีทท่านชอบ</span>
+            <span class="alert">**กรุณาเลือกคำตอบ</span>
             <div class="row">
               <div class="col-6 mb-4">
                 <div class="rdio rdio-primary radio-inline"> <input name="q1" value="1" id="q1_1" type="radio" required>
@@ -139,10 +140,12 @@ function content_65c5cbc1899529_38930633 (Smarty_Internal_Template $_smarty_tpl)
         <div class="form-group mb-0">
           <section class="show-sequence">
             <div class="heading">
+            <div>
               2. ในความคิดเห็นของท่านการจัดลำดับหัวข้อในการแสดงผล ก่อน-หลัง ของหัวข้อบริการและงานวิจัยและนวัตกรรม
-              ควรเป็นแบบใด*
+              ควรเป็นแบบใด<span class="moon">&nbsp;&nbsp;*</span>
             </div>
-            <span class="alert">**กรุณาเลือกรูปแบบทีทท่านชอบ</span>
+            </div>
+            <span class="alert">**กรุณาเลือกคำตอบ</span>
             <div class="row mb-sm-0 mb-3">
               <div class="col-sm">
                 <div class="rdio rdio-primary radio-inline"> <input name="q2" value="1" id="q2_1" type="radio" required>
@@ -164,9 +167,11 @@ function content_65c5cbc1899529_38930633 (Smarty_Internal_Template $_smarty_tpl)
         <div class="form-group mb-0">
           <section class="service-theme">
             <div class="heading">
-              3. ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด*
+            <div>
+              3. ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด<span class="moon">&nbsp;&nbsp;*</span>
             </div>
-            <span class="alert">**กรุณาเลือกรูปแบบทีทท่านชอบ</span>
+            </div>
+            <span class="alert">**กรุณาเลือกคำตอบ</span>
             <div class="row">
               <div class="col-6 mb-sm-4 mb-3">
                 <div class="rdio rdio-primary radio-inline"> <input name="q3" value="1" id="q3_1" type="radio" required>
