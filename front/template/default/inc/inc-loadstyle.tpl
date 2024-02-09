@@ -18,6 +18,7 @@
 <!-- plugin -->
 <link rel="stylesheet" href="{$template}/assets/css/slick.css">
 <link rel="stylesheet" href="{$template}/assets/css/slick-theme.css">
+<link href=" https://cdn.jsdelivr.net/npm/feather-icon@0.1.0/css/feather.min.css " rel="stylesheet">
 
 <!-- Custom -->
 <link rel="stylesheet" href="{$template}/assets/css/style.css{$lastModify}">

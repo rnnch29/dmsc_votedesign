@@ -54,153 +54,63 @@
     </div>
   </section>
 
-  <form id="myForm">
-    <div class="container">
-      <section class="general-theme">
-        <div class="des">
-          <strong>คำชี้แจง</strong> กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากที่สุด
-        </div>
-        <div class="heading">
-          ข้อที่ 1 ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ในรูปแบบใด
-        </div>
-        <div class="row">
-          <div class="col-6">
-            {* <div class="choice">
-              <input class="choice-input" type="radio" id="q1_1" name="q1" value="1">
-              <label class="control-label">รูปแบบที่ 1</label>
-            </div> *}
-            <div class="rdio rdio-primary radio-inline"> <input name="q1" value="1" id="q1_1" type="radio">
-              <label for="q1_1">รูปแบบที่ 1</label>
-            </div>
-          </div>
-          <div class="col-6">
-            {* <div class="choice">
-              <input type="radio" id="q1_2" name="q1" value="2">
-              <label>รูปแบบที่ 2</label>
-            </div> *}
-            <div class="rdio rdio-primary radio-inline"> <input name="q1" value="2" id="q1_2" type="radio">
-              <label for="q1_2">รูปแบบที่ 2</label>
-            </div>
-          </div>
-          <div class="col-6">
-
-            {* <div class="choice">
-              <input type="radio" id="q1_3" name="q1" value="3">
-              <label>รูปแบบที่ 3</label>
-            </div> *}
-            <div class="rdio rdio-primary radio-inline"> <input name="q1" value="3" id="q1_3" type="radio">
-              <label for="q1_3">รูปแบบที่ 3</label>
-            </div>
-          </div>
-          <div class="col-6">
-            {* <div class="choice">
-              <input type="radio" id="q1_4" name="q1" value="4">
-              <label>รูปแบบที่ 4</label>
-            </div> *}
-            <div class="rdio rdio-primary radio-inline"> <input name="q1" value="4" id="q1_4" type="radio">
-              <label for="q1_4">รูปแบบที่ 4</label>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="show-sequence">
-        <div class="heading">
-          ข้อที่ 2 การจัดลำดับหัวข้อในการแสดงผล ก่อน-หลัง หัวข้อบริการและงานวิจัยและนวัตกรรม ควรเป็นแบบใด
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="rdio rdio-primary radio-inline"> <input name="q2" value="1" id="q2_1" type="radio">
-              <label for="q2_1">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
-            </div>
-            {* <div class="choice">
-              <input type="radio" id="q2_1" name="q2" value="1">
-              <label>หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
-            </div> *}
-          </div>
-          <div class="col">
-            <div class="rdio rdio-primary radio-inline"> <input name="q2" value="2" id="q2_2" type="radio">
-              <label for="q2_2">หัวข้องานวิจัยและนวัตกรรม - หัวข้อบริการ</label>
-            </div>
-            {* <div class="choice">
-              <input type="radio" id="q2_2" name="q2" value="2">
-              <label>หัวข้องานวิจัยและนวัตกรรม - หัวข้อบริการ</label>
-            </div> *}
-          </div>
-        </div>
-      </section>
-
-      <section class="service-theme">
-        <div class="heading">
-          ข้อที่ 3 ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="rdio rdio-primary radio-inline"> <input name="q3" value="1" id="q3_1" type="radio">
-              <label for="q3_1">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
-            </div>
-            {* <div class="choice">
-              <input type="radio" id="q3_1" name="q3" value="1">
-              <label>รูปแบบที่ 1</label>
-            </div> *}
-            <div class="thumb">
-              <figure class="cover">
-                <img src="{$template}/assets/img/sv-01.png" alt="">
-              </figure>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="rdio rdio-primary radio-inline"> <input name="q3" value="2" id="q3_2" type="radio">
-              <label for="q3_2">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
-            </div>
-            {* <div class="choice">
-              <input type="radio" id="q3_2" name="q3" value="2">
-              <label>รูปแบบที่ 2</label>
-            </div> *}
-            <div class="thumb">
-              <figure class="cover">
-                <img src="{$template}/assets/img/sv-02.png" alt="">
-              </figure>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="rdio rdio-primary radio-inline"> <input name="q3" value="3" id="q3_3" type="radio">
-              <label for="q3_3">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
-            </div>
-            {* <div class="choice">
-              <input type="radio" id="q3_3" name="q3" value="3">
-              <label>รูปแบบที่ 3</label>
-            </div> *}
-            <div class="thumb">
-              <figure class="cover">
-                <img src="{$template}/assets/img/sv-03.png" alt="">
-              </figure>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="rdio rdio-primary radio-inline"> <input name="q3" value="4" id="q3_4" type="radio">
-              <label for="q3_4">หัวข้อบริการ - หัวข้องานวิจัยและนวัตกรรม</label>
-            </div>
-            {* <div class="choice">
-              <input type="radio" id="q3_4" name="q3" value="4">
-              <label>รูปแบบที่ 4</label>
-            </div> *}
-            <div class="thumb">
-              <figure class="cover">
-                <img src="{$template}/assets/img/sv-04.png" alt="">
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="suggestions">
-        <div class="form-group">
-          <div class="heading" for="comment">ข้อเสนอแนะ:</div>
-          <textarea class="form-control" name="suggest" rows="5" id="comment" placeholder="กรอกข้อเสนอแนะ"></textarea>
-        </div>
-      </section>
-      <input class="sending" type="submit" value="ส่งข้อมูล">
+  <form data-toggle="validator" role="form">
+  <div class="form-group">
+    <label for="inputName" class="control-label">Name</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+  </div>
+  <div class="form-group has-feedback">
+    <label for="inputTwitter" class="control-label">Twitter</label>
+    <div class="input-group">
+      <span class="input-group-addon">@</span>
+      <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="1000hz" required>
     </div>
-  </form>
+    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+    <div class="help-block with-errors">Hey look, this one has feedback icons!</div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail" class="control-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+    <div class="help-block with-errors"></div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="control-label">Password</label>
+    <div class="form-inline row">
+      <div class="form-group col-sm-6">
+        <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+        <div class="help-block">Minimum of 6 characters</div>
+      </div>
+      <div class="form-group col-sm-6">
+        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="radio">
+      <label>
+        <input type="radio" name="underwear" required>
+        Boxers
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="underwear" required>
+        Briefs
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
+        Check yourself
+      </label>
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
 </div>

@@ -5,25 +5,35 @@
     }
 
     .vote-info .title {
-        font-size: 18px;
+        font-size: 22px;
     }
 
-    .vote-info .title small {
-        font-size: 12px;
-    }
 
-    .votedesign{
+    .votedesign {
         background-image: none;
         padding-bottom: 30px;
+        margin-top: 20px;
     }
 
     .vote-title .title h1 {
-        font-size: 12px;
+        font-size: 24px;
+        line-height: 1.3em;
         margin: 20px 0px;
     }
 
     .general-theme .des {
-        font-size: 8px;
+        font-size: 16px;
+    }
+
+    .general-theme .rdio label .title {
+        padding: 8px;
+        line-height: 1.2em;
+    }
+
+    .general-theme .btn-I {
+        font-size: 14px;
+        line-height: 40px;
+        margin-top: 10px;
     }
 
     .votedesign::before {
@@ -52,10 +62,32 @@
     }
 
     .show-sequence .rdio label .title {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+    }
+
+    .service-theme .rdio label .title {
+        padding: 8px;
+        line-height: 1.2em;
     }
 
     .service-theme .heading {
+        margin-top: 0px;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+    }
+
+    .show-sequence .heading {
         margin-top: 25px;
+    }
+
+    .suggestions .heading {
+        margin-top: 25px;
+    }
+
+    .sending {
+        margin-top: 25px;
+        line-height: 45px;
     }
 }

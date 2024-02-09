@@ -84,8 +84,7 @@ body {
 }
 
 .vote-info {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .vote-info .title {
@@ -95,7 +94,7 @@ body {
     line-height: 28px;
 }
 
-.vote-info .title small {
+.vote-info .sub-title {
     font-size: 16px;
 }
 
@@ -194,7 +193,7 @@ body {
 
 
 label:hover img {
-    transform: scale(1.1);
+    transform: scale(1);
     background-color: aliceblue;
     filter: grayscale(0)!important;
 }
@@ -254,7 +253,7 @@ label:hover img {
     line-height: 45px;
     border: 2px solid #004298;
     box-shadow: 0 0 15px 1px rgb(60 60 60 / 46%);
-    margin: 25px 0px;
+    margin-top: 15px;
     transition: All 400ms ease;
 }
 
@@ -282,7 +281,6 @@ label:hover img {
 
 .service-theme .thumb {
     position: relative;
-    margin-bottom: 25px;
 }
 
 .service-theme .thumb figure.cover {
@@ -305,6 +303,16 @@ label:hover img {
     object-position: center;
     /* border-radius: 5px; */
 }
+
+.show-sequence .rdio label{
+    border: none;
+}
+
+.show-sequence .rdio input[type="radio"]:checked+label::after {
+    width: 12px;
+    height: 12px;
+}
+
 
 .sending {
     background-color: #004298;
@@ -373,7 +381,17 @@ label:hover img {
 }
 
 .general-theme .rdio label .title {
-    margin-bottom: 25px;
+    background-color: #004298;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.btn-I span{
+    position: relative;
+    top: 2px;
+    padding-right: 6px;
 }
 
 .service-theme .rdio label .title {
@@ -384,7 +402,14 @@ label:hover img {
     margin-bottom: 0px;
 }
 
-
+.service-theme .rdio label .title {
+    background-color: #004298;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0;
+}
 
 
 
@@ -414,20 +439,39 @@ label:hover img {
 } */
 
 .general-theme input:checked ~ label{
-    border-color:  #004298;
+    border-color:  #009838;
+}
+
+.general-theme input:checked ~ label .title{
+    background-color:#009838 ;
+}
+
+.general-theme input:checked ~ label img{
+    transform: scale(1);
+    filter: grayscale(0)!important;
+}
+
+.service-theme input:checked ~ label{
+    border-color:  #009838;
+}
+
+.service-theme input:checked ~ label .title{
+    background-color:#009838 ;
+}
+
+.service-theme input:checked ~ label img{
+    transform: scale(1);
+    filter: grayscale(0)!important;
 }
 
 /* .show-sequence input:checked ~ label{
     border-color:  #004298;
 } */
 
-.service-theme input:checked ~ label{
-    border-color: #004298;
-}
 
-.was-validated :invalid~label{
+/* .was-validated :invalid~label{
     border: 2px solid #980000;
-}
+} */
 
 .suggestions .form-group{
     margin-bottom: 0px;
@@ -437,6 +481,19 @@ label:hover img {
     background-image:none;
     border-color: unset;
 }
+
+.needs-validation .alert{
+    display: none;
+    color: red;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: -15px;
+}
+
+.needs-validation.was-validated .alert{
+    display: block;
+}
+
 
 
 
@@ -458,7 +515,7 @@ label:hover img {
     color: #004298;
     width: 100%;
     margin-bottom: 0;
-    border: 2px solid transparent;
+    border: 2px solid #004298;
 }
 
 .rdio label .title{
@@ -518,6 +575,7 @@ label:hover img {
 
 .rdio-primary input[type="radio"]:checked+label::after {
     background-color: #004298;
+    width: 0;
 }
 
 .custom-checkbox {
