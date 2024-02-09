@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-08 20:18:33
+/* Smarty version 3.1.30, created on 2024-02-09 10:05:04
   from "C:\xampp\htdocs\dmsc_votedesign\front\controller\script\home\template\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c4d4a95a0904_41368467',
+  'unifunc' => 'content_65c59660cc7c16_57519043',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4ea67c3214c36c66bc8e244352bd3a98d8dd9042' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\controller\\script\\home\\template\\index.tpl',
-      1 => 1707398312,
+      1 => 1707447898,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c4d4a95a0904_41368467 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c59660cc7c16_57519043 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="votedesign">
   <div class="position-relative">
@@ -54,7 +54,7 @@ function content_65c4d4a95a0904_41368467 (Smarty_Internal_Template $_smarty_tpl)
             คำชี้แจง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
           </div>
           <div class="heading">
-            1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด
+            1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด*
           </div>
           <div class="row">
             <div class="col-6">
@@ -125,6 +125,7 @@ function content_65c4d4a95a0904_41368467 (Smarty_Internal_Template $_smarty_tpl)
               </div>
               <a href="https://xd.adobe.com/view/32b75125-59cd-4892-ad63-e6f6a885bda9-67e4/" target="_blank">
                 <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
+                  <span class="feather icon-link"></span>
                 </button>
               </a>
             </div>
@@ -134,7 +135,7 @@ function content_65c4d4a95a0904_41368467 (Smarty_Internal_Template $_smarty_tpl)
         <section class="show-sequence">
           <div class="heading">
             2. ในความคิดเห็นของท่านการจัดลำดับหัวข้อในการแสดงผล ก่อน-หลัง ของหัวข้อบริการและงานวิจัยและนวัตกรรม
-            ควรเป็นแบบใด
+            ควรเป็นแบบใด*
           </div>
           <div class="row">
             <div class="col-sm">
@@ -156,7 +157,7 @@ function content_65c4d4a95a0904_41368467 (Smarty_Internal_Template $_smarty_tpl)
 
         <section class="service-theme">
           <div class="heading">
-            3. ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด
+            3. ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด*
           </div>
           <div class="row">
             <div class="col-6">
@@ -202,7 +203,8 @@ function content_65c4d4a95a0904_41368467 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <div class="col-6">
               <div class="rdio rdio-primary radio-inline"> <input name="q3" value="4" id="q3_4" type="radio" required>
-                <label for="q3_4"><div class="title">รูปแบบที่ 4</div>
+                <label for="q3_4">
+                  <div class="title">รูปแบบที่ 4</div>
                   <div class="thumb">
                     <figure class="cover">
                       <img src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>

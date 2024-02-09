@@ -199,6 +199,8 @@ label:hover img {
     filter: grayscale(0)!important;
 }
 
+
+
 .thumb {
     position: relative;
     overflow: hidden;
@@ -415,9 +417,9 @@ label:hover img {
     border-color:  #004298;
 }
 
-.show-sequence input:checked ~ label{
+/* .show-sequence input:checked ~ label{
     border-color:  #004298;
-}
+} */
 
 .service-theme input:checked ~ label{
     border-color: #004298;

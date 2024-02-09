@@ -70,7 +70,7 @@
             คำชี้แจง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
           </div>
           <div class="heading">
-            1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด
+            1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด*
           </div>
           <div class="row">
             <div class="col-6">
@@ -139,6 +139,7 @@
               </div>
               <a href="https://xd.adobe.com/view/32b75125-59cd-4892-ad63-e6f6a885bda9-67e4/" target="_blank">
                 <button type="button" class="btn-I">คลิกเพื่อดูรูปภาพเต็ม
+                  <span class="feather icon-link"></span>
                 </button>
               </a>
             </div>
@@ -148,7 +149,7 @@
         <section class="show-sequence">
           <div class="heading">
             2. ในความคิดเห็นของท่านการจัดลำดับหัวข้อในการแสดงผล ก่อน-หลัง ของหัวข้อบริการและงานวิจัยและนวัตกรรม
-            ควรเป็นแบบใด
+            ควรเป็นแบบใด*
           </div>
           <div class="row">
             <div class="col-sm">
@@ -170,7 +171,7 @@
 
         <section class="service-theme">
           <div class="heading">
-            3. ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด
+            3. ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด*
           </div>
           <div class="row">
             <div class="col-6">
@@ -213,7 +214,8 @@
             </div>
             <div class="col-6">
               <div class="rdio rdio-primary radio-inline"> <input name="q3" value="4" id="q3_4" type="radio" required>
-                <label for="q3_4"><div class="title">รูปแบบที่ 4</div>
+                <label for="q3_4">
+                  <div class="title">รูปแบบที่ 4</div>
                   <div class="thumb">
                     <figure class="cover">
                       <img src="{$template}/assets/img/sv-4.png" alt="">
