@@ -221,7 +221,7 @@ body {
 
 .general-theme label:hover .title {
     background-color: #ffd700 !important;
-    color: #fff !important;
+    color: #000 !important;
 }
 
 .service-theme label:hover {
@@ -230,7 +230,7 @@ body {
 
 .service-theme label:hover .title {
     background-color: #ffd700 !important;
-    color: #fff !important;
+    color: #000 !important;
 }
 
 /* end */
