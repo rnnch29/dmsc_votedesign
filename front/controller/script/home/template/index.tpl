@@ -25,14 +25,14 @@
     <form id = "myForm" data-toggle="validator" role="form">
       <div class="container">
         <div class="des">
-          <span class="mr-3">คำชี้แจง</span>กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
+          <span class="mr-1">คำชี้แจง :</span>กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
         </div>
         <div class="form-group mb-0">
           <section class="general-theme">
             <div class="heading">
-              1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด*
+              1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด<span class="moon">&nbsp;&nbsp;*</span>
             </div>
-            <span class="alert">**กรุณาเลือกรูปแบบทีทท่านชอบ</span>
+            <span class="alert">**กรุณาเลือกคำตอบ</span>
             <div class="row">
               <div class="col-6 mb-4">
                 <div class="rdio rdio-primary radio-inline"> <input name="q1" value="1" id="q1_1" type="radio" required>
@@ -112,9 +112,9 @@
           <section class="show-sequence">
             <div class="heading">
               2. ในความคิดเห็นของท่านการจัดลำดับหัวข้อในการแสดงผล ก่อน-หลัง ของหัวข้อบริการและงานวิจัยและนวัตกรรม
-              ควรเป็นแบบใด*
+              ควรเป็นแบบใด<span class="moon">&nbsp;&nbsp;*</span>
             </div>
-            <span class="alert">**กรุณาเลือกรูปแบบทีทท่านชอบ</span>
+            <span class="alert">**กรุณาเลือกคำตอบ</span>
             <div class="row mb-sm-0 mb-3">
               <div class="col-sm">
                 <div class="rdio rdio-primary radio-inline"> <input name="q2" value="1" id="q2_1" type="radio" required>
@@ -136,9 +136,9 @@
         <div class="form-group mb-0">
           <section class="service-theme">
             <div class="heading">
-              3. ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด*
+              3. ท่านมีความชื่นชอบการออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์ หัวข้อบริการ ในรูปแบบใดมากที่สุด<span class="moon">&nbsp;&nbsp;*</span>
             </div>
-            <span class="alert">**กรุณาเลือกรูปแบบทีทท่านชอบ</span>
+            <span class="alert">**กรุณาเลือกคำตอบ</span>
             <div class="row">
               <div class="col-6 mb-sm-4 mb-3">
                 <div class="rdio rdio-primary radio-inline"> <input name="q3" value="1" id="q3_1" type="radio" required>

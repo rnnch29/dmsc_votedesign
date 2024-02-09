@@ -110,6 +110,10 @@ body {
     font-weight: 600;
 }
 
+.des {
+    font-weight: 600;
+}
+
 /* .vote-info{
     position: relative;
     z-index: 2;
@@ -207,7 +211,7 @@ label:hover img {
 
 
 .thumb .cover img {
-    filter: grayscale(0.7);
+    filter: grayscale(1);
     transition: All 500ms ease;
 }
 
@@ -711,4 +715,8 @@ label:hover img {
 
 .form-group.has-error .alert {
     display: block;
+}
+
+.moon{
+    color: red;
 }
