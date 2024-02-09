@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-09 13:12:05
+/* Smarty version 3.1.30, created on 2024-02-09 13:35:47
   from "C:\xampp\htdocs\dmsc_votedesign\front\controller\script\home\template\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c5c235472388_94563654',
+  'unifunc' => 'content_65c5c7c3d53986_90288419',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4ea67c3214c36c66bc8e244352bd3a98d8dd9042' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\controller\\script\\home\\template\\index.tpl',
-      1 => 1707459118,
+      1 => 1707460519,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c5c235472388_94563654 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c5c7c3d53986_90288419 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="votedesign">
   <div class="position-relative">
@@ -50,11 +50,11 @@ function content_65c5c235472388_94563654 (Smarty_Internal_Template $_smarty_tpl)
 
 
     
-    <form class="needs-validation" id="myForm" novalidate>
+    <form data-toggle="validator" role="form" class="needs-validation" id="myForm" novalidate>
       <div class="container">
         <section class="general-theme">
           <div class="des">
-            <span class="mr-3">คำชี้แจง</span>กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
+            <span class="mr-1">คำชี้แจง :</span>กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
           </div>
           <div class="heading">
             1. ท่านมีความชื่นชอบการออกแบบเว็บไซต์ของกรมวิทยาศาสตร์การแพทย์ในรูปแบบใดมากที่สุด*
