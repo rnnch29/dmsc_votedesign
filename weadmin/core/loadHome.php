@@ -88,6 +88,14 @@ include("../core/incLang.php");
         }
         ?>
 
+        <?php 
+            $sqlValList = "SELECT COUNT(*) AS vote_list FROM " . $core_tb_vote;
+            $queryValList = wewebQueryDB($coreLanguageSQL, $sqlValList);
+            $row_List = wewebFetchArrayDB($coreLanguageSQL, $queryValList);
+
+            $val_List = $row_List[0];
+        ?>
+
 <form action="?" method="post" name="myForm" id="myForm">
         <input name="masterkey" type="hidden" id="masterkey" value="<?php echo  $_REQUEST['masterkey'] ?>" />
         <input name="menukeyid" type="hidden" id="menukeyid" value="<?php echo  $_REQUEST['menukeyid'] ?>" />
@@ -215,9 +223,11 @@ include("../core/incLang.php");
                     <!-- Top graphic name table head  -->
                     <!-- <td width="5%" class="divRightTitleTbL" valign="middle" align="left" style="padding-left: 40px;"><?php echo $langMod["txt:id"] ?></span></td>    -->
 
-                    <td align="center" width="50%" valign="middle" class="divRightTitleTbL" ><span class="fontTitlTbRight"><?php echo $langMod["txt:suggest"] ?></span></td> 
+                    <td align="center" width="10%" valign="middle" class="divRightTitleTbL" ><span class="fontTitlTbRight"><?php echo 'ลำดับ' ?></span></td> 
 
-                    <td align="center" width="50%" valign="middle" class="divRightTitleTb"><span class="fontTitlTbRight"><?php echo $langMod["txt:voteDate"] ?></span></td>
+                    <td align="center" width="65%" valign="middle" class="divRightTitleTb" ><span class="fontTitlTbRight"><?php echo $langMod["txt:suggest"] ?></span></td> 
+
+                    <td align="center" width="20%" valign="middle" class="divRightTitleTbR"><span class="fontTitlTbRight"><?php echo $langMod["txt:voteDate"] ?></span></td>
 
                     
                     <!-- <td width="9%" class="divRightTitleTb" valign="middle" align="center"><span
@@ -356,15 +366,17 @@ include("../core/incLang.php");
 
                 $query = wewebQueryDB($coreLanguageSQL, $sql);
                 $count_record = wewebNumRowsDB($coreLanguageSQL, $query);
-                // print_pre($query);die();
 
                 $index = 1;
                 $valDivTr = "divSubOverTb";
+
+                
 
                 if ($count_record > 0) {
 
                     while ($index < $count_record + 1) {
                         $row = wewebFetchArrayDB($coreLanguageSQL, $query);
+                        $valID = $row[0];
                         $valSug = $row[1];
                         $valDate = $row[2];
              
@@ -404,6 +416,26 @@ include("../core/incLang.php");
 
 
 
+                    <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
+
+                        <td class="divRightContantOverTb" valign="top" align="center">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <!-- <td class="displayTdImg" align="center" valign="top">
+                                        <div class="displayClickImg" style=" background:url(<?php echo  $valPicEN ?>) center no-repeat;border-radius: 50%;"></div>
+                                    </td> -->
+                                <td align="center">
+                                    <?php
+                                        echo $valID;     
+                                                 
+                                    ?>
+                                </td>
+                                </tr>
+                            </table>
+                        </td>
+                    
+                    <?php } ?>
+
                 
 
                     <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
@@ -427,6 +459,7 @@ include("../core/incLang.php");
                         </td>
                         
                         <?php } ?>
+
                         <?php if ($_SESSION[$valSiteManage . 'core_session_languageT'] == 2) { ?>
                         <td class="divRightContantOverTb" valign="top" align="center">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">

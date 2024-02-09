@@ -482,17 +482,6 @@ label:hover img {
     border-color: unset;
 }
 
-.needs-validation .alert{
-    display: none;
-    color: red;
-    margin-bottom: 0;
-    padding-top: 0;
-    margin-top: -15px;
-}
-
-.needs-validation.was-validated .alert{
-    display: block;
-}
 
 
 
@@ -692,3 +681,23 @@ label:hover img {
     border: 1px solid #004298 !important;
 }
 
+.form-group {
+    border: 2px solid transparent;
+    transition: All 400ms ease;
+}
+.form-group.has-error {
+    border: 2px solid red;
+}
+
+
+.form-group .alert { 
+    display: none;
+    color: red;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: -15px;
+}
+
+.form-group.has-error .alert {
+    display: block;
+}
