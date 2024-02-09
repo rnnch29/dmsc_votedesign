@@ -1,3 +1,64 @@
+@media(max-width:1199px) {
+    .general-theme label:hover {
+        border: 2px solid #006838 !important;
+    }
+    
+    .general-theme label:hover .title {
+        background-color: #006838 !important;
+        color: #fff !important;
+    }
+    
+    .service-theme label:hover {
+        border: 2px solid #006838 !important;
+    }
+    
+    .service-theme label:hover .title {
+        background-color: #006838 !important;
+        color: #fff !important;
+    }
+}
+
+@media(max-width:991px) {
+    .general-theme label:hover {
+        border: 2px solid #006838 !important;
+    }
+    
+    .general-theme label:hover .title {
+        background-color: #006838 !important;
+        color: #fff !important;
+    }
+    
+    .service-theme label:hover {
+        border: 2px solid #006838 !important;
+    }
+    
+    .service-theme label:hover .title {
+        background-color: #006838 !important;
+        color: #fff !important;
+    }
+}
+
+@media(max-width:767px) {
+    .general-theme label:hover {
+        border: 2px solid #006838 !important;
+    }
+    
+    .general-theme label:hover .title {
+        background-color: #006838 !important;
+        color: #fff !important;
+    }
+    
+    .service-theme label:hover {
+        border: 2px solid #006838 !important;
+    }
+    
+    .service-theme label:hover .title {
+        background-color: #006838 !important;
+        color: #fff !important;
+    }
+}
+
+
 @media(max-width:575px) {
 
     .vote-logo img {
