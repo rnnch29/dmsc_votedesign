@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2024-02-09 15:58:21
+/* Smarty version 3.1.30, created on 2024-02-12 10:15:43
   from "C:\xampp\htdocs\dmsc_votedesign\front\controller\script\home\template\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_65c5e92d3622e1_46409683',
+  'unifunc' => 'content_65c98d5f68bd47_36421553',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4ea67c3214c36c66bc8e244352bd3a98d8dd9042' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dmsc_votedesign\\front\\controller\\script\\home\\template\\index.tpl',
-      1 => 1707469091,
+      1 => 1707703849,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65c5e92d3622e1_46409683 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65c98d5f68bd47_36421553 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="votedesign">
   <div class="position-relative">
@@ -42,7 +42,7 @@ function content_65c5e92d3622e1_46409683 (Smarty_Internal_Template $_smarty_tpl)
         </div>
         <div class="vote-title">
           <div class="title">
-            <h1>แบบสอบถามความพึงพอใจ การออกแบบเว็บไซต์กรมวิยาศาสตร์การแพทย์</h1>
+            <h1>แบบสอบถามความพึงพอใจ การออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์</h1>
           </div>
         </div>
       </div>

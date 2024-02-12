@@ -17,7 +17,7 @@
         </div>
         <div class="vote-title">
           <div class="title">
-            <h1>แบบสอบถามความพึงพอใจ การออกแบบเว็บไซต์กรมวิยาศาสตร์การแพทย์</h1>
+            <h1>แบบสอบถามความพึงพอใจ การออกแบบเว็บไซต์กรมวิทยาศาสตร์การแพทย์</h1>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
     <form id = "myForm" data-toggle="validator" role="form">
       <div class="container">
         <div class="des">
-          <span class="mr-1">คำชี้แจง :</span>กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านมากให้ที่สุด
+          <span class="mr-1">คำชี้แจง :</span>กรุณาเลือกช่องคำตอบตามความเป็นจริงหรือใกล้เคียงกับความคิดเห็นของท่านให้มากที่สุด
         </div>
         <div class="form-group mb-0">
           <section class="general-theme">
